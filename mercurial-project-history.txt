@@ -1,0 +1,692 @@
+changeset:   134:7e00e553103e
+tag:         tip
+user:        alexandrebraganca
+date:        Tue Jul 04 15:42:24 2017 +0100
+summary:     Fixes small bug in SAFT export where tax rate must be "0".
+
+changeset:   133:62c79da96cb4
+user:        alexandrebraganca
+date:        Sat Jul 01 10:35:38 2017 +0100
+summary:     hgignore to ignore build dir.
+
+changeset:   132:6b933a3d75e7
+user:        alexandrebraganca
+date:        Sat Jul 01 10:11:00 2017 +0100
+summary:     Added support for SAFT v1.04.01.
+
+changeset:   131:2284255e728f
+user:        Alexandre  Braganca (KTC) <alexandre.ktc@gmail.com>
+date:        Sat Jul 01 08:22:32 2017 +0000
+summary:     Added tag v1.2.679 for changeset 4dc721ffa13e
+
+changeset:   130:4dc721ffa13e
+tag:         v1.2.679
+user:        alexandrebraganca
+date:        Mon Jun 15 09:33:13 2015 +0100
+summary:     Removi o "separador" "oferta" do painel de pagamentos a pedido da QQQQ
+
+changeset:   129:1872a49b97c1
+user:        alexandrebraganca
+date:        Mon Mar 23 11:12:09 2015 +0000
+summary:     Added tag v1.2.678 for changeset 5daae325a7cb
+
+changeset:   128:5daae325a7cb
+tag:         v1.2.678
+user:        alexandrebraganca
+date:        Mon Mar 23 09:47:06 2015 +0000
+summary:     corrigido problema/bug que fazia com que o relatorio de vendas e impostos errasse quando por alguma razao nao era calculado o imposto de uma venda.
+
+changeset:   127:69ad68763972
+user:        alexandrebraganca
+date:        Fri Sep 05 17:13:07 2014 +0100
+summary:     Implementa a possibilidade de selecionar o pais de uma lista. Necessario para registar NIF estrangeiros e exportar correctamente no SAFT. ref #8. closes #8.
+
+changeset:   126:4f2d5abdc237
+user:        alexandrebraganca
+date:        Wed Sep 03 17:07:40 2014 +0100
+summary:     correcao do limite das referencias na exportacao do saft ref #9
+
+changeset:   125:c157cb8a217a
+user:        alexandrebraganca
+date:        Sun May 25 22:15:04 2014 +0100
+summary:     Added tag v1.2.676 for changeset 5b8b12d1e2f5
+
+changeset:   124:5b8b12d1e2f5
+tag:         v1.2.676
+user:        alexandrebraganca
+date:        Sun May 25 22:14:41 2014 +0100
+summary:     correcao do problema que nao exportava clientes desactivos no saft.
+
+changeset:   123:bddaf959ba8b
+user:        alexandrebraganca
+date:        Wed Mar 19 18:27:58 2014 +0000
+summary:     Added tag v1.2.675 for changeset 3f10dbb08dc8
+
+changeset:   122:3f10dbb08dc8
+tag:         v1.2.675
+user:        alexandrebraganca
+date:        Wed Mar 19 18:24:24 2014 +0000
+summary:     suporte para mudar o cliente quando se faz o slip da conta, possibilitando criar cliente na altura close #7
+
+changeset:   121:1c8eb3e3c762
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Jan 02 12:40:17 2014 +0000
+summary:     actualizacao do ficheiro de servicos do X e Y
+
+changeset:   120:2cdeb215ef32
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 18 15:13:42 2013 +0000
+summary:     No split de recibo o novo recibo fica com a referencia as consultas de mesa do original close #6
+
+changeset:   119:da8e3336c48e
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 18 11:57:01 2013 +0000
+summary:     Added tag v1.2.674 for changeset e5561f3fe4db
+
+changeset:   118:e5561f3fe4db
+tag:         v1.2.674
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 18 11:11:31 2013 +0000
+summary:     correcao do saft que exportava codigo de users com mais de 30 caracteres
+
+changeset:   117:8316632ff257
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 18 09:46:36 2013 +0000
+summary:     Added tag v1.2.673 for changeset fbbf3359016f
+
+changeset:   116:fbbf3359016f
+tag:         v1.2.673
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Nov 22 17:35:09 2013 +0000
+summary:     Corrigido bug que permitia gerar consultas de mesa sem linhas (valor=0) close #5.
+
+changeset:   115:303d2163be7d
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Oct 14 11:20:30 2013 +0100
+summary:     Pequena correcao no "refund" de documentos de forma a nao impedir "refunds" devido a arredondamentos ref #4
+
+changeset:   114:276fab168150
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Oct 10 15:14:30 2013 +0100
+summary:     Added tag v1.2.672 for changeset 1b51f3ee14ae
+
+changeset:   113:1b51f3ee14ae
+tag:         v1.2.672
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Oct 10 15:12:31 2013 +0100
+summary:     Versao 1.2.672: completei a exportacao de saft 1.3.01 e melhorei o relatorio de vendas e impostos closed #3
+
+changeset:   112:52f272d5fc53
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Sep 30 19:02:32 2013 +0100
+summary:     Opcao para exportar saft v1.03 quase completa (GenerateSAFT4), falta os documentos de trabalho ref #3
+
+changeset:   111:4beeadee821c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Sep 20 18:50:52 2013 +0100
+summary:     Adicionado xsd para saft v1.03 ref #3
+
+changeset:   110:d320d7a82255
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Sep 20 18:46:23 2013 +0100
+summary:     Exportacao SAFT segundo SAFT PT v1.2 aparentemente correcta, mas e necessario suportar a v1.3!! ref #3
+
+changeset:   109:5ef5ca7c3092
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Sep 18 11:48:31 2013 +0100
+summary:     gerado o modelo do SAFT PT v1.2 ref #3
+
+changeset:   108:de5dc7528c14
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Sep 11 10:08:09 2013 +0100
+summary:     versao 1.2.671
+
+changeset:   107:5d48f1e817f1
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Sep 11 10:01:39 2013 +0100
+summary:     correcao de problema no relatorio de vendas de produtos TO_DATE passa a TO_TIMESTAMP
+
+changeset:   106:b46270496e88
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Jun 11 18:49:16 2013 +0100
+summary:     Correcao de "bug" que afectava a propriedade "cat-height" de Ticket.Buttons. Aparentemente esta corrigida.
+
+changeset:   105:05a6655c1929
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Jun 07 17:18:47 2013 +0100
+summary:     Inicio do suporte para o backup em background/crond na versao actual com bd hsqldb e postgres.
+
+changeset:   104:8a57e18d21a7
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed May 22 19:31:21 2013 +0100
+summary:     v1.2.669: Correcoes no saft que deixava passar campos vazios quando sao obrigatorios.
+
+changeset:   103:a288a1f70c2d
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri May 17 15:01:02 2013 +0100
+summary:     v1.2.668: correcao do problema das classes do relatorio de vendas na impressora de taloes nao estarem publicas no build de distribuicao
+
+changeset:   102:06b419bf4145
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu May 16 16:11:25 2013 +0100
+summary:     Correcoes nos scripts de inicializacao da base de dados da aplicacao
+
+changeset:   101:cc4bc81d33e3
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed May 15 10:06:07 2013 +0100
+summary:     correcao de um bug relativo a leitura da propriedade  <cat-xxxxx value="300"/>  em Ticket.Buttons.xml.
+
+changeset:   100:8f52dda16581
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue May 14 23:19:08 2013 +0100
+summary:     possibilidade de usar a propriedade     <cat-width value="300"/>  em Ticket.Buttons.xml para configurar a largura da lista de categorias no painel de vendas.
+
+changeset:   99:f49336b05f32
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue May 14 18:16:33 2013 +0100
+summary:     Corrigido bug que alterava NIF na ficha de um cliente quando esta era alterada.
+
+changeset:   98:86fbbfd0ce37
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri May 10 18:17:43 2013 +0100
+summary:     Terminada nova opcao de relatorio de vendas de produtos que imprime em impressora de taloes
+
+changeset:   97:231fe4e1a165
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu May 09 17:10:24 2013 +0100
+summary:     correcao de bug na edicao de clientes que colocava NIF do primeiro cliente no cliente que se estivesse a editar
+
+changeset:   96:2579920c2a6e
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu May 09 14:47:49 2013 +0100
+summary:     Added tag v1.2.665 for changeset f2bbe0e8cc6f
+
+changeset:   95:f2bbe0e8cc6f
+tag:         v1.2.665
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu May 09 14:47:28 2013 +0100
+summary:     corrigido bug ao gerar consulta de mesa pois nao guardava o "place" em "signatures"
+
+changeset:   94:d6e32a03b94c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu May 09 08:45:22 2013 +0100
+summary:     Added tag v1.2.664 QQQQ for changeset 08badce4575c
+
+changeset:   93:08badce4575c
+tag:         v1.2.664 QQQQ
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu May 09 08:44:56 2013 +0100
+summary:     Pequena correcao na geracao do SAFT para usar a referencia do produto e nao o seu codigo de barras
+
+changeset:   92:12a8ddee5eb6
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue May 07 21:17:14 2013 +0100
+summary:     aparentemente corrigido erro de falha de actualizacao de tabela DOCS_IDS quando falha o save_ticket (incrementava na mesma o numero do ultimo id)
+
+changeset:   91:6dfe6bd542e6
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue May 07 18:21:14 2013 +0100
+summary:     Added tag v1.2.663 antes de acrescentar feature de guardar o local do servico (mesa) for changeset 694fc99765c4
+
+changeset:   90:694fc99765c4
+tag:         v1.2.663 antes de acrescentar feature de guardar o local do servico (mesa)
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue May 07 18:20:00 2013 +0100
+summary:     correcoes nas constantes cifradas
+
+changeset:   89:57a6c75ec6d5
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue May 07 15:15:44 2013 +0100
+summary:     reorganizacao dos ficheiros de services
+
+changeset:   88:069370db17d4
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri May 03 19:30:52 2013 +0100
+summary:     remocao de strings constantes do codigo.
+
+changeset:   87:bf538d5fbd48
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Apr 26 19:57:04 2013 +0100
+summary:     actualizacao de Menu.Toot.txt e ficheiros de seguranca com opcao de impressao de relatorios via impressora de taloes
+
+changeset:   86:73ad2a58cfae
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Apr 26 19:38:51 2013 +0100
+summary:     inicio de suporte para relatorios a sair na impressora de taloes
+
+changeset:   85:740e488632e0
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Apr 24 19:14:59 2013 +0100
+summary:     Added tag v1.2.663 ZZZZZ for changeset 0f8deefef4ec
+
+changeset:   84:0f8deefef4ec
+tag:         v1.2.663 WWWWW
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Apr 24 19:13:51 2013 +0100
+summary:     v1.2.663: versao instalada no ZZZZZ
+
+changeset:   83:6a3aaba7b1b9
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Apr 24 19:01:44 2013 +0100
+summary:     adicionei scrips para poder lancar 2 versoes: demonstracao e release. A aplicacao passa a receber os nomes dos 2 ficheiros de propriedades. Inicialmente o ficheiro de propriedades "release" é igual ao de demonstracao.
+
+changeset:   82:ab1e06f017b0
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Apr 12 19:10:36 2013 +0100
+summary:     Em preparacao se segundo posto do ZZZZ (zzzz) corrigiu-se um problema de sincronismo das threads e uns detalhes com o hsqldb. Tambem uns bugs com a utilizacao do Bouncy Castle.
+
+changeset:   81:6a335a7a4133
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Mar 07 16:28:55 2013 +0000
+summary:     corrigido problema/bug que originava ID duplicado de recibos em sequencia (devido a nao remover corretamente o recibo apos a sua emissao)
+
+changeset:   80:3f12b2f1041d
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Feb 26 16:25:55 2013 +0000
+summary:     pequenas alteracoes essencialmente para melhorar o build e o suporte do hsqldb e tambem o logging
+
+changeset:   79:2ebb9dc7e778
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Jan 21 19:17:41 2013 +0000
+summary:     v1.2.662: Actualizacoes para suportar a nova numercao dos documentos.
+
+changeset:   78:8bd1e88c0132
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Jan 11 16:07:16 2013 +0000
+summary:     v1.2.661: Possibilidade de criar clientes apenas com NIF e na altura de criacao da venda
+
+changeset:   77:bb83686c9005
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Jan 07 12:54:42 2013 +0000
+summary:     v1.2.660: Inicio do suporte para SAFT com FS Fatura Simplificada.
+
+changeset:   76:ac280b714dd7
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Jan 03 14:40:25 2013 +0000
+summary:     Added tag v1.2.659 for changeset f915a8c8bdb6
+
+changeset:   75:f915a8c8bdb6
+tag:         v1.2.659
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Jan 03 11:19:21 2013 +0000
+summary:     v1.2.659: Corrige erros de nao permitir editar linha e dados incorretos de companhia na segunda via.
+
+changeset:   74:7bb2df35ffa4
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 26 19:51:04 2012 +0000
+summary:     v1.2.658: Actualizados ficheiros para corrigir erro devido a executavel nao arrancar no Windows 7 64 bits. Foi adicionado um ficheiro bat para esses casos.
+
+changeset:   73:ddcb9680303f
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Dec 20 18:30:32 2012 +0000
+summary:     v1.2.657: Continuacao. Actualizações ao manual.
+
+changeset:   72:2fe47fb90f81
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 19 13:56:49 2012 +0000
+summary:     v1.2.657: Continuacao. Adicionamos codigo para a geracao do manual da aplicacao com base em ficheiros latex.
+
+changeset:   71:d103a460deed
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 14 16:06:12 2012 +0000
+summary:     v1.2.656: Continuacao. Alteracoes para construir versao de demonstracao automaticamente...
+
+changeset:   70:f2570b0745a4
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Dec 11 08:26:18 2012 +0000
+summary:     v1.2.655: Continuacao. Alteracoes relativas a templates e scripts de bd e outras...
+
+changeset:   69:38aeeed73dd8
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 07 18:30:39 2012 +0000
+summary:     v1.2.654: Continuacao. Acrescentei classe para consultar o macaddress (que fica no jar principal para facilitar a consulta nas instalacoes remotas)
+
+changeset:   68:d2f4ba99ffc3
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Nov 26 21:22:28 2012 +0000
+summary:     v1.2.653: Continuacao. Actualizacao para suportar hsqldb com encriptacao da bd
+
+changeset:   67:9d27ac940551
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Nov 23 11:49:31 2012 +0000
+summary:     v1.2.652: Continuacao. Actualizacao do ficheiro de constantes
+
+changeset:   66:3a48aa810f5c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Nov 23 11:33:22 2012 +0000
+summary:     v1.2.651: Continuacao. Criado suporte para garantir numeros sequenciais de documentos atraves de tabela DOCS_IDS
+
+changeset:   65:fcd16e8dad3c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Nov 22 16:55:01 2012 +0000
+summary:     v1.2.65: Continuacao. Mais alguns avancos....
+
+changeset:   64:0efdea25466c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Nov 20 20:56:43 2012 +0000
+summary:     v1.2.64: Continuacao. Avancos na cifragem dos dados da aplicacao e na verificacao da licenca do cliente.
+
+changeset:   63:39ecece826a0
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Nov 16 20:20:59 2012 +0000
+summary:     v1.2.62: Continuacao de branch para suportar melhor a distribuicao e seguranca da aplicacao
+
+changeset:   62:5e33cb024bf9
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Nov 15 16:37:12 2012 +0000
+summary:     v1.2.62 (discount project): Inicio de branch para suportar melhor a distribuicao e seguranca da aplicacao
+
+changeset:   61:2e5905037afe
+user:        alexandre_ktc@gmail.com
+date:        Tue Oct 16 15:45:14 2012 +0100
+summary:     v1.2.61: Acrescento de suporte para efectuar backups automaticos com o crontab ou ferramenta semelhante
+
+changeset:   60:6d2d684b4328
+user:        alexandre_ktc@gmail.com
+date:        Tue Oct 02 11:31:19 2012 +0100
+summary:     Pequena alteracao que permite a funcionalidade da gaveta apenas abrir caso o utilizador introduza um segredo.
+
+changeset:   59:fa4fb37785a3
+user:        alexandre_ktc@gmail.com
+date:        Tue Sep 25 10:13:05 2012 +0100
+summary:     Versao 1.58: Correcao de problemas nas copias de seguranca. Apenas o Adm pode fazer restauros para evitar apagar transacoes ja efectuadas
+
+changeset:   58:9086fde7f3cb
+user:        alexandre_ktc@gmail.com
+date:        Sat Jul 21 19:40:14 2012 +0100
+summary:     Versao 1.56: Correcao de um pequeno bug que nao usava os campos de baseprice e discount nos taloes de consulta
+
+changeset:   57:b44bb6821228
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Jul 09 16:31:13 2012 +0100
+summary:     commit apos resolver pequenos conflitos gerados pelo join do ramo principal com o fork do "desconto".
+
+changeset:   56:eb57e88d1346
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Jul 09 15:42:43 2012 +0100
+summary:     Commit obrigatorio para incluir versao gerada do openk_pljava.jar
+
+changeset:   55:33afc0b00450
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Jul 04 15:26:38 2012 +0100
+summary:     v1.2.55 Discount: Versao da loja YYYY
+
+changeset:   54:a059eeac2d52
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Jul 04 11:23:35 2012 +0100
+summary:     pequena correcao para suportar backups em postgres 8.x e 9.x
+
+changeset:   53:89c0f5f612be
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Jul 03 17:38:24 2012 +0100
+summary:     actualizacao dos templates de recibo para suportarem os descontos
+
+changeset:   52:2519df480284
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Jul 03 16:51:30 2012 +0100
+summary:     primeira versao com suporte para descontos
+
+changeset:   51:bd66dc3a6587
+user:        alexandre_ktc@gmail.com
+date:        Sat Jun 30 15:31:26 2012 +0100
+summary:     v1.2.50 Antes do fork para suportar descontos
+
+changeset:   50:6344c0e4439e
+user:        alexandre_ktc@gmail.com
+date:        Wed Jun 06 15:30:07 2012 +0100
+summary:     v1.2.49: Corrige erro de permissoes que afectava o backup e o restore
+
+changeset:   49:499d2510a3e1
+user:        alexandre_ktc@gmail.com
+date:        Tue May 29 11:11:14 2012 +0100
+summary:     Versao 1.2.48. Primeira versao com suporte total para as copias de seguranca.
+
+changeset:   48:961a5660e0b0
+user:        alexandre_ktc@gmail.com
+date:        Mon May 28 23:40:54 2012 +0100
+summary:     Funcionalidade de backup quase pronta. Falta o restore.
+
+changeset:   47:a140e3e225f0
+user:        alexandre_ktc@gmail.com
+date:        Mon May 28 10:26:15 2012 +0100
+summary:     Versao 1.2.45 para instalacao no XXXX - Faltava a classe Base64
+
+changeset:   46:0094dd59f000
+user:        alexandre_ktc@gmail.com
+date:        Mon May 28 10:22:12 2012 +0100
+summary:     Versao 1.2.45 para instalacao no XXXX
+
+changeset:   45:b9711a05bbe1
+user:        alexandre_ktc@gmail.com
+date:        Mon May 07 18:50:54 2012 +0100
+summary:     Marcacao da versao v1.2.41 para instalacao no XXXX
+
+changeset:   44:82d5a2627614
+user:        alexandre_ktc@gmail.com
+date:        Mon Apr 30 10:05:00 2012 +0100
+summary:     Preparacao da versao para XXXX
+
+changeset:   43:1e73cbac3bcc
+user:        alexandre_ktc
+date:        Fri Apr 20 19:30:43 2012 +0100
+summary:     Iniciei implementacao do backup.
+
+changeset:   42:d3def690632b
+user:        alexandre_ktc
+date:        Wed Apr 11 16:41:03 2012 +0100
+summary:     Added tag v1.2.40 for changeset c5467c07f5df
+
+changeset:   41:c5467c07f5df
+tag:         v1.2.40
+user:        alexandre_ktc
+date:        Wed Apr 11 16:31:05 2012 +0100
+summary:     Acrescentado um script de bd que corre sempre no inicio. Para ja ele coloca sempre a password de 'Administrador' = '?????' para ser usada por quem faz a assistencia tecnica.
+
+changeset:   40:7b24bc076927
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Apr 04 14:48:31 2012 +0100
+summary:     Suporte para obfuscacao do codigo (openkpos_out.jar).
+
+changeset:   39:1afdd3539242
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Apr 04 14:46:59 2012 +0100
+summary:     Suporte para validacao da instacalao por MacAddress da maquina.
+
+changeset:   38:39507310170e
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Sat Mar 31 09:04:58 2012 +0100
+summary:     Acrescentada classe para obter o mac address do computador
+
+changeset:   37:2c83b0db2c7b
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Mar 07 19:51:56 2012 +0000
+summary:     Corrigido o bug que permitia que os dados do cliente tivessem caracteres que depois davam erro ao imprimir os taloes.
+
+changeset:   36:8c0af2c3c744
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Mar 02 13:46:34 2012 +0000
+summary:     Corrigido bug que mantinha o preco de venda a vermelho caso se introduzisse temporariamente um numero invalido.
+
+changeset:   35:6b69fb36272c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Mar 02 09:54:03 2012 +0000
+summary:     Inicio da implementacao da opcao de substituir recibo
+
+changeset:   34:c3ff32c59c2d
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Feb 28 11:33:09 2012 +0000
+summary:     Added tag v1.2.31 for changeset aba5571d6a97
+
+changeset:   33:aba5571d6a97
+tag:         v1.2.31
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Feb 28 11:32:43 2012 +0000
+summary:     Marca da versao 1.2.31
+
+changeset:   32:c171ad520493
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Feb 28 11:28:51 2012 +0000
+summary:     Coloca no ecra a indicacao correcta da versao de acordo com o que esta definido no codigo
+
+changeset:   31:ded4f5e2e82c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Feb 28 11:25:35 2012 +0000
+summary:     Added tag v1.2.30 Corrigida situacao que podia desactivar campo NIF no registo de um novo cliente for changeset 2fca9e18a49e
+
+changeset:   30:2fca9e18a49e
+tag:         v1.2.30 Corrigida situacao que podia desactivar campo NIF no registo de um novo cliente
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Feb 27 09:31:24 2012 +0000
+summary:     Corrigida a situacao na criacao de novo cliente que, caso o ultimo registos fosse um cliente com recibos, deixava o campo NIF em readonly.
+
+changeset:   29:5488294e6d8e
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Jan 30 16:25:47 2012 +0000
+summary:     Os fechos de caixa estavam a contabilizar tambem as consultas de mesa. Ainda e necessario ver se as consultas de mesa aparecem noutras opcoes de forma endevida.
+
+changeset:   28:cf1bd28c2ca8
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Jan 19 11:47:44 2012 +0000
+summary:     Added tag EEEEE for changeset bd23663432ca
+
+changeset:   27:bd23663432ca
+tag:         EEEEE
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Thu Jan 19 11:46:51 2012 +0000
+summary:     EEEEE. Instalado a 2012-01-19
+
+changeset:   26:a5b2e6adf329
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Jan 02 19:14:56 2012 +0000
+summary:     Consulta de mesas e facturas com rerencias. Falta actualizar o SAFT.
+
+changeset:   25:2295bcdb79a6
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 30 14:20:35 2011 +0000
+summary:     Pequenas alteracoes
+
+changeset:   24:0a45411513cd
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 30 13:38:18 2011 +0000
+summary:     Inicio do suporte de talao de consulta de mesa
+
+changeset:   23:cc8b81165633
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 21 19:40:26 2011 +0000
+summary:     Suporte para tickets de ordem de fabrico nas cozinhas e outros
+
+changeset:   22:d5b868d0089f
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 21 07:56:51 2011 +0000
+summary:     Added tag clone_para_1_2 for changeset 2ef665060995
+
+changeset:   21:2ef665060995
+tag:         clone_para_1_2
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Dec 19 16:39:22 2011 +0000
+summary:     Novo relatorio de vendas e impostos e possibilidade de introduzir dados da empresa em todos os relatorios com aspect Report.aj
+
+changeset:   20:57dba972de1d
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 16 18:39:07 2011 +0000
+summary:     Acrescento de logotipo OpenK na canto superior esquerdo
+
+changeset:   19:c9b95c3a4fb2
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 16 18:38:34 2011 +0000
+summary:     Acrescento de logotipo OpenK na canto superior esquerdo
+
+changeset:   18:d27059296a28
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Dec 14 19:24:16 2011 +0000
+summary:     Alteracao para apresentar informacao do armazem e posto na barra na parte inferior das janelas
+
+changeset:   17:34a536bdfa0e
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Dec 09 17:45:36 2011 +0000
+summary:     Actualizacao das permissoes do "gerente"
+
+changeset:   16:3a6d9661f3d0
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Nov 15 18:52:16 2011 +0000
+summary:     remover ficheiros que sao gerados no build
+
+changeset:   15:c84084e77bb1
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Nov 15 18:48:58 2011 +0000
+summary:     Alteracoes para permitir uma gestao melhorada da instalacao 2
+
+changeset:   14:be395d80a38d
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Nov 14 20:10:32 2011 +0000
+summary:     Alteracoes para permitir uma gestao melhorada da instalacao
+
+changeset:   13:fa786b5f566c
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Nov 11 19:41:55 2011 +0000
+summary:     Alterações para suportar arranque com leitura de um ficheiro de propriedades (permite arrancar com uma password diferente por exemplo para entrar com usar postgres em vez do openk)
+
+changeset:   12:cff80df3a468
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Oct 31 19:19:18 2011 +0000
+summary:     Actualizacao da abordagem a passagem das chaves de assinatura dos documentos para a base de dados usando o pljava
+
+changeset:   11:43cb12f4e387
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Oct 31 17:07:47 2011 +0000
+summary:     Primeira abordagem a passagem das chaves de assinatura dos documentos para a base de dados usando o pljava
+
+changeset:   10:c774c0378b32
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Oct 12 16:44:00 2011 +0100
+summary:     Não permite a selecção de um cliente diferente numa devolução.
+
+changeset:   9:d767813102b2
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Oct 11 19:17:30 2011 +0100
+summary:     Correcção de alguns pontos da certificação: datas na geração do saft, dados do cliente copiados nos documentos, etc.
+
+changeset:   8:f425363f2376
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Oct 10 20:14:41 2011 +0100
+summary:     Obrigação de introduzir NIF, Nome, Endereço, Postal e Cidade para todos os Clientes. Talão de demonstração com frase explicita "Documento não serve de factura".
+
+changeset:   7:120be97f93d8
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Oct 07 08:36:00 2011 +0100
+summary:     versao do software na altura da segunda reuniao com as financas em 2011-10-06
+
+changeset:   6:9ed837880e5e
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Oct 03 16:15:55 2011 +0100
+summary:     Inicializacao da base dados com alguns valores de exemplo
+
+changeset:   5:5ab4a58c3059
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Tue Sep 27 19:20:24 2011 +0100
+summary:     Alterar a geracao do saft para nao conter valores negativos. Ocultar o ficheiro de configuracao.
+
+changeset:   4:cec51ad2d139
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Mon Sep 26 20:21:28 2011 +0100
+summary:     Mais alteracoes por causa da certificacao: validacoes nas devolucoes e outras menores.
+
+changeset:   3:82fa6a17d945
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Fri Sep 23 18:02:35 2011 +0100
+summary:     Inicio do suporte para requisitos de certificacao saidos da primeira reuniao.
+
+changeset:   2:6882da0dd56f
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Sep 07 18:48:37 2011 +0100
+summary:     remover o botao de imprimir recibo temporario. A certificacao de software nao permite.
+
+changeset:   1:c117bbe071b9
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Sep 07 17:46:22 2011 +0100
+summary:     nota sobre a geracao do saftmodel no README
+
+changeset:   0:f72f39fe9f80
+user:        Alexandre Braganca <alexandre.ktc@gmail.com>
+date:        Wed Sep 07 12:08:21 2011 +0100
+summary:     Inicio da versao 1.1 do openk pos
