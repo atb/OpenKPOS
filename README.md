@@ -2,11 +2,11 @@
 
 Software de Point of Sale Open Source.
 
-Este sofware foi certificado pela Autoridade Tributária (AT).
+Este sofware foi certificado pela Autoridade Tributária (AT) Portuguesa.
 
 Este software é baseado no projeto Openbravo POS (http://wiki.openbravo.com/wiki/Projects:POS/Installation).
 
-No entanto, o Openbravo POS é um software internacional, que não está certificado para operar em Portugal.
+No entanto, o Openbravo POS é um software internacional que não está certificado para operar em Portugal.
 
 O projeto OpenKPOS foi iniciado em 2011 com o objectivo de estender e certificar o Openbravo para poder ser operado em Portugal.
 
