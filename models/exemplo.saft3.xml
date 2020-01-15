@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<AuditFile xmlns="urn:OECD:StandardAuditFile-Tax:PT_1.01_01">
+  <Header>
+    <AuditFileVersion>1.01_01</AuditFileVersion>
+    <CompanyID>507287584</CompanyID>
+    <TaxRegistrationNumber>507287584</TaxRegistrationNumber>
+    <TaxAccountingBasis>F</TaxAccountingBasis>
+    <CompanyName>KTC</CompanyName>
+    <BusinessName>KTC Formacao</BusinessName>
+    <CompanyAddress>
+      <AddressDetail>Rua EN 327, 1315</AddressDetail>
+      <City>Santa Maria da feira</City>
+      <PostalCode>4520-706</PostalCode>
+      <Region>Aveiro</Region>
+      <Country>PT</Country>
+    </CompanyAddress>
+    <FiscalYear>2011</FiscalYear>
+    <StartDate>2011-06-01Z</StartDate>
+    <EndDate>2011-06-24Z</EndDate>
+    <CurrencyCode>EUR</CurrencyCode>
+    <DateCreated>2010-11-10Z</DateCreated>
+    <TaxEntity>Global</TaxEntity>
+    <ProductCompanyTaxID>507287584</ProductCompanyTaxID>
+    <SoftwareCertificateNumber>1234</SoftwareCertificateNumber>
+    <ProductID>OpenK POS/KTC</ProductID>
+    <ProductVersion>v1.0</ProductVersion>
+  </Header>
+  <MasterFiles>
+    <Customer>
+      <CustomerID>0</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Consumidor final</CompanyName>
+      <Contact>Cliente Generico</Contact>
+      <BillingAddress>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Country>Desconhecido</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Country>Desconhecido</Country>
+      </ShipToAddress>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>48ad9678be364649bd805b786b5f2c</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>195310160</CustomerTaxID>
+      <CompanyName>Alexandre Braganca</CompanyName>
+      <Contact>Alexandre Braganca</Contact>
+      <BillingAddress>
+        <StreetName>Rua Benjamim de Brito, 9</StreetName>
+        <AddressDetail>Rua Benjamim de Brito, 9</AddressDetail>
+        <City>Santa Maria da Feira</City>
+        <PostalCode>4520-185</PostalCode>
+        <Region>Aveiro</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <StreetName>Rua Benjamim de Brito, 9</StreetName>
+        <AddressDetail>Rua Benjamim de Brito, 9</AddressDetail>
+        <City>Santa Maria da Feira</City>
+        <PostalCode>4520-185</PostalCode>
+        <Region>Aveiro</Region>
+        <Country>PT</Country>
+      </ShipToAddress>
+      <Telephone>256383282</Telephone>
+      <Email>alex@dei.isep.ipp.pt</Email>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>e31cf4590097463fb4d00b1af5cf91</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>507287584</CustomerTaxID>
+      <CompanyName>KTC</CompanyName>
+      <Contact>Anabela Braganca</Contact>
+      <BillingAddress>
+        <StreetName>Rua EN 327, 1315</StreetName>
+        <AddressDetail>Rua EN 327, 1315</AddressDetail>
+        <City>Souto, Santa Maria da Feira</City>
+        <PostalCode>4520-706</PostalCode>
+        <Region>Aveiro</Region>
+        <Country>PT</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <StreetName>Rua EN 327, 1315</StreetName>
+        <AddressDetail>Rua EN 327, 1315</AddressDetail>
+        <City>Souto, Santa Maria da Feira</City>
+        <PostalCode>4520-706</PostalCode>
+        <Region>Aveiro</Region>
+        <Country>PT</Country>
+      </ShipToAddress>
+      <Telephone>256184931</Telephone>
+      <Fax>256184931</Fax>
+      <Email>anabela.braganca@netvisao.pt</Email>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <TaxTable>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Tax Exempt</Description>
+        <TaxPercentage>0.0</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Tax Standard</Description>
+        <TaxPercentage>10.0</TaxPercentage>
+      </TaxTableEntry>
+    </TaxTable>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>94d62d0ad91d4298948687f4b0c7c0</ProductCode>
+      <ProductGroup>000</ProductGroup>
+      <ProductDescription>Produto 1</ProductDescription>
+      <ProductNumberCode>P001</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>630fefb926eb4dffa7100c7c6b720c</ProductCode>
+      <ProductGroup>000</ProductGroup>
+      <ProductDescription>Produto 2 com IVA</ProductDescription>
+      <ProductNumberCode>P002</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>P</ProductType>
+      <ProductCode>ef1822bc0be345c69db5c7689121f1</ProductCode>
+      <ProductGroup>000</ProductGroup>
+      <ProductDescription>Produto 3</ProductDescription>
+      <ProductNumberCode>63938200039</ProductNumberCode>
+    </Product>
+  </MasterFiles>
+  <SourceDocuments>
+    <SalesInvoices>
+      <NumberOfEntries>3</NumberOfEntries>
+      <TotalDebit>116.00</TotalDebit>
+      <TotalCredit>136.00</TotalCredit>
+      <Invoice>
+        <InvoiceNo>REC 1/62</InvoiceNo>
+        <InvoiceStatus>N</InvoiceStatus>
+        <Hash>CixuVfpRHywWTV3UVD6GIXJWVr12EOuHCnhRRY57x1SGa5KMgYh/WLTTIGCR8lfQQeCFM8AtcVaxqh8u3WEL7NjYN3TsC2kn/T9tvlZO/wZibMT6shmL1JKA2XKl86IOTf9jaUwsNctn3ZMEjsp3WppB/yjElIRTlcIL98cPV+8=</Hash>
+        <InvoiceDate>2011-06-15</InvoiceDate>
+        <InvoiceType>VD</InvoiceType>
+        <SelfBillingIndicator>0</SelfBillingIndicator>
+        <SystemEntryDate>2011-06-15T15:17:41</SystemEntryDate>
+        <CustomerID>48ad9678be364649bd805b786b5f2c</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>ef1822bc0be345c69db5c7689121f1</ProductCode>
+          <ProductDescription>Produto 3</ProductDescription>
+          <Quantity>1.00</Quantity>
+          <UnitOfMeasure>Unidades</UnitOfMeasure>
+          <UnitPrice>20.00</UnitPrice>
+          <TaxPointDate>2011-06-15</TaxPointDate>
+          <Description>Produto 3</Description>
+          <CreditAmount>20.00</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>RED</TaxCode>
+            <TaxPercentage>10.0</TaxPercentage>
+          </Tax>
+          <TaxExemptionReason>Art 9 do CIVA</TaxExemptionReason>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>2.00</TaxPayable>
+          <NetTotal>20.00</NetTotal>
+          <GrossTotal>22.00</GrossTotal>
+        </DocumentTotals>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>REC 1/63</InvoiceNo>
+        <InvoiceStatus>N</InvoiceStatus>
+        <Hash>B5dttqR0eOWwRvFoc+CPp1lilTivw2FENrh/iHzhfitEnjiyxGxJ81tZa/VI1Hc5nJhmf4jbkDWRBmvWxaTOwgSCIgcOr74310nTE21vQarEh4n7uVZRZ0n5+q5xSZnvLB6l5XzkRfA4KQue5b96izVO8RggQ3qbM9Ii5FEwfjM=</Hash>
+        <InvoiceDate>2011-06-17</InvoiceDate>
+        <InvoiceType>VD</InvoiceType>
+        <SelfBillingIndicator>0</SelfBillingIndicator>
+        <SystemEntryDate>2011-06-17T13:32:38</SystemEntryDate>
+        <CustomerID>e31cf4590097463fb4d00b1af5cf91</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>94d62d0ad91d4298948687f4b0c7c0</ProductCode>
+          <ProductDescription>Produto 1</ProductDescription>
+          <Quantity>1.00</Quantity>
+          <UnitOfMeasure>Unidades</UnitOfMeasure>
+          <UnitPrice>10.00</UnitPrice>
+          <TaxPointDate>2011-06-17</TaxPointDate>
+          <Description>Produto 1</Description>
+          <CreditAmount>10.00</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>ISE</TaxCode>
+            <TaxPercentage>0.0</TaxPercentage>
+          </Tax>
+          <TaxExemptionReason>Art 9 do CIVA</TaxExemptionReason>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>ef1822bc0be345c69db5c7689121f1</ProductCode>
+          <ProductDescription>Produto 3</ProductDescription>
+          <Quantity>5.30</Quantity>
+          <UnitOfMeasure>Unidades</UnitOfMeasure>
+          <UnitPrice>20.00</UnitPrice>
+          <TaxPointDate>2011-06-17</TaxPointDate>
+          <Description>Produto 3</Description>
+          <CreditAmount>106.00</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>RED</TaxCode>
+            <TaxPercentage>10.0</TaxPercentage>
+          </Tax>
+          <TaxExemptionReason>Art 9 do CIVA</TaxExemptionReason>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>10.60</TaxPayable>
+          <NetTotal>116.00</NetTotal>
+          <GrossTotal>126.60</GrossTotal>
+        </DocumentTotals>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>DEV 1/4</InvoiceNo>
+        <InvoiceStatus>N</InvoiceStatus>
+        <Hash>VBCFuWNO769EJ6H36+VIlpvM93YvN0adIRMnGRT2ppueucEirx0sg2SofXZFiL7Sm2lvm8wmJBLgCLVGyODXNBlKk+1W+iYvFTe38CJ6+tXWoXG98fwdl7zHTAj1WZfrv4y53EwplhVjBr8t6J6SqyTmyoIHCk0Ne6zQLxEotC8=</Hash>
+        <InvoiceDate>2011-06-17</InvoiceDate>
+        <InvoiceType>TD</InvoiceType>
+        <SelfBillingIndicator>0</SelfBillingIndicator>
+        <SystemEntryDate>2011-06-17T13:35:30</SystemEntryDate>
+        <CustomerID>e31cf4590097463fb4d00b1af5cf91</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>94d62d0ad91d4298948687f4b0c7c0</ProductCode>
+          <ProductDescription>Produto 1</ProductDescription>
+          <Quantity>1.00</Quantity>
+          <UnitOfMeasure>Unidades</UnitOfMeasure>
+          <UnitPrice>10.00</UnitPrice>
+          <TaxPointDate>2011-06-17</TaxPointDate>
+          <Description>Produto 1</Description>
+          <DebitAmount>10.00</DebitAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>ISE</TaxCode>
+            <TaxPercentage>0.0</TaxPercentage>
+          </Tax>
+          <TaxExemptionReason>Art 9 do CIVA</TaxExemptionReason>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>ef1822bc0be345c69db5c7689121f1</ProductCode>
+          <ProductDescription>Produto 3</ProductDescription>
+          <Quantity>5.30</Quantity>
+          <UnitOfMeasure>Unidades</UnitOfMeasure>
+          <UnitPrice>20.00</UnitPrice>
+          <TaxPointDate>2011-06-17</TaxPointDate>
+          <Description>Produto 3</Description>
+          <DebitAmount>106.00</DebitAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>RED</TaxCode>
+            <TaxPercentage>10.0</TaxPercentage>
+          </Tax>
+          <TaxExemptionReason>Art 9 do CIVA</TaxExemptionReason>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>10.60</TaxPayable>
+          <NetTotal>-116.00</NetTotal>
+          <GrossTotal>-126.60</GrossTotal>
+        </DocumentTotals>
+      </Invoice>
+    </SalesInvoices>
+  </SourceDocuments>
+</AuditFile>

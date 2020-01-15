@@ -1,0 +1,9 @@
+//javax.swing.JOptionPane.showInputDialog("Set Line", "linha alterada ="+line.printMultiply());
+
+// vamos marcar a linha como alterada
+line.setLineStatus("?");
+
+
+// para deixar remover a linha deve-se devolver null
+returno=null;
+

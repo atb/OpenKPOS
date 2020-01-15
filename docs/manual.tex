@@ -1,0 +1,79 @@
+
+% Baseado em:
+% http://theoval.cmp.uea.ac.uk/~nlct/latex/thesis/node1.html
+
+\documentclass[a4paper]{report}
+
+% para gerar indices no pdf
+\usepackage[bookmarks]{hyperref}    
+
+\usepackage[applemac]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+
+
+% definir margens de 2 cm
+\RequirePackage[a4paper,margin=2cm]{geometry}
+\usepackage{graphicx} 
+
+\usepackage[tikz]{bclogo}
+\usepackage{verbatim}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+%\setlength{\headheight}{15.2pt}
+\pagestyle{fancyplain} { % define first page header and footer
+%\fancyhead[L]{Course Report}
+%\fancyhead[C]{Manual de Utilização OpenK POS}
+%\fancyhead[R]{\thepage of \pageref{LastPage}}
+\fancyfoot[L]{Alexandre Bragança}
+\fancyfoot[C]{(c) KTC Lda / www.openk.pt}
+\fancyfoot[R]{\thepage}
+}
+
+
+\begin{document}
+
+\title{Manual de Utilização do OpenK POS}
+%\author{Alexandre Bragança}
+\author{Alexandre Bragança\\
+  KTC Lda,\\
+  Rua EN 327, 1315
+  4520-706 Souto, Santa Maria da Feira,\\
+  Portugal,\\
+  \texttt{alexandre.ktc@gmail.com},\\
+  \texttt{www.openk.pt}}
+\date{Dezembro 2013}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+%\listoftables
+
+%\chapter*{Agradecimentos}
+
+%\begin{abstract}
+%\end{abstract}
+
+\newpage
+
+\pagenumbering{arabic}
+
+\include{apresentacao}
+
+\include{instalacao}
+
+\include{interface}
+
+\include{administracao} 
+
+\include{operacoes}
+
+\include{licenca}
+
+\bibliographystyle{plain}
+\bibliography{manual}
+
+\end{document}

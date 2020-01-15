@@ -1,0 +1,1036 @@
+<?xml version="1.0"?>
+<!-- 
+    Openbravo POS is a point of sales application designed for touch screens.
+    Copyright (C) 2008-2009 Openbravo, S.L.
+    http://sourceforge.net/projects/openbravopos
+
+    This file is part of Openbravo POS.
+
+    Openbravo POS is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Openbravo POS is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Openbravo POS.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<project name="openkpos" basedir="." default="build_all">
+    <!-- ================================================================= -->
+    <!-- P R O P E R T I E S                                               -->
+    <!-- ================================================================= -->
+    <!-- program name -->
+    <property name="name" value="openkpos"/>
+    <!-- project version -->
+    <property name="version" value="1.10"/>
+    <!-- javac properties -->
+    <property name="javac.deprecation" value="off"/>
+    <property name="javac.optimize" value="on"/>
+    <property name="javac.debug" value="on"/>
+	<!-- O seguinte era 1.6 -->
+    <property name="javac.minVMVersion" value="1.6"/>
+    <!-- read in property files -->
+    <property file="build.properties" />
+    <property name="src" value="${basedir}/src"/>
+    <property name="ui-sources" value="${basedir}/ui_sources"/>	
+    <property name="pljava" value="${basedir}/pljava"/>
+    <property name="tools" value="${basedir}/src-utils"/>
+    <property name="src-models" value="${basedir}/src-models"/>
+    <property name="src.data" value="${basedir}/src-data"/>
+    <property name="src.beans" value="${basedir}/src-beans"/>
+    <property name="src.erp" value="${basedir}/src-erp"/>
+    <property name="reports" value="${basedir}/reports"/>
+    <property name="locales" value="${basedir}/locales"/>
+    <property name="src.pda" value="${basedir}/src-pda"/>
+    <property name="src.web" value="${basedir}/web"/>
+    <property name="jetty.lib" value="${basedir}/jetty/lib"/>
+    <property name="lib" value="${basedir}/lib"/>
+
+    <!-- the saftmodel 1.1 directory -->
+    <property name="saftmodel_1_1.base" value="${basedir}/../saftmodel_v1_1"/>
+    <!-- the openbravo directory -->
+    <property name="openbravo.base" value="${basedir}/openbravopos_2_30/"/>
+    <!-- the jar directory -->
+    <property name="dest.jar" value="${basedir}/build/jar"/>
+    <property name="dest.war" value="${basedir}/build/war"/>
+    <!-- where the class files go -->
+    <property name="dest.classes" value="${basedir}/build/classes"/>
+    <property name="dest.classes.pljava" value="${basedir}/build/classes_pljava"/>
+    <property name="dest.classes.tools" value="${basedir}/build/classes_tools"/>
+	<!-- where the distribution files go -->
+    <property name="dest.dist" value="${basedir}/build/dist"/>
+    <!-- where the installers go -->
+    <property name="dest.installer.pos" value="${basedir}/build/installerpos"/>
+    <property name="dest.installer.pda" value="${basedir}/build/installerpda"/>
+	
+	<taskdef resource="proguard/ant/task.properties"
+	         classpath="/Aplicacoes/proguard4.6/lib/proguard.jar" />
+
+	<!-- Para o one-jar PARA JA NAO VOU USAR
+	<property name="one-jar.dist.dir" value="/Aplicacoes"/> 
+	<import file="${one-jar.dist.dir}/one-jar-ant/one-jar-ant-task.xml"  />  
+	-->
+	
+	<!--
+	<target name="obfuscation" depends="">
+		<proguard/>
+	</target>
+	-->
+	
+	<!-- Definir uma tarefa para o launch4j -->
+	<property name="launch4j.dir" location="/Aplicacoes/launch4j/" />
+	<taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar
+	    :${launch4j.dir}/lib/xstream.jar" />
+	
+	<!-- to support aspectJ -->
+	<taskdef
+	    resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+	  <classpath>
+	    <pathelement location=
+	        "/Aplicacoes/aspectj1.6/lib/aspectjtools.jar"/>
+	  </classpath>
+	</taskdef>
+	
+	<!-- task definition Plant UML -->
+	<taskdef name="plantuml" classname="net.sourceforge.plantuml.ant.PlantUmlTask" classpath="/Aplicacoes/plantuml.jar" />
+
+	<!-- process ./src files -->
+	<target name="plantuml">
+	    <plantuml dir="./docs" output="./docs/imgs"/>
+	</target>
+		
+	<target name="build_openkpos" depends="clean, build_pljava">
+        <delete dir="${dest.classes}" />
+        <delete dir="${dest.jar}" />
+        <mkdir dir="${dest.classes}" />
+		<iajc
+		     destDir="${dest.classes}"
+		     fork="true"
+		     verbose="true" 
+            debug="${javac.debug}"
+            deprecation="${javac.deprecation}"
+		  	source="${javac.minVMVersion}"
+            target="${javac.minVMVersion}"		  	
+		  	>
+		      <sourceroots>
+		        <pathelement location="${src}"/>
+		        <pathelement location="${basedir}/src-models"/>
+		        <pathelement location="${openbravo.base}/src-data"/>
+		        <pathelement location="${openbravo.base}/src-erp"/>
+		        <pathelement location="${openbravo.base}/src-pos"/>
+		        <pathelement location="${openbravo.base}/src-beans"/>
+		      </sourceroots>
+		     <classpath>
+                <fileset dir="${basedir}/lib">
+                  <include name="**/*.jar"/>
+                </fileset>
+	          	<fileset dir="${openbravo.base}/lib">
+                 <include name="**/*.jar"/>
+               </fileset>
+		    </classpath>
+		</iajc>
+		<!-- copiar imagens de 'ui_sources' -->	
+		<copy file="${ui-sources}/Window.Logo.png" tofile="${src}/pt/ktc/openk/pos/templates/Window.Logo.png"/>		
+		<copy file="${ui-sources}/openk_favicon_large.png" tofile="${src}/pt/ktc/openk/pos/images/openk_favicon_large.png"/>
+		<copy file="${ui-sources}/openk_favicon.png" tofile="${src}/pt/ktc/openk/pos/images/openk_favicon.png"/>		
+        <copy todir="${dest.classes}">
+            <fileset dir="${src}">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy>
+        <copy todir="${dest.classes}">
+            <fileset dir="${src-models}">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes}">
+            <fileset dir="${openbravo.base}/src-beans">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes}">
+            <fileset dir="${openbravo.base}/src-data">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes}">
+            <fileset dir="${openbravo.base}/src-pos">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes}">
+            <fileset dir="${openbravo.base}/src-erp">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+		<mkdir dir="${dest.jar}" />
+		<!-- Falta copiar para o directorio do jar os seguintes jars: 
+				- todos os jars e bibliotecas necessarios ao openbravo pos;
+				- todos os jars do directorio "lib" (especificos do openkpos). -->
+        <copy todir="${dest.jar}">
+            <fileset dir="${openbravo.base}/lib">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.jar}">
+            <fileset dir="${lib}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </copy>  
+		<!-- E necessario copiar os directorios com os reports e os locales do OpenK         -->
+        <copy todir="${dest.jar}">
+            <fileset dir="${basedir}">
+                <include name="locales/**/*.properties"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.jar}">
+            <fileset dir="${basedir}">
+                <include name="reports/**/*.*"/>
+            </fileset>
+        </copy> 
+		<!-- E necessario copiar os directorios com os reports e os locales do Openbravo -->
+        <copy todir="${dest.jar}">
+            <fileset dir="${openbravo.base}">
+                <include name="locales/**/*.properties"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.jar}">
+            <fileset dir="${openbravo.base}">
+                <include name="reports/**/*.*"/>
+            </fileset>
+        </copy> 
+        <jar jarfile="${dest.jar}/openkpos_pre.jar"
+             compress="true">
+            <manifest>
+                <attribute name="Implementation-Vendor" value="KTC"/>
+                <attribute name="Implementation-Title" value="OpenK POS"/>
+                <attribute name="Implementation-Version" value="${version}"/>
+                <attribute name="Main-Class" value="pt.ktc.openk.pos.forms.StartOpenKPOS" />
+    	    </manifest>
+            <fileset dir="${dest.classes}"/>
+            <fileset dir="${dest.jar}/locales/">
+                <include name="**/*.properties"/>
+            </fileset>
+            <fileset dir="${dest.jar}/reports/">
+                <include name="**/*.*"/>
+            </fileset>
+        	<!--
+            <fileset dir="${basedir}/locales/">
+                 <include name="*.*"/>
+             </fileset>
+             -->
+        </jar>
+
+		<!-- E necessario copiar os ficheiros de propriedades que estao no folder 'properties_files' -->
+        <copy todir="${dest.jar}">
+            <fileset dir="${basedir}/properties_files">
+                <include name="*.properties"/>
+            </fileset>
+        </copy> 
+        
+		<!-- Copiar o ficheiro de arranque -->
+        <copy todir="${dest.jar}">
+            <fileset dir="${basedir}">
+                <include name="start.sh"/>
+                <include name="start_final.sh"/>
+                <include name="start_final.bat"/>
+                <include name="start_demo.sh"/>
+                <include name="start_demo.bat"/>            	
+            	<include name="start_update.sh"/>
+            	<include name="start_obfuscated.sh"/>
+                <include name="start.bat"/>
+                <include name="backup.sh"/>   
+                <include name="info.sh"/>    
+                <include name="start_hsqldb_man.sh"/>    
+                <include name="start_hsqldb_man.bat"/>    
+            </fileset>
+        </copy> 
+
+		<!-- No fim chamar a task de obfuscation -->
+		<proguard>
+			-injars       build/jar/openkpos_pre.jar
+			-outjars      build/jar/openkpos.jar
+			-printmapping proguard.map
+			-dontskipnonpubliclibraryclassmembers
+			-ignorewarnings
+			-flattenpackagehierarchy
+			-keepattributes InnerClasses
+			-libraryjars  /System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Classes/classes.jar
+			-libraryjars  /System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Classes/jce.jar
+			-libraryjars  /System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Classes/jsse.jar	
+			-libraryjars  /System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/lib/javaws.jar
+			-libraryjars  ${dest.jar}/org.eclipse.emf_2.6.0.v20100914-1218.jar
+			-libraryjars  ${dest.jar}/org.eclipse.emf.common_2.6.0.v20100914-1218.jar
+			-libraryjars  ${dest.jar}/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar
+			-libraryjars  ${dest.jar}/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar
+			-libraryjars  ${dest.jar}/axis.jar
+			-libraryjars  ${dest.jar}/barcode4j-light.jar
+			-libraryjars  ${dest.jar}/bcprov-jdk16-146.jar
+			-libraryjars  ${dest.jar}/bsh-core-2.0b4.jar
+			-libraryjars  ${dest.jar}/commons-beanutils-1.7.jar
+			-libraryjars  ${dest.jar}/commons-codec-1.3.jar
+			-libraryjars  ${dest.jar}/commons-collections-3.1.jar
+			-libraryjars  ${dest.jar}/commons-digester-1.7.jar
+			-libraryjars  ${dest.jar}/commons-discovery-0.2.jar
+			-libraryjars  ${dest.jar}/commons-lang-2.1.jar
+			-libraryjars  ${dest.jar}/commons-logging-1.0.4.jar
+			-libraryjars  ${dest.jar}/iText-2.1.0.jar
+			-libraryjars  ${dest.jar}/jasperreports-3.1.4.jar
+			-libraryjars  ${dest.jar}/jaxrpc.jar
+			-libraryjars  ${dest.jar}/jcommon-1.0.15.jar
+			-libraryjars  ${dest.jar}/jdt-compiler-3.1.1.jar
+			-libraryjars  ${dest.jar}/jfreechart-1.0.12.jar
+			-libraryjars  ${dest.jar}/jpos1121.jar
+			-libraryjars  ${dest.jar}/oro-2.0.8.jar
+			-libraryjars  ${dest.jar}/poi-3.2-FINAL-20081019.jar
+			-libraryjars  ${dest.jar}/postgresql-jdbc3-8.2.jar
+			-libraryjars  ${dest.jar}/RXTXcomm.jar
+			-libraryjars  ${dest.jar}/saaj.jar
+			-libraryjars  ${dest.jar}/substance-swingx.jar
+			-libraryjars  ${dest.jar}/substance.jar
+			-libraryjars  ${dest.jar}/swingx-0.9.5.jar
+			-libraryjars  ${dest.jar}/velocity-1.5.jar
+			-libraryjars  ${dest.jar}/wsdl4j-1.5.1.jar
+			-libraryjars  ${dest.jar}/aspectjrt.jar
+			-libraryjars  ${dest.jar}/hsqldb.jar
+			
+
+			-keep public class pt.ktc.openk.pos.forms.StartOpenKPOS {
+			    public static void main(java.lang.String[]);
+			}
+			-keep public class pt.ktc.openk.pos.forms.StartInfo {
+			    public static void main(java.lang.String[]);
+			}			
+			-keep public class com.openbravo.pos.forms.DataLogicSystem
+			-keep public class com.openbravo.pos.admin.DataLogicAdmin
+			-keep public class com.openbravo.pos.customers.DataLogicCustomers
+			-keep public class com.openbravo.possync.DataLogicIntegration
+			-keep public class com.openbravo.pos.sales.DataLogicReceipts
+			-keep public class com.openbravo.pos.forms.DataLogicSales
+			-keep public class pt.ktc.openk.pos.forms.DataLogicSystem
+			-keep public class com.openbravo.pos.thirdparties.DataLogicThirdParties
+			-keep public class com.openbravo.pos.forms.AppView 
+			-keep public class com.openbravo.pos.forms.JPrincipalApp { *; }
+			-keep public class com.openbravo.pos.forms.JPrincipalApp$ScriptMenu { *; }
+			-keep public class com.openbravo.pos.forms.JPrincipalApp$ScriptGroup { *; }
+			-keep public class com.openbravo.pos.forms.JPrincipalApp$ScriptSubmenu { *; }
+			-keep public class com.openbravo.pos.sales.JPanelTicketSales
+			-keep public class com.openbravo.pos.sales.JPanelTicketEdits
+			-keep public class com.openbravo.pos.customers.CustomersPayment
+			-keep public class com.openbravo.pos.panels.JPanelPayments
+			-keep public class com.openbravo.pos.panels.JPanelCloseMoney
+			-keep public class com.openbravo.pos.customers.CustomersPanel
+			-keep public class pt.ktc.openk.pos.customers.CustomersPanel
+			-keep public class pt.ktc.openk.pos.inventory.ProductsPanel
+			-keep public class com.openbravo.pos.inventory.ProductsWarehousePanel
+			-keep public class com.openbravo.pos.inventory.AuxiliarPanel
+			-keep public class com.openbravo.pos.inventory.CategoriesPanel
+			-keep public class com.openbravo.pos.inventory.AttributesPanel
+			-keep public class com.openbravo.pos.inventory.AttributeValuesPanel
+			-keep public class com.openbravo.pos.inventory.AttributeSetsPanel
+			-keep public class com.openbravo.pos.inventory.AttributeUsePanel
+			-keep public class com.openbravo.pos.inventory.TaxPanel
+			-keep public class com.openbravo.pos.inventory.TaxCategoriesPanel
+			-keep public class com.openbravo.pos.inventory.TaxCustCategoriesPanel
+			-keep public class com.openbravo.pos.inventory.StockDiaryPanel
+			-keep public class com.openbravo.pos.inventory.StockManagement  {
+		    	public &lt;init&gt;(com.openbravo.pos.forms.AppView);
+			}      
+			-keep public class com.openbravo.pos.admin.PeoplePanel
+			-keep public class com.openbravo.pos.admin.RolesPanel
+			-keep public class com.openbravo.pos.admin.ResourcesPanel
+			-keep public class com.openbravo.pos.inventory.LocationsPanel
+			-keep public class com.openbravo.pos.mant.JPanelFloors
+			-keep public class com.openbravo.pos.mant.JPanelPlaces
+			-keep public class pt.ktc.openk.pos.saft.JPanelSaft  {
+				    public &lt;init&gt;(com.openbravo.pos.forms.AppView);
+			}
+			-keep public class pt.ktc.openk.pos.company.CompanyPanel
+			-keep public class com.openbravo.pos.config.JPanelConfiguration {
+			    public &lt;init&gt;(com.openbravo.pos.forms.AppView);
+			}
+			-keep public class com.openbravo.pos.panels.JPanelPrinter {
+				    public &lt;init&gt;(com.openbravo.pos.forms.AppView);
+				}
+			-keep public class com.openbravo.pos.reports.PanelReportBean { *; }
+			-keep public class com.openbravo.pos.forms.JRootApp { *; }
+			-keep public class com.openbravo.pos.reports.JParamsCustomer { *; }
+			-keep public class com.openbravo.pos.ticket.ProductFilter	{ *; }
+			-keep public class * implements com.openbravo.pos.reports.ReportEditorCreator
+			-keep public class com.openbravo.pos.reports.JParamsLocationWithFirst { *; }
+			-keep public class com.openbravo.data.loader.Datas { *; }
+			-keep public class * extends com.openbravo.data.loader.Datas { *; }
+			-keep public class com.openbravo.pos.sales.TaxesLogic { *; }
+			-keeppackagenames pt.ktc.openk.pos.images
+			-keep public class com.openbravo.data.loader.ImageUtils { *; }
+			-keep public class * extends com.openbravo.format.Formats { *; }
+			-keep public class com.openbravo.format.Formats { *; }
+			-keep public class com.openbravo.pos.util.BarcodeImage { *; }
+			-keep public class com.openbravo.data.loader.Session  { *; }
+			-keep public class * implements com.openbravo.data.loader.SessionDB { *; }
+			-keep public interface com.openbravo.data.loader.SessionDB { *; }
+			-keep public class com.openbravo.beans.DateUtils { *; }
+			-keep public class com.openbravo.pos.reports.JParamsDatesInterval { *; }	
+			-keep public class com.openbravo.pos.ticket.TicketLineInfo { *; }
+			-keep public class com.openbravo.pos.ticket.TicketInfo { *; }
+			-keep public class com.openbravo.pos.ticket.TaxInfo { *; }	
+			-keep public class com.openbravo.pos.ticket.TicketTaxInfo { *; }
+			-keep public class com.openbravo.pos.sales.JPanelTicket { *; }
+			-keep public class com.openbravo.pos.sales.JPanelTicket$ScriptObject { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfo { *; }
+			-keep public class com.openbravo.pos.payment.JPaymentCashPos { *; }
+			-keep public class com.openbravo.pos.payment.JPaymentCashPos$ScriptPaymentCash { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfoCash { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfoCash { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfoFree { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfoMagcard { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfoMagcardRefund { *; }
+			-keep public class com.openbravo.pos.payment.PaymentInfoTicket { *; }
+			-keep public class com.openbravo.pos.panels.PaymentsModel { *; }
+			-keep public class com.openbravo.pos.panels.PaymentsModel$PaymentsLine { *; }
+			-keep public class com.openbravo.pos.panels.PaymentsModel$SalesLine { *; }
+			-keep public class pt.ktc.openk.pos.utils.MACAddress {
+			    public static void main(java.lang.String[]);
+			}
+			-keep public class pt.ktc.openk.pos.backup.JPanelBackup { *; }
+			-keep public class pt.ktc.openk.pos.forms.StartBackup {
+			    public static void main(java.lang.String[]);
+			}
+			-keep public class com.openbravo.pos.sales.JPanelTicket { *; }
+			-keep public class pt.ktc.openk.pos.sales.JPanelTicketEdits { *; }
+			-keep public class pt.ktc.openk.pos.panels.JPanelProductSalesRPrinter { *; }
+			-keep public class pt.ktc.openk.pos.panels.ProductSalesReportInfo { *; }
+			-keep public class pt.ktc.openk.pos.panels.ProductsSalesInfo { *; }
+			
+			-keep class oecd.** {
+			  public protected private *;
+			}
+			
+		</proguard>
+		<!-- mudar o nome do jar original 	
+		<move file="${dest.jar}/openkpos.jar" tofile="${dest.jar}/openkpos_org.jar"/>		
+		 mudar o nome do jar obfuscado 
+		<move file="${dest.jar}/openkpos_out.jar" tofile="${dest.jar}/openkpos.jar"/>
+		-->
+		<!-- copiar o icon -->
+		<copy file="${ui-sources}/openk_pos_icon.ico" tofile="${dest.jar}/openk_pos_icon.ico"/>		
+		
+		<!-- Gerar o jar final DESACTIVADO
+        <jar jarfile="${dest.jar}/openkpos.jar"
+             compress="true">
+            <manifest>
+                <attribute name="Implementation-Vendor" value="KTC"/>
+                <attribute name="Implementation-Title" value="OpenK POS"/>
+                <attribute name="Implementation-Version" value="${version}"/>
+                <attribute name="Main-Class" value="pt.ktc.openk.pos.forms.StartOpenKPOS" />
+    	    </manifest>
+        	<zipfileset includes="**/*.*" src="${dest.jar}/openkpos_out.jar"/>
+       </jar> -->
+   	
+            <!-- Construct the One-JAR file PARA JA NAO VAMOS ISAR
+            <one-jar destfile="${dest.jar}/openkpos2.jar">
+                <manifest>
+                    <attribute name="One-Jar-Main-Class" value="pt.ktc.openk.pos.forms.StartOpenKPOS"/>
+                    <attribute name="One-Jar-Expand" value="openkpos.jar!openk_pos_services.properties"/>
+                </manifest>            	
+            	<main jar="${dest.jar}/openkpos.jar">
+            	</main>
+                <lib>
+                	<fileset file="${dest.jar}/jasperreports-3.1.4.jar"/>
+                    <fileset file="${dest.jar}/jcommon-1.0.15.jar"/>
+                    <fileset file="${dest.jar}/jfreechart-1.0.12.jar"/>
+                    <fileset file="${dest.jar}/jdt-compiler-3.1.1.jar"/>
+                    <fileset file="${dest.jar}/commons-beanutils-1.7.jar"/>
+                    <fileset file="${dest.jar}/commons-digester-1.7.jar"/>
+                    <fileset file="${dest.jar}/iText-2.1.0.jar"/>
+                    <fileset file="${dest.jar}/poi-3.2-FINAL-20081019.jar"/>
+                    <fileset file="${dest.jar}/barcode4j-light.jar"/>
+                    <fileset file="${dest.jar}/commons-codec-1.3.jar"/>
+                    <fileset file="${dest.jar}/velocity-1.5.jar"/>
+                    <fileset file="${dest.jar}/oro-2.0.8.jar"/>
+                    <fileset file="${dest.jar}/commons-collections-3.1.jar"/>
+                    <fileset file="${dest.jar}/commons-lang-2.1.jar"/>
+                    <fileset file="${dest.jar}/bsh-core-2.0b4.jar"/>
+                    <fileset file="${dest.jar}/RXTXcomm.jar"/>
+                    <fileset file="${dest.jar}/jpos1121.jar"/>
+                    <fileset file="${dest.jar}/swingx-0.9.5.jar"/>
+                    <fileset file="${dest.jar}/substance.jar"/>
+                    <fileset file="${dest.jar}/substance-swingx.jar"/>
+                    <fileset file="${dest.jar}/axis.jar"/>
+                    <fileset file="${dest.jar}/jaxrpc.jar"/>
+                    <fileset file="${dest.jar}/saaj.jar"/>
+                    <fileset file="${dest.jar}/wsdl4j-1.5.1.jar"/>
+                    <fileset file="${dest.jar}/commons-discovery-0.2.jar"/>
+                    <fileset file="${dest.jar}/commons-logging-1.0.4.jar"/>
+                    <fileset file="${dest.jar}/aspectjrt.jar"/>
+                    <fileset file="${dest.jar}/org.eclipse.emf_2.6.0.v20100914-1218.jar"/>
+                    <fileset file="${dest.jar}/org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+                    <fileset file="${dest.jar}/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+                    <fileset file="${dest.jar}/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+                    <fileset file="${dest.jar}/postgresql-jdbc3-8.2.jar"/>
+                    <fileset file="${dest.jar}/bcprov-jdk16-146.jar"/>
+                    <fileset file="${dest.jar}/hsqldb.jar"/>
+                </lib>
+            </one-jar>
+ 		-->
+		
+    </target>
+
+	<target name="build_pljava" depends="">
+	      <delete dir="${dest.classes.pljava}" />
+	      <mkdir dir="${dest.classes.pljava}" />
+ 		  <iajc
+		     destDir="${dest.classes.pljava}"
+		     fork="true"
+		     verbose="true" 
+          debug="${javac.debug}"
+          deprecation="${javac.deprecation}"
+		  	source="${javac.minVMVersion}"
+          target="${javac.minVMVersion}"		  	
+		  	>
+		      <sourceroots>
+		        <pathelement location="${pljava}"/>
+		      </sourceroots>
+		     <classpath>
+              <fileset dir="${basedir}/lib">
+                <include name="**/*.jar"/>
+              </fileset>
+	          	<fileset dir="${openbravo.base}/lib">
+               <include name="**/*.jar"/>
+             </fileset>
+		    </classpath>
+		  </iajc>
+        <jar jarfile="${dest.jar}/openk_pljava.jar"
+             compress="true">
+            <manifest>
+                <attribute name="Implementation-Vendor" value="KTC"/>
+                <attribute name="Implementation-Title" value="OpenK POS PL Java"/>
+                <attribute name="Implementation-Version" value="${version}"/>
+    	    </manifest>
+            <fileset dir="${dest.classes.pljava}">
+                <include name="**/*.class"/>
+			</fileset>
+        </jar>
+		<!-- Copiar para o directorio de templates -->
+        <copy todir="${src}/pt/ktc/openk/pos/templates">
+            <fileset dir="${dest.jar}">
+                <include name="openk_pljava.jar"/>
+            </fileset>
+        </copy> 
+		
+    </target>
+	
+	<target name="build_tools" depends="">
+	      <delete dir="${dest.classes.tools}" />
+	      <mkdir dir="${dest.classes.tools}" />
+		<!-- Primeiro: compilar com aspectos -->
+ 		  <iajc
+		     destDir="${dest.classes.tools}"
+		     fork="true"
+		     verbose="true" 
+          debug="${javac.debug}"
+          deprecation="${javac.deprecation}"
+		  	source="${javac.minVMVersion}"
+          target="${javac.minVMVersion}"		  	
+		  	>
+		      <sourceroots>
+		        <pathelement location="${tools}"/>
+		        <pathelement location="${src}"/>
+		        <pathelement location="${basedir}/src-models"/>
+		        <pathelement location="${openbravo.base}/src-data"/>
+		        <pathelement location="${openbravo.base}/src-erp"/>
+		        <pathelement location="${openbravo.base}/src-pos"/>
+		        <pathelement location="${openbravo.base}/src-beans"/>
+		      </sourceroots>
+		     <classpath>
+              <fileset dir="${basedir}/lib">
+                <include name="**/*.jar"/>
+              </fileset>
+	          	<fileset dir="${openbravo.base}/lib">
+               <include name="**/*.jar"/>
+             </fileset>
+		    </classpath>
+		  </iajc>
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${tools}">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${src}">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${basedir}/src-models">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${openbravo.base}/src-data">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${openbravo.base}/src-erp">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${openbravo.base}/src-pos">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 		
+        <copy todir="${dest.classes.tools}">
+            <fileset dir="${openbravo.base}/src-beans">
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.aj"/>
+                <exclude name="**/*.form"/>
+                <exclude name="**/.nbattrs"/>
+                <exclude name="**/Thumbs.db"/>
+                <exclude name="**/filesystem.attributes"/>
+            </fileset>
+        </copy> 
+		<!-- Segundo: gerar o jar -->
+        <jar jarfile="${dest.jar}/openk_tools.jar"
+             compress="true">
+            <manifest>
+                <attribute name="Implementation-Vendor" value="KTC"/>
+                <attribute name="Implementation-Title" value="OpenK POS Tools"/>
+                <attribute name="Implementation-Version" value="${version}"/>
+    	    </manifest>
+            <fileset dir="${dest.classes.tools}"/>
+            <fileset dir="${dest.jar}/locales/">
+                <include name="**/*.properties"/>
+            </fileset>
+            <fileset dir="${dest.jar}/reports/">
+                <include name="**/*.*"/>
+            </fileset>
+        </jar>
+		<!-- Copiar para o directorio de templates 
+        <copy todir="${src}/pt/ktc/openk/pos/templates">
+            <fileset dir="${dest.jar}">
+                <include name="openk_pljava.jar"/>
+            </fileset>
+        </copy> 
+		-->
+    </target>
+
+	<target name="build_all" depends="build_openkpos, build_tools">
+		
+		<!-- E necessario copiar os ficheiros de propriedades para o nivel da diretorio jar -->
+        <delete dir="${dest.jar}/src-utils" />
+	    <mkdir dir="${dest.jar}/src-utils" />
+        <copy todir="${dest.jar}/src-utils">
+            <fileset dir="${basedir}/src-utils">
+                <include name="*.properties"/>
+            </fileset>
+        </copy>
+		<!-- Para criar a base de dados de demonstracao -->
+		<java
+			classname="pt.ktc.openk.pos.tools.CreateDatabaseHSQLDB"
+		    dir="${dest.jar}"
+		    fork="true"
+		    failonerror="true"
+		    maxmemory="128m" >
+		      <arg value="demo" />
+	         <classpath>
+	           <pathelement path="${dest.jar}/openk_tools.jar"/>
+               	<pathelement path="${dest.jar}/jasperreports-3.1.4.jar"/>
+                    <pathelement path="${dest.jar}/jcommon-1.0.15.jar"/>
+                    <pathelement path="${dest.jar}/jfreechart-1.0.12.jar"/>
+                    <pathelement path="${dest.jar}/jdt-compiler-3.1.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-beanutils-1.7.jar"/>
+                    <pathelement path="${dest.jar}/commons-digester-1.7.jar"/>
+                    <pathelement path="${dest.jar}/iText-2.1.0.jar"/>
+                    <pathelement path="${dest.jar}/poi-3.2-FINAL-20081019.jar"/>
+                    <pathelement path="${dest.jar}/barcode4j-light.jar"/>
+                    <pathelement path="${dest.jar}/commons-codec-1.3.jar"/>
+                    <pathelement path="${dest.jar}/velocity-1.5.jar"/>
+                    <pathelement path="${dest.jar}/oro-2.0.8.jar"/>
+                    <pathelement path="${dest.jar}/commons-collections-3.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-lang-2.1.jar"/>
+                    <pathelement path="${dest.jar}/bsh-core-2.0b4.jar"/>
+                    <pathelement path="${dest.jar}/RXTXcomm.jar"/>
+                    <pathelement path="${dest.jar}/jpos1121.jar"/>
+                    <pathelement path="${dest.jar}/swingx-0.9.5.jar"/>
+                    <pathelement path="${dest.jar}/substance.jar"/>
+                    <pathelement path="${dest.jar}/substance-swingx.jar"/>
+                    <pathelement path="${dest.jar}/axis.jar"/>
+                    <pathelement path="${dest.jar}/jaxrpc.jar"/>
+                    <pathelement path="${dest.jar}/saaj.jar"/>
+                    <pathelement path="${dest.jar}/wsdl4j-1.5.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-discovery-0.2.jar"/>
+                    <pathelement path="${dest.jar}/commons-logging-1.0.4.jar"/>
+                    <pathelement path="${dest.jar}/aspectjrt.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf_2.6.0.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+                    <pathelement path="${dest.jar}/postgresql-jdbc3-8.2.jar"/>
+                    <pathelement path="${dest.jar}/bcprov-jdk16-146.jar"/>
+                    <pathelement path="${dest.jar}/hsqldb.jar"/>
+	         </classpath>			
+		 </java>
+		<!-- Para criar a base de dados release -->
+		<java
+			classname="pt.ktc.openk.pos.tools.CreateDatabaseHSQLDB"
+		    dir="${dest.jar}"
+		    fork="true"
+		    failonerror="true"
+		    maxmemory="128m" >
+		      <arg value="release" />
+	         <classpath>
+	           <pathelement path="${dest.jar}/openk_tools.jar"/>
+               	<pathelement path="${dest.jar}/jasperreports-3.1.4.jar"/>
+                    <pathelement path="${dest.jar}/jcommon-1.0.15.jar"/>
+                    <pathelement path="${dest.jar}/jfreechart-1.0.12.jar"/>
+                    <pathelement path="${dest.jar}/jdt-compiler-3.1.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-beanutils-1.7.jar"/>
+                    <pathelement path="${dest.jar}/commons-digester-1.7.jar"/>
+                    <pathelement path="${dest.jar}/iText-2.1.0.jar"/>
+                    <pathelement path="${dest.jar}/poi-3.2-FINAL-20081019.jar"/>
+                    <pathelement path="${dest.jar}/barcode4j-light.jar"/>
+                    <pathelement path="${dest.jar}/commons-codec-1.3.jar"/>
+                    <pathelement path="${dest.jar}/velocity-1.5.jar"/>
+                    <pathelement path="${dest.jar}/oro-2.0.8.jar"/>
+                    <pathelement path="${dest.jar}/commons-collections-3.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-lang-2.1.jar"/>
+                    <pathelement path="${dest.jar}/bsh-core-2.0b4.jar"/>
+                    <pathelement path="${dest.jar}/RXTXcomm.jar"/>
+                    <pathelement path="${dest.jar}/jpos1121.jar"/>
+                    <pathelement path="${dest.jar}/swingx-0.9.5.jar"/>
+                    <pathelement path="${dest.jar}/substance.jar"/>
+                    <pathelement path="${dest.jar}/substance-swingx.jar"/>
+                    <pathelement path="${dest.jar}/axis.jar"/>
+                    <pathelement path="${dest.jar}/jaxrpc.jar"/>
+                    <pathelement path="${dest.jar}/saaj.jar"/>
+                    <pathelement path="${dest.jar}/wsdl4j-1.5.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-discovery-0.2.jar"/>
+                    <pathelement path="${dest.jar}/commons-logging-1.0.4.jar"/>
+                    <pathelement path="${dest.jar}/aspectjrt.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf_2.6.0.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+                    <pathelement path="${dest.jar}/postgresql-jdbc3-8.2.jar"/>
+                    <pathelement path="${dest.jar}/bcprov-jdk16-146.jar"/>
+                    <pathelement path="${dest.jar}/hsqldb.jar"/>
+	         </classpath>			
+		 </java>		
+		<!--
+			O que e' necessario ter na distribuicao final de demonstracao:
+			- todos os jar excepto o openk_tools.jar
+			- o ficheiro openk_pos_demo.properties (renomeado para openk_pos.properties)
+			- o ficheiro openk_pos_services_demo.properties (renomeado para openk_pos_services.properties)
+			- os ficheiros que compoem a base de dados hsqldb: openkpos_data_demo.*	
+			- o start_final.sh (renomeado para start.sh) (para linux e osx)
+			- o PDF do manual
+		-->
+        <delete dir="${dest.jar}/dist-demo" />
+	    <mkdir dir="${dest.jar}/dist-demo" />
+        <copy todir="${dest.jar}/dist-demo">
+            <fileset dir="${dest.jar}">
+                 <include name="openkpos.jar"/>
+            	 <include name="jasperreports-3.1.4.jar"/>
+                 <include name="jcommon-1.0.15.jar"/>
+                 <include name="jfreechart-1.0.12.jar"/>
+                 <include name="jdt-compiler-3.1.1.jar"/>
+                 <include name="commons-beanutils-1.7.jar"/>
+                 <include name="commons-digester-1.7.jar"/>
+                 <include name="iText-2.1.0.jar"/>
+                 <include name="poi-3.2-FINAL-20081019.jar"/>
+                 <include name="barcode4j-light.jar"/>
+                 <include name="commons-codec-1.3.jar"/>
+                 <include name="velocity-1.5.jar"/>
+                 <include name="oro-2.0.8.jar"/>
+                 <include name="commons-collections-3.1.jar"/>
+                 <include name="commons-lang-2.1.jar"/>
+                 <include name="bsh-core-2.0b4.jar"/>
+                 <include name="RXTXcomm.jar"/>
+                 <include name="jpos1121.jar"/>
+                 <include name="swingx-0.9.5.jar"/>
+                 <include name="substance.jar"/>
+                 <include name="substance-swingx.jar"/>
+                 <include name="axis.jar"/>
+                 <include name="jaxrpc.jar"/>
+                 <include name="saaj.jar"/>
+                 <include name="wsdl4j-1.5.1.jar"/>
+                 <include name="commons-discovery-0.2.jar"/>
+                 <include name="commons-logging-1.0.4.jar"/>
+                 <include name="aspectjrt.jar"/>
+                 <include name="org.eclipse.emf_2.6.0.v20100914-1218.jar"/>
+                 <include name="org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+                 <include name="org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+                 <include name="org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+                 <include name="postgresql-jdbc3-8.2.jar"/>
+                 <include name="bcprov-jdk16-146.jar"/>
+                 <include name="hsqldb.jar"/>
+            </fileset>
+        </copy>		
+        <copy todir="${dest.jar}/dist-demo">
+            <fileset dir="${dest.jar}">
+            	 <include name="openkpos_data_demo.*"/>            	
+            	<include name="openkpos_data_demo.tmp/**"/>    
+            	<include name="logging.properties"/>
+            	<include name="Linux/**"/>
+            	<include name="Solaris/**"/>
+            	<include name="Windows/**"/>
+            	<include name="Mac_OS_X/**"/>
+	           	 <include name="openkpos.exe"/>
+           	    <include name="openkpos_data_release.*"/>
+            	<include name="openkpos_data_release.tmp/**"/>                	
+            </fileset>
+        </copy>		
+		<move file="${dest.jar}/src-utils/openk_pos_demo.properties" tofile="${dest.jar}/dist-demo/openk_pos_demo.properties"/>
+		<move file="${dest.jar}/src-utils/openk_pos_services_demo.properties" tofile="${dest.jar}/dist-demo/openk_pos_services_demo.properties"/>
+		<move file="${dest.jar}/src-utils/openk_pos_release.properties" tofile="${dest.jar}/dist-demo/openk_pos.properties"/>
+		<move file="${dest.jar}/src-utils/openk_pos_services_release.properties" tofile="${dest.jar}/dist-demo/openk_pos_services.properties"/>
+		<move file="${dest.jar}/start_final.sh" tofile="${dest.jar}/dist-demo/openkpos.sh"/>
+		<chmod file="${dest.jar}/dist-demo/openkpos.sh" perm="a+x"/>
+		<move file="${dest.jar}/start_demo.sh" tofile="${dest.jar}/dist-demo/start_demo.sh"/>
+		<chmod file="${dest.jar}/dist-demo/start_demo.sh" perm="a+x"/>
+		<move file="${dest.jar}/start_final.bat" tofile="${dest.jar}/dist-demo/openkpos.bat"/>
+		<chmod file="${dest.jar}/dist-demo/openkpos.bat" perm="a+x"/>
+		<move file="${dest.jar}/start_demo.bat" tofile="${dest.jar}/dist-demo/start_demo.bat"/>
+		<chmod file="${dest.jar}/dist-demo/start_demo.bat" perm="a+x"/>
+		<move file="${dest.jar}/start_hsqldb_man.sh" tofile="${dest.jar}/dist-demo/start_hsqldb_man.sh"/>
+		<chmod file="${dest.jar}/dist-demo/start_hsqldb_man.sh" perm="a+x"/>
+		<move file="${dest.jar}/start_hsqldb_man.bat" tofile="${dest.jar}/dist-demo/start_hsqldb_man.bat"/>
+		<chmod file="${dest.jar}/dist-demo/start_hsqldb_man.bat" perm="a+x"/>
+	</target>
+
+	<target name="build_release_NAO_USAR" depends="build_openkpos, build_tools, build_exe">
+		
+		<!-- E necessario copiar os ficheiros de propriedades para o nivel da diretorio jar -->
+        <delete dir="${dest.jar}/src-utils" />
+	    <mkdir dir="${dest.jar}/src-utils" />
+        <copy todir="${dest.jar}/src-utils">
+            <fileset dir="${basedir}/src-utils">
+                <include name="*.properties"/>
+            </fileset>
+        </copy>
+		<java
+			classname="pt.ktc.openk.pos.tools.CreateDatabaseHSQLDB"
+		    dir="${dest.jar}"
+		    fork="true"
+		    failonerror="true"
+		    maxmemory="128m" >
+		      <arg value="release" />
+	         <classpath>
+	           <pathelement path="${dest.jar}/openk_tools.jar"/>
+               	<pathelement path="${dest.jar}/jasperreports-3.1.4.jar"/>
+                    <pathelement path="${dest.jar}/jcommon-1.0.15.jar"/>
+                    <pathelement path="${dest.jar}/jfreechart-1.0.12.jar"/>
+                    <pathelement path="${dest.jar}/jdt-compiler-3.1.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-beanutils-1.7.jar"/>
+                    <pathelement path="${dest.jar}/commons-digester-1.7.jar"/>
+                    <pathelement path="${dest.jar}/iText-2.1.0.jar"/>
+                    <pathelement path="${dest.jar}/poi-3.2-FINAL-20081019.jar"/>
+                    <pathelement path="${dest.jar}/barcode4j-light.jar"/>
+                    <pathelement path="${dest.jar}/commons-codec-1.3.jar"/>
+                    <pathelement path="${dest.jar}/velocity-1.5.jar"/>
+                    <pathelement path="${dest.jar}/oro-2.0.8.jar"/>
+                    <pathelement path="${dest.jar}/commons-collections-3.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-lang-2.1.jar"/>
+                    <pathelement path="${dest.jar}/bsh-core-2.0b4.jar"/>
+                    <pathelement path="${dest.jar}/RXTXcomm.jar"/>
+                    <pathelement path="${dest.jar}/jpos1121.jar"/>
+                    <pathelement path="${dest.jar}/swingx-0.9.5.jar"/>
+                    <pathelement path="${dest.jar}/substance.jar"/>
+                    <pathelement path="${dest.jar}/substance-swingx.jar"/>
+                    <pathelement path="${dest.jar}/axis.jar"/>
+                    <pathelement path="${dest.jar}/jaxrpc.jar"/>
+                    <pathelement path="${dest.jar}/saaj.jar"/>
+                    <pathelement path="${dest.jar}/wsdl4j-1.5.1.jar"/>
+                    <pathelement path="${dest.jar}/commons-discovery-0.2.jar"/>
+                    <pathelement path="${dest.jar}/commons-logging-1.0.4.jar"/>
+                    <pathelement path="${dest.jar}/aspectjrt.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf_2.6.0.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+                    <pathelement path="${dest.jar}/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+                    <pathelement path="${dest.jar}/postgresql-jdbc3-8.2.jar"/>
+                    <pathelement path="${dest.jar}/bcprov-jdk16-146.jar"/>
+                    <pathelement path="${dest.jar}/hsqldb.jar"/>
+	         </classpath>			
+		 </java>
+		
+		<!--
+			O que e' necessario ter na distribuicao final de demonstracao:
+			- todos os jar excepto o openk_tools.jar
+			- o ficheiro openk_pos_demo.properties (renomeado para openk_pos.properties)
+			- o ficheiro openk_pos_services_demo.properties (renomeado para openk_pos_services.properties)
+			- os ficheiros que compoem a base de dados hsqldb: openkpos_data_demo.*	
+			- o start_final.sh (renomeado para start.sh) (para linux e osx)
+			- o PDF do manual
+		-->
+        <delete dir="${dest.jar}/dist-release" />
+	    <mkdir dir="${dest.jar}/dist-release" />
+        <copy todir="${dest.jar}/dist-release">
+            <fileset dir="${dest.jar}">
+                 <include name="openkpos.jar"/>
+            	 <include name="jasperreports-3.1.4.jar"/>
+                 <include name="jcommon-1.0.15.jar"/>
+                 <include name="jfreechart-1.0.12.jar"/>
+                 <include name="jdt-compiler-3.1.1.jar"/>
+                 <include name="commons-beanutils-1.7.jar"/>
+                 <include name="commons-digester-1.7.jar"/>
+                 <include name="iText-2.1.0.jar"/>
+                 <include name="poi-3.2-FINAL-20081019.jar"/>
+                 <include name="barcode4j-light.jar"/>
+                 <include name="commons-codec-1.3.jar"/>
+                 <include name="velocity-1.5.jar"/>
+                 <include name="oro-2.0.8.jar"/>
+                 <include name="commons-collections-3.1.jar"/>
+                 <include name="commons-lang-2.1.jar"/>
+                 <include name="bsh-core-2.0b4.jar"/>
+                 <include name="RXTXcomm.jar"/>
+                 <include name="jpos1121.jar"/>
+                 <include name="swingx-0.9.5.jar"/>
+                 <include name="substance.jar"/>
+                 <include name="substance-swingx.jar"/>
+                 <include name="axis.jar"/>
+                 <include name="jaxrpc.jar"/>
+                 <include name="saaj.jar"/>
+                 <include name="wsdl4j-1.5.1.jar"/>
+                 <include name="commons-discovery-0.2.jar"/>
+                 <include name="commons-logging-1.0.4.jar"/>
+                 <include name="aspectjrt.jar"/>
+                 <include name="org.eclipse.emf_2.6.0.v20100914-1218.jar"/>
+                 <include name="org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+                 <include name="org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+                 <include name="org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+                 <include name="postgresql-jdbc3-8.2.jar"/>
+                 <include name="bcprov-jdk16-146.jar"/>
+                 <include name="hsqldb.jar"/>
+            </fileset>
+        </copy>		
+        <copy todir="${dest.jar}/dist-release">
+            <fileset dir="${dest.jar}">
+            	 <include name="openkpos_data_release.*"/>
+	           	 <include name="logging.properties"/>
+            	<include name="Linux/**"/>
+            	<include name="Solaris/**"/>
+            	<include name="Windows/**"/>
+            	<include name="Mac_OS_X/**"/>
+            	<include name="openkpos_data_release.tmp/**"/>    
+	           	 <include name="openkpos.exe"/>
+            </fileset>
+        </copy>		
+		<move file="${dest.jar}/src-utils/openk_pos_release.properties" tofile="${dest.jar}/dist-release/openk_pos.properties"/>
+		<!-- <move file="${dest.jar}/src-utils/openk_pos_services_release.properties" tofile="${dest.jar}/dist-release/openk_pos_services.properties"/> -->
+		<move file="${dest.jar}/start_final.sh" tofile="${dest.jar}/dist-release/openkpos.sh"/>
+		<chmod file="${dest.jar}/dist-release/openkpos.sh" perm="a+x"/>
+	</target>
+
+	<target name="build_exe" depends="">
+		<!-- copiar o ficheiro para o diretorio de build -->
+        <copy todir="${dest.jar}">
+            <fileset dir="${basedir}">
+            	<include name="build_exe.xml"/>
+            </fileset>
+        </copy>		
+		
+		<launch4j configFile="${dest.jar}/build_exe.xml" />
+	</target>
+	
+	<target name="clean" depends="">
+	      <delete dir="${dest.classes.pljava}" />
+	      <delete dir="${dest.classes}" />
+          <delete dir="${dest.jar}" />
+		
+	      <mkdir dir="${dest.classes.pljava}" />
+          <mkdir dir="${dest.classes}" />
+          <mkdir dir="${dest.jar}" />
+	</target>
+	
+	<!--
+        <javac srcdir="${src}"
+               destdir="${dest.classes}/compile"
+               debug="${javac.debug}"
+               deprecation="${javac.deprecation}"
+               optimize="${javac.optimize}"
+               target="${javac.minVMVersion}">
+            <classpath>
+                  <fileset dir="${basedir}/lib">
+                    <include name="**/*.jar"/>
+                  </fileset>
+            	<pathelement location="${saftmodel_1_0.base}/bin"/>
+               	<pathelement location="${saftmodel_1_1.base}/bin"/>
+            	<fileset dir="${openbravo.base}/lib">
+                   <include name="**/*.jar"/>
+                 </fileset>
+                <fileset dir="${openbravo.base}/build/jar">
+                   <include name="**/*.jar"/>
+                 </fileset>
+            </classpath>
+        </javac>
+
+--> 
+</project>

@@ -1,0 +1,6 @@
+// vamos marcar a linha como adicionada
+line.setLineStatus("+");
+
+// para deixar remover a linha deve-se devolver null
+returno=null;
+

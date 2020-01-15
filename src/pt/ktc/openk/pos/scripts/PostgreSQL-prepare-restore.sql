@@ -1,0 +1,3 @@
+
+select prepare_restore();
+

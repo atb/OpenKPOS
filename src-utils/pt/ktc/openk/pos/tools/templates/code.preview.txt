@@ -1,0 +1,12 @@
+//
+// script para imprimir consultas de mesa
+//
+
+sales.generatePreview("Printer.TicketPreview");
+
+// devolver o resultado na forma de uma string
+// Indica que se deve sair para o mapa de mesas se estamos em modo restaurante
+"sair"
+
+
+

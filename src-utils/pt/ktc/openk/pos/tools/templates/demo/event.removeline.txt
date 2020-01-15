@@ -1,0 +1,12 @@
+//javax.swing.JOptionPane.showInputDialog("Line notes", "linha removida ="+index);
+
+line = ticket.getLine(index);
+
+line.setLineStatus("-");
+
+// adicionar a lista de linhas removidas
+ticket.addRemovedLine(line);
+
+// para deixar remover a linha deve-se devolver null
+returno=null;
+

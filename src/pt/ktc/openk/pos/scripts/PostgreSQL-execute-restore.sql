@@ -1,0 +1,3 @@
+
+select execute_restore();
+

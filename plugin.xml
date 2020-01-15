@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="urn:OECD:StandardAuditFile-Tax:PT_1.01_01"
+            class="oecd.standard.audit.file.tax.pt1_01_2.Pt1_01_2Package"
+            genModel="schemas/SAFTPT_1_01_alterado.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="pt1_01_2"
+            class="oecd.standard.audit.file.tax.pt1_01_2.util.Pt1_01_2ResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

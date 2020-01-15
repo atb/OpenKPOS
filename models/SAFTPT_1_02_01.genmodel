@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/openk_pos_v1_2_discount/src-models"
+    modelPluginID="saftmodel_v1_2" modelName="SAFTPT_1_02_01" modelPluginClass=""
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd</foreignModel>
+  <genPackages prefix="_201" basePackage="oecd.standard.audit.file.tax.p.t1._0" resource="XML"
+      disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
+      ecorePackage="_201.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//GroupingCategoryType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//GroupingCategoryType/GR"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//GroupingCategoryType/GA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//GroupingCategoryType/GM"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//GroupingCategoryType/AR"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//GroupingCategoryType/AA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//GroupingCategoryType/AM"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//InvoiceStatusType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceStatusType/N"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceStatusType/S"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceStatusType/A"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceStatusType/R"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceStatusType/F"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//InvoiceTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/FT"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/FS"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/FR"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/ND"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/NC"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/VD"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/TV"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/TD"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/AA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/DA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/RP"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/RE"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/CS"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/LD"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//InvoiceTypeType/RA"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//MovementStatusType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementStatusType/N"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementStatusType/T"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementStatusType/A"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementStatusType/R"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//MovementTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementTypeType/GR"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementTypeType/GT"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementTypeType/GA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementTypeType/GC"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//MovementTypeType/GD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//PaymentMechanismType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/CC"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/CD"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/CH"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/CS"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/LC"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/MB"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/NU"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/PR"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/TB"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//PaymentMechanismType/TR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//ProductTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//ProductTypeType/P"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//ProductTypeType/S"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//ProductTypeType/O"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//ProductTypeType/I"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//SAFTPTMovementTaxType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//SAFTPTMovementTaxType/IVA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//SAFTPTMovementTaxType/NS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//SourceBillingType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//SourceBillingType/P"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//SourceBillingType/I"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//SourceBillingType/M"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//TaxAccountingBasisType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxAccountingBasisType/C"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxAccountingBasisType/F"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxAccountingBasisType/I"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxAccountingBasisType/S"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxAccountingBasisType/E"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxAccountingBasisType/P"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//TaxTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxTypeType/IVA"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxTypeType/IS"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TaxTypeType/NS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//TransactionTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TransactionTypeType/N"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TransactionTypeType/R"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TransactionTypeType/A"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//TransactionTypeType/J"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//WithholdingTaxTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WithholdingTaxTypeType/IRS"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WithholdingTaxTypeType/IRC"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WithholdingTaxTypeType/IS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//WorkStatusType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WorkStatusType/N"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WorkStatusType/A"/>
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WorkStatusType/F"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="_201.ecore#//WorkTypeType">
+      <genEnumLiterals ecoreEnumLiteral="_201.ecore#//WorkTypeType/DC"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="_201.ecore#//AccountIDType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//AuditFileVersionType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//CompanyIDType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//CountryType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//CurrencyCodeType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//DocumentNumberType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//EACCodeType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//FiscalYearType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//GroupingCategoryTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//InvoiceNoType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//InvoiceStatusTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//InvoiceTypeTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//MovementStatusTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//MovementTypeTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//PaymentMechanismTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//PeriodType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//PostalCodePT"/>
+    <genDataTypes ecoreDataType="_201.ecore#//ProductTypeTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFdateTimeType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFdateType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFdecimalType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFmonetaryType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTAccountingPeriod"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTDateSpan"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTGLAccountID"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTJournalID"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTPortugueseTaxExemption"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTPortugueseVatNumber"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTProductID"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax100Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax10Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax172Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax200Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax20Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax255Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax30Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax3Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax40Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax50Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax60Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax70Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMandatoryMax90Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTtextTypeMax40Car"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFPTTransactionID"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFTPTDocArchivalNumber"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFTPTMovementTaxCode"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SAFTPTMovementTaxTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SelfBillingIndicatorType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SourceBillingTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//SupplierCountry"/>
+    <genDataTypes ecoreDataType="_201.ecore#//TaxAccountingBasisTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//TaxCodeType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//TaxCountryRegionType"/>
+    <genDataTypes ecoreDataType="_201.ecore#//TaxTypeTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//TransactionTypeTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//WithholdingTaxTypeTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//WorkStatusTypeObject"/>
+    <genDataTypes ecoreDataType="_201.ecore#//WorkTypeTypeObject"/>
+    <genClasses ecoreClass="_201.ecore#//AddressStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/buildingNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/streetName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/addressDetail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/postalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/region"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructure/country"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//AddressStructurePT">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/buildingNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/streetName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/addressDetail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/postalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/region"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//AddressStructurePT/country"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//AuditFileType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//AuditFileType/header"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//AuditFileType/masterFiles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//AuditFileType/generalLedgerEntries"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//AuditFileType/sourceDocuments"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//Currency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Currency/currencyCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Currency/currencyAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Currency/exchangeRate"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//CustomerType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/customerID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/accountID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/customerTaxID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/companyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/contact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//CustomerType/billingAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//CustomerType/shipToAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/telephone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/fax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/website"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//CustomerType/selfBillingIndicator"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/accountDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/accountID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/addressDetail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/aTDocCodeID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/auditFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/auditFileVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/billingAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/buildingNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/businessName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/closingCreditBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/closingDebitBalance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/companyAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/companyID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/companyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/contact"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/creditAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/currencyAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/currencyCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/customer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/customerID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/customerTaxID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/dateCreated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/debitAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/deliveryDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/deliveryID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/docArchivalNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/documentNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/eACCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/exchangeRate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/fax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/fiscalYear"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/generalLedger"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/generalLedgerEntries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/gLPostingDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/grossTotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/groupingCategory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/hash"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/hashControl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/header"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/headerComment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/invoiceDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/invoiceNo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/invoiceStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/invoiceStatusDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/invoiceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/journalID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/lineNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/locationID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementComments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementEndTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementStartTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementStatusDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/movementType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/netTotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/numberOfEntries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/numberOfMovementLines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/openingCreditBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/openingDebitBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/orderDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/originatingON"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/paymentMechanism"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/period"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/postalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/product"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productCompanyTaxID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productNumberCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/productVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/reason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/recordID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/reference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/region"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/selfBillingIndicator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/settlementAmount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/shipFrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/shipFromAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/shipTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/shipToAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/softwareCertificateNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/sourceBilling"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/sourceDocumentID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/sourceDocuments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/streetName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/supplier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/supplierID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/supplierTaxID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/systemEntryDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxAccountingBasis"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxCountryRegion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxEntity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxExemptionReason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxExpirationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxPayable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxPercentage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxPointDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/taxTable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentRoot/taxTableEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/taxVerificationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/telephone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/totalCredit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/totalDebit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/totalQuantityIssued"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/transactionDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/transactionID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/transactionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/unitOfMeasure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/unitPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/warehouseID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/website"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/withholdingTaxType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/workDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/workStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/workStatusDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentRoot/workType"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentStatusType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType/workStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType/workStatusDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType/reason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType/sourceID"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentStatusType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType1/movementStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType1/movementStatusDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType1/reason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType1/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType1/sourceBilling"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentStatusType2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType2/invoiceStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType2/invoiceStatusDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType2/reason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType2/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentStatusType2/sourceBilling"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentTotalsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType/taxPayable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType/netTotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType/grossTotal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentTotalsType/currency"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentTotalsType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType1/taxPayable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType1/netTotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType1/grossTotal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentTotalsType1/currency"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//DocumentTotalsType2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType2/taxPayable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType2/netTotal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//DocumentTotalsType2/grossTotal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentTotalsType2/currency"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentTotalsType2/settlement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//DocumentTotalsType2/payment"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//GeneralLedgerEntriesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerEntriesType/numberOfEntries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerEntriesType/totalDebit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerEntriesType/totalCredit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//GeneralLedgerEntriesType/journal"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//GeneralLedgerType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/accountID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/accountDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/openingDebitBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/openingCreditBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/closingDebitBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/closingCreditBalance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/groupingCategory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//GeneralLedgerType/groupingCode"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//HeaderType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/auditFileVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/companyID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/taxRegistrationNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/taxAccountingBasis"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/companyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/businessName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//HeaderType/companyAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/fiscalYear"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/currencyCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/dateCreated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/taxEntity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/productCompanyTaxID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/softwareCertificateNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/productID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/productVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/headerComment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/telephone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/fax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//HeaderType/website"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//InvoiceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/invoiceNo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//InvoiceType/documentStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/hash"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/hashControl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/period"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/invoiceDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/invoiceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/selfBillingIndicator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/eACCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/systemEntryDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/transactionID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/customerID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//InvoiceType/shipTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//InvoiceType/shipFrom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/movementEndTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//InvoiceType/movementStartTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//InvoiceType/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//InvoiceType/documentTotals"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//InvoiceType/withholdingTax"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//JournalType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//JournalType/journalID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//JournalType/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//JournalType/transaction"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//LineType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/lineNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType/orderReferences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/productCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/unitOfMeasure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/unitPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/debitAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/creditAmount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType/tax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/taxExemptionReason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType/settlementAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//LineType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/lineNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType1/orderReferences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/productCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/unitOfMeasure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/unitPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/taxPointDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType1/references"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/debitAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/creditAmount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType1/tax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/taxExemptionReason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType1/settlementAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//LineType2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/lineNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType2/orderReferences"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/productCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/unitOfMeasure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/unitPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/taxPointDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/debitAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/creditAmount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//LineType2/tax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/taxExemptionReason"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType2/settlementAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//LineType3">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/recordID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/accountID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/sourceDocumentID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/systemEntryDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/debitAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//LineType3/creditAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//MasterFilesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//MasterFilesType/generalLedger"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//MasterFilesType/customer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//MasterFilesType/supplier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//MasterFilesType/product"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//MasterFilesType/taxTable"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//MovementOfGoodsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//MovementOfGoodsType/numberOfMovementLines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//MovementOfGoodsType/totalQuantityIssued"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//MovementOfGoodsType/stockMovement"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//MovementTax">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//MovementTax/taxType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//MovementTax/taxCountryRegion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//MovementTax/taxCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//MovementTax/taxPercentage"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//OrderReferences">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//OrderReferences/originatingON"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//OrderReferences/orderDate"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//Payment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Payment/paymentMechanism"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Payment/paymentAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Payment/paymentDate"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//ProductType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ProductType/productType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ProductType/productCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ProductType/productGroup"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ProductType/productDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ProductType/productNumberCode"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//References">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//References/reference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//References/reason"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//SalesInvoicesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SalesInvoicesType/numberOfEntries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SalesInvoicesType/totalDebit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SalesInvoicesType/totalCredit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//SalesInvoicesType/invoice"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//Settlement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Settlement/settlementDiscount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Settlement/settlementAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Settlement/settlementDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Settlement/paymentTerms"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//ShippingPointStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ShippingPointStructure/deliveryID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ShippingPointStructure/deliveryDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute _201.ecore#//ShippingPointStructure/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ShippingPointStructure/warehouseID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//ShippingPointStructure/locationID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//ShippingPointStructure/address"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//SourceDocumentsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//SourceDocumentsType/salesInvoices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//SourceDocumentsType/movementOfGoods"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//SourceDocumentsType/workingDocuments"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//StockMovementType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/documentNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//StockMovementType/documentStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/hash"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/hashControl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/period"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/movementDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/movementType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/systemEntryDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/transactionID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/customerID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/supplierID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/eACCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/movementComments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//StockMovementType/shipTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//StockMovementType/shipFrom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/movementEndTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/movementStartTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//StockMovementType/aTDocCodeID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//StockMovementType/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//StockMovementType/documentTotals"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//SupplierAddressStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/buildingNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/streetName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/addressDetail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/postalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/region"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierAddressStructure/country"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//SupplierType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/supplierID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/accountID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/supplierTaxID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/companyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/contact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//SupplierType/billingAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//SupplierType/shipFromAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/telephone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/fax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/website"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//SupplierType/selfBillingIndicator"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//Tax">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Tax/taxType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Tax/taxCountryRegion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Tax/taxCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Tax/taxPercentage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//Tax/taxAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//TaxTableEntryType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/taxType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/taxCountryRegion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/taxCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/taxExpirationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/taxPercentage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TaxTableEntryType/taxAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//TaxTableType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//TaxTableType/taxTableEntry"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//TransactionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/transactionID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/period"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/transactionDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/docArchivalNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/transactionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/gLPostingDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/customerID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//TransactionType/supplierID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//TransactionType/line"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//WithholdingTax">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WithholdingTax/withholdingTaxType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WithholdingTax/withholdingTaxDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WithholdingTax/withholdingTaxAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//WorkDocumentType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/documentNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//WorkDocumentType/documentStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/hash"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/hashControl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/period"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/workDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/workType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/sourceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/eACCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/systemEntryDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkDocumentType/customerID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//WorkDocumentType/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//WorkDocumentType/documentTotals"/>
+    </genClasses>
+    <genClasses ecoreClass="_201.ecore#//WorkingDocumentsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkingDocumentsType/numberOfEntries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkingDocumentsType/totalDebit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute _201.ecore#//WorkingDocumentsType/totalCredit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _201.ecore#//WorkingDocumentsType/workDocument"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

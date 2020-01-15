@@ -1,0 +1,9 @@
+
+// A linha seguinte permite obter o numero que foi introduzido no keypad do ecra de vendas
+// valor=sales.getInputValue();
+// A seguir invoca-se a abertura da gaveta apenas se o valor introduzido no keypad e' igual a 
+// um numero secreto (neste caso 32)
+// if (valor==32) sales.printTicket("Printer.OpenDrawer");
+
+// para abrir a gaveta sem introducao de numero secreto
+sales.printTicket("Printer.OpenDrawer");

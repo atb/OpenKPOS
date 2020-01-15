@@ -1,0 +1,1 @@
+OpenK POS é uma aplicação de ponto de venda concebida para ecrãs tácteis.

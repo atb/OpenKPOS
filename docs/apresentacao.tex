@@ -1,0 +1,157 @@
+\chapter{Apresenta‹o}
+\label{ch:apresentacao}
+
+Neste manual encontrar‡ informa‹o sobre como administrar e operar o OpenK POS
+\cite{openk}. 
+O OpenK POS Ž um software de fatura‹o e posto de venda que se baseia no
+Openbravo \cite{openbravo}, um dos softwares de gest‹o \emph{open source}
+(software aberto e livre) mais usado em todo o mundo.
+
+O OpenK POS est‡ devidamente certificado pela DGCI/AT (Dire‹o Geral de
+Contribui›es/Autoridade Tribut‡ria) tendo a licena de certifica‹o n¼1345. O
+OpenK Ž uma adapta‹o para o mercado portugus do Openbravo, o software de
+gest‹o aberto e baseado em tecnologia internet l’der mundial com mais de 2000000
+de utilizadores. Existem centenas de grandes empresas em diversos pa’ses a
+utilizarem com grande sucesso esta solu‹o. No retalho destaca-se como
+referncia o caso da BUT, a empresa francesa l’der da distribui‹o de m—veis em
+Frana, com uma solu‹o de mais de 1000 postos de venda Openbravo POS. O OpenK
+POS Ž a vers‹o portuguesa do Openbravo POS certificada pela DGCI/AT e adaptada
+para o mercado nacional.
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/certifica_at.png}
+  \caption{Apresenta‹o do certificado do OpenK POS no site da AT}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/init_app.png}
+  \caption{Janela de abertura da aplica‹o}
+\end{figure}
+
+\section{Caracter’sticas}
+Salientamos as seguintes caracter’sticas e funcionalidades do OpenK POS:\\
+\\Garantia
+\begin{itemize}
+	\item Software Certificado pela AT com emiss‹o de ficheiros SAF-T PT
+	\item A garantia de utilizar um software l’der mundial
+\end{itemize}
+Gest‹o de Dados
+\begin{itemize}
+	\item Nœmero ilimitado de clientes e produtos
+	\item Possibilidade de defini‹o de impostos (ex: IVA) diferentes por cliente
+	\item Possibilidade de definir produtos compostos
+	\item Possibilidade de definir produtos com atributos (Ex: cor e tamanho)
+	\item Multi-utilizador
+	\item Possibilidade de definir cart›es para colaboradores e clientes 
+\end{itemize}
+Vendas, Devolu›es e Gest‹o de Caixa
+\begin{itemize}
+	\item Emiss‹o de tal›es de caixa e faturas configur‡vel
+	\item Mœltiplos recibos em um ou mais terminais
+	\item Divis‹o de recibos
+	\item Gest‹o de conta correntes de clientes
+	\item Gest‹o vers‡til de devolu›es
+	\item Mœltiplos modos de pagamento
+\end{itemize}
+Gest‹o de Stocks e ArmazŽns
+\begin{itemize}
+	\item Gest‹o de stock de produtos (registo de entradas, sa’das e movimenta›es)
+	\item Stock de produtos automaticamente actualizado
+	\item Suporte para mœltiplos armazŽns
+	\item Gest‹o de stocks com base nos atributos dos produtos	 
+\end{itemize}
+M—dulo de Restaurantes e CafŽs
+\begin{itemize}
+	\item \emph{Layout} interativo de mesas
+	\item Gest‹o de reservas de mesas
+	\item Possibilidade de utiliza‹o de m—dulo adicional para Smarthone/PDA/Tablet
+\end{itemize}
+Relat—rios e Gr‡ficos
+\begin{itemize}
+	\item Relat—rios e graficos configur‡veis
+	\item Vendas por utilizador
+	\item Vendas por produto
+	\item Stocks
+	\item Dividas de clientes
+	\item Imposto liquidado
+	\item e muito mais.
+\end{itemize}
+Especifica›es TŽcnicas
+\begin{itemize}
+	\item Multi-posto
+	\item Multi-plataforma: Windows, Linux e Mac OSX
+	\item Funcionamento com ecr‹s t‡cteis
+	\item Funcionamento com leitores de c—digos de barras
+	\item Funcionamento com balanas
+	\item Funcionamento com impressoras de POS
+\end{itemize}
+
+\section{Funcionamento em Rede}
+A aplica‹o permite um ou mais postos. Cada posto tem o seu nome que Ž derivado
+do nome do computador. Os postos trabalham em rede, partilhando os mesmos
+dados.
+
+Um posto acede aos recibos dos outros postos quando arranca. Em cada momento
+apenas um posto deve trabalhar com um recibo. A vers‹o que fica de um recibo Ž a
+do œltimo posto que o alterou.
+
+O nome do posto (atribu’do no ficheiro de propriedades) Ž usado para identificar
+o caixa, e Ž usado nos fechos de caixa. Este aparece na faixa do final do ecr‹
+(assim como o armazŽm activo).
+
+\section{Estrutura do manual} 
+
+Este manual esta estruturado de forma a facilitar a sua consulta pelo
+utilizador.
+
+No cap’tulo 2 encontra informa‹o sobre a instala‹o e configura‹o da
+aplica‹o.
+
+No cap’tulo 3 encontra a descri‹od e como funcionam na generalidade os ecr‹s da
+aplica‹o.
+
+No cap’tulo 4 encontram-se descritas as funcionalidades que permitem administrar
+a aplica‹o.
+
+No cap’tulo 5 encontram-se descritas as funcionalidades da aplica‹o para os
+operadores da aplica‹o.
+
+O cap’tulo final informa sobre a licena da aplica‹o.
+
+
+%\begin{center} 
+%\includegraphics[width=140mm]{./imgs_org/certifica_at.png}
+%\end{center}
+
+% Isto Ã© um exemplo de citaÃ§Ã£o \cite{goossens97}.
+
+%@startuml intro.png
+%
+%(First usecase)
+%(Another usecase) as (UC2)  
+%usecase UC3
+%usecase (Last\nusecase) as UC4
+%
+%@enduml
+
+%@startuml seq1.png
+% participant User
+% User -> A: DoWork 
+% activate A #FFBBBB
+% A -> A: Internal call 
+% activate A #DarkSalmon
+% A -> B: << createRequest >> 
+% activate B
+% B --> A: RequestCreated 
+% deactivate B 
+% deactivate A 
+%A -> User: Done 
+% deactivate A
+%@enduml
+
+%\begin{center}
+%\includegraphics[width=80mm]{./imgs/intro.png}
+%\includegraphics[width=80mm]{./imgs/seq1.png}
+%\end{center}

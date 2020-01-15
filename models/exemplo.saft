@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<saft:AuditFile xmlns:saft="urn:OECD:StandardAuditFile-Tax:PT_1.01_01">
+  <saft:Header>
+    <saft:AuditFileVersion>1.01_01</saft:AuditFileVersion>
+    <saft:CompanyID>507287584</saft:CompanyID>
+    <saft:TaxRegistrationNumber>507287584</saft:TaxRegistrationNumber>
+    <saft:TaxAccountingBasis>F</saft:TaxAccountingBasis>
+    <saft:CompanyName>KTC</saft:CompanyName>
+    <saft:BusinessName>KTC Formacao</saft:BusinessName>
+    <saft:CompanyAddress>
+      <saft:AddressDetail>Rua EN 327, 1315</saft:AddressDetail>
+      <saft:City>Santa Maria da feira</saft:City>
+      <saft:PostalCode>4520-706</saft:PostalCode>
+      <saft:Region>Aveiro</saft:Region>
+      <saft:Country>PT</saft:Country>
+    </saft:CompanyAddress>
+    <saft:FiscalYear>2011</saft:FiscalYear>
+    <saft:StartDate>2011-06-01Z</saft:StartDate>
+    <saft:EndDate>2011-06-08Z</saft:EndDate>
+    <saft:CurrencyCode>EUR</saft:CurrencyCode>
+    <saft:DateCreated>2010-11-10Z</saft:DateCreated>
+    <saft:TaxEntity>Global</saft:TaxEntity>
+    <saft:ProductCompanyTaxID>507287584</saft:ProductCompanyTaxID>
+    <saft:SoftwareCertificateNumber>0</saft:SoftwareCertificateNumber>
+    <saft:ProductID>OpenK POS/KTC</saft:ProductID>
+    <saft:ProductVersion>v1.0</saft:ProductVersion>
+  </saft:Header>
+  <saft:MasterFiles>
+    <saft:Customer>
+      <saft:CustomerID>0</saft:CustomerID>
+      <saft:AccountID>Desconhecido</saft:AccountID>
+      <saft:CustomerTaxID>999999990</saft:CustomerTaxID>
+      <saft:CompanyName>Consumidor final</saft:CompanyName>
+      <saft:Contact>Cliente Generico</saft:Contact>
+      <saft:BillingAddress>
+        <saft:BuildingNumber> </saft:BuildingNumber>
+        <saft:AddressDetail>Desconhecido</saft:AddressDetail>
+        <saft:City>Desconhecido</saft:City>
+        <saft:PostalCode>Desconhecido</saft:PostalCode>
+        <saft:Country>Desconhecido</saft:Country>
+      </saft:BillingAddress>
+      <saft:ShipToAddress>
+        <saft:BuildingNumber> </saft:BuildingNumber>
+        <saft:AddressDetail>Desconhecido</saft:AddressDetail>
+        <saft:City>Desconhecido</saft:City>
+        <saft:PostalCode>Desconhecido</saft:PostalCode>
+        <saft:Country>Desconhecido</saft:Country>
+      </saft:ShipToAddress>
+      <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+    </saft:Customer>
+    <saft:Customer>
+      <saft:CustomerID>48ad9678be364649bd805b786b5f2c</saft:CustomerID>
+      <saft:AccountID>Desconhecido</saft:AccountID>
+      <saft:CustomerTaxID>195310160</saft:CustomerTaxID>
+      <saft:CompanyName>Alexandre Braganca</saft:CompanyName>
+      <saft:Contact>Alexandre Braganca</saft:Contact>
+      <saft:BillingAddress>
+        <saft:BuildingNumber> </saft:BuildingNumber>
+        <saft:StreetName>Rua Benjamim de Brito, 9</saft:StreetName>
+        <saft:AddressDetail>Rua Benjamim de Brito, 9</saft:AddressDetail>
+        <saft:City>Santa Maria da Feira</saft:City>
+        <saft:PostalCode>4520-185</saft:PostalCode>
+        <saft:Region>Aveiro</saft:Region>
+        <saft:Country>PT</saft:Country>
+      </saft:BillingAddress>
+      <saft:ShipToAddress>
+        <saft:BuildingNumber> </saft:BuildingNumber>
+        <saft:StreetName>Rua Benjamim de Brito, 9</saft:StreetName>
+        <saft:AddressDetail>Rua Benjamim de Brito, 9</saft:AddressDetail>
+        <saft:City>Santa Maria da Feira</saft:City>
+        <saft:PostalCode>4520-185</saft:PostalCode>
+        <saft:Region>Aveiro</saft:Region>
+        <saft:Country>PT</saft:Country>
+      </saft:ShipToAddress>
+      <saft:Telephone>256383282</saft:Telephone>
+      <saft:Email>alex@dei.isep.ipp.pt</saft:Email>
+      <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+    </saft:Customer>
+    <saft:Customer>
+      <saft:CustomerID>e31cf4590097463fb4d00b1af5cf91</saft:CustomerID>
+      <saft:AccountID>Desconhecido</saft:AccountID>
+      <saft:CustomerTaxID>507287584</saft:CustomerTaxID>
+      <saft:CompanyName>KTC</saft:CompanyName>
+      <saft:Contact>Anabela Braganca</saft:Contact>
+      <saft:BillingAddress>
+        <saft:BuildingNumber> </saft:BuildingNumber>
+        <saft:StreetName>Rua EN 327, 1315</saft:StreetName>
+        <saft:AddressDetail>Rua EN 327, 1315</saft:AddressDetail>
+        <saft:City>Souto, Santa Maria da Feira</saft:City>
+        <saft:PostalCode>4520-706</saft:PostalCode>
+        <saft:Region>Aveiro</saft:Region>
+        <saft:Country>PT</saft:Country>
+      </saft:BillingAddress>
+      <saft:ShipToAddress>
+        <saft:BuildingNumber> </saft:BuildingNumber>
+        <saft:StreetName>Rua EN 327, 1315</saft:StreetName>
+        <saft:AddressDetail>Rua EN 327, 1315</saft:AddressDetail>
+        <saft:City>Souto, Santa Maria da Feira</saft:City>
+        <saft:PostalCode>4520-706</saft:PostalCode>
+        <saft:Region>Aveiro</saft:Region>
+        <saft:Country>PT</saft:Country>
+      </saft:ShipToAddress>
+      <saft:Telephone>256184931</saft:Telephone>
+      <saft:Fax>256184931</saft:Fax>
+      <saft:Email>anabela.braganca@netvisao.pt</saft:Email>
+      <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+    </saft:Customer>
+    <saft:TaxTable>
+      <saft:TaxTableEntry>
+        <saft:TaxType>IVA</saft:TaxType>
+        <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+        <saft:TaxCode>ISE</saft:TaxCode>
+        <saft:Description>Tax Exempt</saft:Description>
+        <saft:TaxPercentage>0.0</saft:TaxPercentage>
+      </saft:TaxTableEntry>
+      <saft:TaxTableEntry>
+        <saft:TaxType>IVA</saft:TaxType>
+        <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+        <saft:TaxCode>RED</saft:TaxCode>
+        <saft:Description>Tax Standard</saft:Description>
+        <saft:TaxPercentage>0.1</saft:TaxPercentage>
+      </saft:TaxTableEntry>
+    </saft:TaxTable>
+    <saft:Product>
+      <saft:ProductType>P</saft:ProductType>
+      <saft:ProductCode>94d62d0ad91d4298948687f4b0c7c0</saft:ProductCode>
+      <saft:ProductGroup>000</saft:ProductGroup>
+      <saft:ProductDescription>Produto 1</saft:ProductDescription>
+      <saft:ProductNumberCode>P001</saft:ProductNumberCode>
+    </saft:Product>
+    <saft:Product>
+      <saft:ProductType>P</saft:ProductType>
+      <saft:ProductCode>630fefb926eb4dffa7100c7c6b720c</saft:ProductCode>
+      <saft:ProductGroup>000</saft:ProductGroup>
+      <saft:ProductDescription>Produto 2 com IVA</saft:ProductDescription>
+      <saft:ProductNumberCode>P002</saft:ProductNumberCode>
+    </saft:Product>
+    <saft:Product>
+      <saft:ProductType>P</saft:ProductType>
+      <saft:ProductCode>ef1822bc0be345c69db5c7689121f1</saft:ProductCode>
+      <saft:ProductGroup>000</saft:ProductGroup>
+      <saft:ProductDescription>Produto 3</saft:ProductDescription>
+      <saft:ProductNumberCode>63938200039</saft:ProductNumberCode>
+    </saft:Product>
+  </saft:MasterFiles>
+  <saft:SourceDocuments>
+    <saft:SalesInvoices>
+      <saft:NumberOfEntries>5</saft:NumberOfEntries>
+      <saft:TotalDebit>45.00</saft:TotalDebit>
+      <saft:TotalCredit>411.00</saft:TotalCredit>
+      <saft:Invoice>
+        <saft:InvoiceNo>REC 1/55</saft:InvoiceNo>
+        <saft:InvoiceStatus>N</saft:InvoiceStatus>
+        <saft:Hash>DH6AsxxGTHHaGqr+M7w9ioEWfResSUrNyDsclAWkRjS+6p4JTeffCon3kLCoezXZ6U4qorhdSUbEYYumc+qf0ZwdpHycjQO92SAAYZm6tcElWGCwgHKeCC8oWd0d54WEymbuliFad9+ywsgX2eLH2NQVjMEE9ufgeU7qcIMzTHs=</saft:Hash>
+        <saft:InvoiceDate>2011-05-02</saft:InvoiceDate>
+        <saft:InvoiceType>VD</saft:InvoiceType>
+        <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+        <saft:SystemEntryDate>2011-05-02T01:00:00</saft:SystemEntryDate>
+        <saft:CustomerID>48ad9678be364649bd805b786b5f2c</saft:CustomerID>
+        <saft:Line>
+          <saft:LineNumber>0</saft:LineNumber>
+          <saft:ProductCode>94d62d0ad91d4298948687f4b0c7c0</saft:ProductCode>
+          <saft:ProductDescription>Produto 1</saft:ProductDescription>
+          <saft:Quantity>1</saft:Quantity>
+          <saft:UnitOfMeasure>Unidades</saft:UnitOfMeasure>
+          <saft:UnitPrice>10</saft:UnitPrice>
+          <saft:TaxPointDate>2011-05-02</saft:TaxPointDate>
+          <saft:Description>Produto 1</saft:Description>
+          <saft:CreditAmount>10.00</saft:CreditAmount>
+          <saft:Tax>
+            <saft:TaxType>IVA</saft:TaxType>
+            <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+            <saft:TaxCode>ISE</saft:TaxCode>
+            <saft:TaxPercentage>0.0</saft:TaxPercentage>
+          </saft:Tax>
+          <saft:TaxExemptionReason>Art 9 do CIVA</saft:TaxExemptionReason>
+          <saft:SettlementAmount>0</saft:SettlementAmount>
+        </saft:Line>
+        <saft:DocumentTotals>
+          <saft:TaxPayable>0.00</saft:TaxPayable>
+          <saft:NetTotal>10.00</saft:NetTotal>
+          <saft:GrossTotal>10.00</saft:GrossTotal>
+        </saft:DocumentTotals>
+      </saft:Invoice>
+      <saft:Invoice>
+        <saft:InvoiceNo>REC 1/54</saft:InvoiceNo>
+        <saft:InvoiceStatus>N</saft:InvoiceStatus>
+        <saft:Hash>aQVXmrtgRnqDOawgAkLCe+cKdEIZXEvoxXxj08s/Yuy27+gnqKR13Dqi3dsTD1rJ9ehnBa51VXASU0ByvZIKk862KP9oUykYtSby6RhFWF0mvtm5Yw8POoY0yCDVU6rZeDHNibNQhpdj8ts/1Y0Y+D7/zcgJVzMvqe6SL3oLd/8=</saft:Hash>
+        <saft:InvoiceDate>2011-05-01</saft:InvoiceDate>
+        <saft:InvoiceType>VD</saft:InvoiceType>
+        <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+        <saft:SystemEntryDate>2011-05-01T01:00:00</saft:SystemEntryDate>
+        <saft:CustomerID>48ad9678be364649bd805b786b5f2c</saft:CustomerID>
+        <saft:Line>
+          <saft:LineNumber>0</saft:LineNumber>
+          <saft:ProductCode>630fefb926eb4dffa7100c7c6b720c</saft:ProductCode>
+          <saft:ProductDescription>Produto 2 com IVA</saft:ProductDescription>
+          <saft:Quantity>1</saft:Quantity>
+          <saft:UnitOfMeasure>Unidades</saft:UnitOfMeasure>
+          <saft:UnitPrice>123</saft:UnitPrice>
+          <saft:TaxPointDate>2011-05-01</saft:TaxPointDate>
+          <saft:Description>Produto 2 com IVA</saft:Description>
+          <saft:CreditAmount>123.00</saft:CreditAmount>
+          <saft:Tax>
+            <saft:TaxType>IVA</saft:TaxType>
+            <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+            <saft:TaxCode>RED</saft:TaxCode>
+            <saft:TaxPercentage>0.1</saft:TaxPercentage>
+          </saft:Tax>
+          <saft:TaxExemptionReason>Art 9 do CIVA</saft:TaxExemptionReason>
+          <saft:SettlementAmount>0</saft:SettlementAmount>
+        </saft:Line>
+        <saft:DocumentTotals>
+          <saft:TaxPayable>12.30</saft:TaxPayable>
+          <saft:NetTotal>123.00</saft:NetTotal>
+          <saft:GrossTotal>135.30</saft:GrossTotal>
+        </saft:DocumentTotals>
+      </saft:Invoice>
+      <saft:Invoice>
+        <saft:InvoiceNo>DEV 1/3</saft:InvoiceNo>
+        <saft:InvoiceStatus>N</saft:InvoiceStatus>
+        <saft:Hash>LKVhS8hE33D96TKxOFdLCGjTh+i4KxQj8k5i+JBzoqzRQlcxzmpFqBZ9KKrzXVuxHH4Lo3AA+BEXjZKWjUW5nhEsXpEfu1Ls3FjgTn7qd6gFt1NukPwYhaF92uHbtII58O40i0MGNUy1LTLI7WdC28bdibz90Yg+Tx7F/ZkvMkA=</saft:Hash>
+        <saft:InvoiceDate>2011-05-01</saft:InvoiceDate>
+        <saft:InvoiceType>TD</saft:InvoiceType>
+        <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+        <saft:SystemEntryDate>2011-05-01T01:00:00</saft:SystemEntryDate>
+        <saft:CustomerID>48ad9678be364649bd805b786b5f2c</saft:CustomerID>
+        <saft:Line>
+          <saft:LineNumber>0</saft:LineNumber>
+          <saft:ProductCode>94d62d0ad91d4298948687f4b0c7c0</saft:ProductCode>
+          <saft:ProductDescription>Produto 1</saft:ProductDescription>
+          <saft:Quantity>1</saft:Quantity>
+          <saft:UnitOfMeasure>Unidades</saft:UnitOfMeasure>
+          <saft:UnitPrice>45</saft:UnitPrice>
+          <saft:TaxPointDate>2011-05-01</saft:TaxPointDate>
+          <saft:Description>Produto 1</saft:Description>
+          <saft:DebitAmount>45.00</saft:DebitAmount>
+          <saft:Tax>
+            <saft:TaxType>IVA</saft:TaxType>
+            <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+            <saft:TaxCode>ISE</saft:TaxCode>
+            <saft:TaxPercentage>0.0</saft:TaxPercentage>
+          </saft:Tax>
+          <saft:TaxExemptionReason>Art 9 do CIVA</saft:TaxExemptionReason>
+          <saft:SettlementAmount>0</saft:SettlementAmount>
+        </saft:Line>
+        <saft:DocumentTotals>
+          <saft:TaxPayable>0.00</saft:TaxPayable>
+          <saft:NetTotal>-45.00</saft:NetTotal>
+          <saft:GrossTotal>-45.00</saft:GrossTotal>
+        </saft:DocumentTotals>
+      </saft:Invoice>
+      <saft:Invoice>
+        <saft:InvoiceNo>REC 1/53</saft:InvoiceNo>
+        <saft:InvoiceStatus>N</saft:InvoiceStatus>
+        <saft:Hash>cP0e+9nJVixW2ED8AJKdoHmbvxEWrx7uDRXVJ86beVBB2K8muRi6TgJuZjDf4Ckv+hEbZkOPCfjQ42PYFXtUF4AcUcW3CWAtptTarb410zq4axGDMEAQZ/hDcvsVPJXvSuRd56lR6dD9xXVHYzE0cAaGd5n6N39jF+UEo0g44n8=</saft:Hash>
+        <saft:InvoiceDate>2011-05-01</saft:InvoiceDate>
+        <saft:InvoiceType>VD</saft:InvoiceType>
+        <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+        <saft:SystemEntryDate>2011-05-01T01:00:00</saft:SystemEntryDate>
+        <saft:CustomerID>48ad9678be364649bd805b786b5f2c</saft:CustomerID>
+        <saft:Line>
+          <saft:LineNumber>0</saft:LineNumber>
+          <saft:ProductCode>94d62d0ad91d4298948687f4b0c7c0</saft:ProductCode>
+          <saft:ProductDescription>Produto 1</saft:ProductDescription>
+          <saft:Quantity>3</saft:Quantity>
+          <saft:UnitOfMeasure>Unidades</saft:UnitOfMeasure>
+          <saft:UnitPrice>45</saft:UnitPrice>
+          <saft:TaxPointDate>2011-05-01</saft:TaxPointDate>
+          <saft:Description>Produto 1</saft:Description>
+          <saft:CreditAmount>135.00</saft:CreditAmount>
+          <saft:Tax>
+            <saft:TaxType>IVA</saft:TaxType>
+            <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+            <saft:TaxCode>ISE</saft:TaxCode>
+            <saft:TaxPercentage>0.0</saft:TaxPercentage>
+          </saft:Tax>
+          <saft:TaxExemptionReason>Art 9 do CIVA</saft:TaxExemptionReason>
+          <saft:SettlementAmount>0</saft:SettlementAmount>
+        </saft:Line>
+        <saft:DocumentTotals>
+          <saft:TaxPayable>0.00</saft:TaxPayable>
+          <saft:NetTotal>135.00</saft:NetTotal>
+          <saft:GrossTotal>135.00</saft:GrossTotal>
+        </saft:DocumentTotals>
+      </saft:Invoice>
+      <saft:Invoice>
+        <saft:InvoiceNo>REC 1/52</saft:InvoiceNo>
+        <saft:InvoiceStatus>N</saft:InvoiceStatus>
+        <saft:Hash>qaYxkrzb2xEH6KX19Jb7SlHVX4gWeP7bsKy2JDZmc12ZNElLMvO6ARNSyUvX09L5LqOSgre19uL9cchWsF8e+j9HFu7bIcB7StDiu9Kr/zPwc293EAbqQACOm2DW0asLn8BInL8pYj1ZQhSXILD9LG9RNbtodTVeOfuW1p/UIWE=</saft:Hash>
+        <saft:InvoiceDate>2011-05-01</saft:InvoiceDate>
+        <saft:InvoiceType>VD</saft:InvoiceType>
+        <saft:SelfBillingIndicator>0</saft:SelfBillingIndicator>
+        <saft:SystemEntryDate>2011-05-01T01:00:00</saft:SystemEntryDate>
+        <saft:CustomerID>e31cf4590097463fb4d00b1af5cf91</saft:CustomerID>
+        <saft:Line>
+          <saft:LineNumber>0</saft:LineNumber>
+          <saft:ProductCode>630fefb926eb4dffa7100c7c6b720c</saft:ProductCode>
+          <saft:ProductDescription>Produto 2 com IVA</saft:ProductDescription>
+          <saft:Quantity>1</saft:Quantity>
+          <saft:UnitOfMeasure>Unidades</saft:UnitOfMeasure>
+          <saft:UnitPrice>123</saft:UnitPrice>
+          <saft:TaxPointDate>2011-05-01</saft:TaxPointDate>
+          <saft:Description>Produto 2 com IVA</saft:Description>
+          <saft:CreditAmount>123.00</saft:CreditAmount>
+          <saft:Tax>
+            <saft:TaxType>IVA</saft:TaxType>
+            <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+            <saft:TaxCode>RED</saft:TaxCode>
+            <saft:TaxPercentage>0.1</saft:TaxPercentage>
+          </saft:Tax>
+          <saft:TaxExemptionReason>Art 9 do CIVA</saft:TaxExemptionReason>
+          <saft:SettlementAmount>0</saft:SettlementAmount>
+        </saft:Line>
+        <saft:Line>
+          <saft:LineNumber>1</saft:LineNumber>
+          <saft:ProductCode>ef1822bc0be345c69db5c7689121f1</saft:ProductCode>
+          <saft:ProductDescription>Produto 3</saft:ProductDescription>
+          <saft:Quantity>1</saft:Quantity>
+          <saft:UnitOfMeasure>Unidades</saft:UnitOfMeasure>
+          <saft:UnitPrice>20</saft:UnitPrice>
+          <saft:TaxPointDate>2011-05-01</saft:TaxPointDate>
+          <saft:Description>Produto 3</saft:Description>
+          <saft:CreditAmount>20.00</saft:CreditAmount>
+          <saft:Tax>
+            <saft:TaxType>IVA</saft:TaxType>
+            <saft:TaxCountryRegion>PT</saft:TaxCountryRegion>
+            <saft:TaxCode>RED</saft:TaxCode>
+            <saft:TaxPercentage>0.1</saft:TaxPercentage>
+          </saft:Tax>
+          <saft:TaxExemptionReason>Art 9 do CIVA</saft:TaxExemptionReason>
+          <saft:SettlementAmount>0</saft:SettlementAmount>
+        </saft:Line>
+        <saft:DocumentTotals>
+          <saft:TaxPayable>14.30</saft:TaxPayable>
+          <saft:NetTotal>143.00</saft:NetTotal>
+          <saft:GrossTotal>157.30</saft:GrossTotal>
+        </saft:DocumentTotals>
+      </saft:Invoice>
+    </saft:SalesInvoices>
+  </saft:SourceDocuments>
+</saft:AuditFile>

@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#/"
+    outputs="_201.ecore#/" topToBottom="true">
+  <nested inputs="bundleentry://1231.fwk758393764/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax60Car;XSDSimpleTypeDefinition=21"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax60Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AccountDescription;XSDElementDeclaration=10"
+      outputs="_201.ecore#//DocumentRoot/accountDescription"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AccountID;XSDElementDeclaration=105/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//AccountIDType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AccountID;XSDElementDeclaration=105"
+      outputs="_201.ecore#//DocumentRoot/accountID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax10Car;XSDSimpleTypeDefinition=16"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax10Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax90Car;XSDSimpleTypeDefinition=23"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax90Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax100Car;XSDSimpleTypeDefinition=24"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax100Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax50Car;XSDSimpleTypeDefinition=20"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax50Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax20Car;XSDSimpleTypeDefinition=17"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax20Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Country;XSDElementDeclaration=108/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//CountryType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition"
+      outputs="_201.ecore#//AddressStructure">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//AddressStructure/buildingNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//AddressStructure/streetName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//AddressStructure/addressDetail"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//AddressStructure/city"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//AddressStructure/postalCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//AddressStructure/region"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructure;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//AddressStructure/country"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Address;XSDElementDeclaration=11"
+      outputs="_201.ecore#//DocumentRoot/address"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressDetail;XSDElementDeclaration=12"
+      outputs="_201.ecore#//DocumentRoot/addressDetail"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax200Car;XSDSimpleTypeDefinition=26"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax200Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ATDocCodeID;XSDElementDeclaration=13"
+      outputs="_201.ecore#//DocumentRoot/aTDocCodeID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFileVersion;XSDElementDeclaration=106/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//AuditFileVersionType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CompanyID;XSDElementDeclaration=107/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//CompanyIDType"/>
+  <nested inputs="bundleentry://1231.fwk758393764/cache/www.w3.org/2001/XMLSchema.xsd#//integer;XSDSimpleTypeDefinition=40"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTPortugueseVatNumber;XSDSimpleTypeDefinition=13"
+      outputs="_201.ecore#//SAFPTPortugueseVatNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//TaxAccountingBasisType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//TaxAccountingBasisType/C"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//TaxAccountingBasisType/F"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//TaxAccountingBasisType/I"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//TaxAccountingBasisType/S"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="_201.ecore#//TaxAccountingBasisType/E"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124/XSDSimpleTypeDefinition/XSDEnumerationFacet=5"
+        outputs="_201.ecore#//TaxAccountingBasisType/P"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PostalCodePT;XSDSimpleTypeDefinition=4"
+      outputs="_201.ecore#//PostalCodePT"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1"
+      outputs="_201.ecore#//AddressStructurePT">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//AddressStructurePT/buildingNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//AddressStructurePT/streetName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//AddressStructurePT/addressDetail"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//AddressStructurePT/city"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//AddressStructurePT/postalCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//AddressStructurePT/region"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AddressStructurePT;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//AddressStructurePT/country"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//FiscalYear;XSDElementDeclaration=112/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//FiscalYearType"/>
+  <nested inputs="bundleentry://1231.fwk758393764/cache/www.w3.org/2001/XMLSchema.xsd#//date;XSDSimpleTypeDefinition=17"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Date"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTDateSpan;XSDSimpleTypeDefinition=6"
+      outputs="_201.ecore#//SAFPTDateSpan"/>
+  <nested inputs="bundleentry://1231.fwk758393764/cache/www.w3.org/2001/XMLSchema.xsd#//nonNegativeInteger;XSDSimpleTypeDefinition=47"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//NonNegativeInteger"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTProductID;XSDSimpleTypeDefinition=14"
+      outputs="_201.ecore#//SAFPTProductID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax30Car;XSDSimpleTypeDefinition=18"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax30Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax255Car;XSDSimpleTypeDefinition=27"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax255Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//HeaderType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//HeaderType/auditFileVersion"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//HeaderType/companyID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//HeaderType/taxRegistrationNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//HeaderType/taxAccountingBasis"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//HeaderType/companyName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//HeaderType/businessName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//HeaderType/companyAddress"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//HeaderType/fiscalYear"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//HeaderType/startDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//HeaderType/endDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//HeaderType/currencyCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//HeaderType/dateCreated"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_201.ecore#//HeaderType/taxEntity"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13"
+        outputs="_201.ecore#//HeaderType/productCompanyTaxID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=14"
+        outputs="_201.ecore#//HeaderType/softwareCertificateNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=15"
+        outputs="_201.ecore#//HeaderType/productID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=16"
+        outputs="_201.ecore#//HeaderType/productVersion"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17"
+        outputs="_201.ecore#//HeaderType/headerComment"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18"
+        outputs="_201.ecore#//HeaderType/telephone"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19"
+        outputs="_201.ecore#//HeaderType/fax"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=20"
+        outputs="_201.ecore#//HeaderType/email"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=21"
+        outputs="_201.ecore#//HeaderType/website"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTGLAccountID;XSDSimpleTypeDefinition=8"
+      outputs="_201.ecore#//SAFPTGLAccountID"/>
+  <nested inputs="bundleentry://1231.fwk758393764/cache/www.w3.org/2001/XMLSchema.xsd#//decimal;XSDSimpleTypeDefinition=13"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Decimal"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFmonetaryType;XSDSimpleTypeDefinition=3"
+      outputs="_201.ecore#//SAFmonetaryType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//GroupingCategoryType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//GroupingCategoryType/GR"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//GroupingCategoryType/GA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//GroupingCategoryType/GM"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//GroupingCategoryType/AR"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="_201.ecore#//GroupingCategoryType/AA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113/XSDSimpleTypeDefinition/XSDEnumerationFacet=5"
+        outputs="_201.ecore#//GroupingCategoryType/AM"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//GeneralLedgerType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//GeneralLedgerType/accountID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//GeneralLedgerType/accountDescription"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//GeneralLedgerType/openingDebitBalance"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//GeneralLedgerType/openingCreditBalance"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//GeneralLedgerType/closingDebitBalance"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//GeneralLedgerType/closingCreditBalance"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//GeneralLedgerType/groupingCategory"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//GeneralLedgerType/groupingCode"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SelfBillingIndicator;XSDElementDeclaration=122/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//SelfBillingIndicatorType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//CustomerType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//CustomerType/customerID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//CustomerType/accountID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//CustomerType/customerTaxID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//CustomerType/companyName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//CustomerType/contact"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//CustomerType/billingAddress"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//CustomerType/shipToAddress"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//CustomerType/telephone"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//CustomerType/fax"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//CustomerType/email"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//CustomerType/website"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//CustomerType/selfBillingIndicator"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierCountry;XSDSimpleTypeDefinition=30"
+      outputs="_201.ecore#//SupplierCountry"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9"
+      outputs="_201.ecore#//SupplierAddressStructure">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//SupplierAddressStructure/buildingNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//SupplierAddressStructure/streetName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//SupplierAddressStructure/addressDetail"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//SupplierAddressStructure/city"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//SupplierAddressStructure/postalCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//SupplierAddressStructure/region"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierAddressStructure;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//SupplierAddressStructure/country"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//SupplierType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//SupplierType/supplierID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//SupplierType/accountID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//SupplierType/supplierTaxID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//SupplierType/companyName"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//SupplierType/contact"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//SupplierType/billingAddress"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//SupplierType/shipFromAddress"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//SupplierType/telephone"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//SupplierType/fax"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//SupplierType/email"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//SupplierType/website"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//SupplierType/selfBillingIndicator"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductType;XSDElementDeclaration=121/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//ProductTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductType;XSDElementDeclaration=121/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//ProductTypeType/P"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductType;XSDElementDeclaration=121/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//ProductTypeType/S"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductType;XSDElementDeclaration=121/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//ProductTypeType/O"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductType;XSDElementDeclaration=121/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//ProductTypeType/I"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//ProductType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//ProductType/productType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//ProductType/productCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//ProductType/productGroup"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//ProductType/productDescription"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//ProductType/productNumberCode"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxType;XSDElementDeclaration=127/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//TaxTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxType;XSDElementDeclaration=127/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//TaxTypeType/IVA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxType;XSDElementDeclaration=127/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//TaxTypeType/IS"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxType;XSDElementDeclaration=127/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//TaxTypeType/NS"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxCountryRegion;XSDElementDeclaration=126/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//TaxCountryRegionType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxCode;XSDElementDeclaration=125/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//TaxCodeType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFdateType;XSDSimpleTypeDefinition=1"
+      outputs="_201.ecore#//SAFdateType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFdecimalType;XSDSimpleTypeDefinition=2"
+      outputs="_201.ecore#//SAFdecimalType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//TaxTableEntryType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//TaxTableEntryType/taxType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//TaxTableEntryType/taxCountryRegion"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//TaxTableEntryType/taxCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//TaxTableEntryType/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//TaxTableEntryType/taxExpirationDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//TaxTableEntryType/taxPercentage"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//TaxTableEntryType/taxAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTable;XSDElementDeclaration=6/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//TaxTableType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTable;XSDElementDeclaration=6/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//TaxTableType/taxTableEntry"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MasterFiles;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//MasterFilesType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MasterFiles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//MasterFilesType/generalLedger"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MasterFiles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//MasterFilesType/customer"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MasterFiles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//MasterFilesType/supplier"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MasterFiles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//MasterFilesType/product"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MasterFiles;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//MasterFilesType/taxTable"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTJournalID;XSDSimpleTypeDefinition=9"
+      outputs="_201.ecore#//SAFPTJournalID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTTransactionID;XSDSimpleTypeDefinition=29"
+      outputs="_201.ecore#//SAFPTTransactionID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTAccountingPeriod;XSDSimpleTypeDefinition=5"
+      outputs="_201.ecore#//SAFPTAccountingPeriod"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFTPTDocArchivalNumber;XSDSimpleTypeDefinition=7"
+      outputs="_201.ecore#//SAFTPTDocArchivalNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionType;XSDElementDeclaration=128/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//TransactionTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionType;XSDElementDeclaration=128/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//TransactionTypeType/N"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionType;XSDElementDeclaration=128/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//TransactionTypeType/R"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionType;XSDElementDeclaration=128/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//TransactionTypeType/A"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionType;XSDElementDeclaration=128/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//TransactionTypeType/J"/>
+  </nested>
+  <nested inputs="bundleentry://1231.fwk758393764/cache/www.w3.org/2001/XMLSchema.xsd#//dateTime;XSDSimpleTypeDefinition=15"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//DateTime"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFdateTimeType;XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//SAFdateTimeType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//LineType3">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType3/recordID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType3/accountID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//LineType3/sourceDocumentID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//LineType3/systemEntryDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//LineType3/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType3/debitAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType3/creditAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//TransactionType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//TransactionType/transactionID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//TransactionType/period"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//TransactionType/transactionDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//TransactionType/sourceID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//TransactionType/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//TransactionType/docArchivalNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//TransactionType/transactionType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//TransactionType/gLPostingDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//TransactionType/customerID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//TransactionType/supplierID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/Transaction;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//TransactionType/line"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//JournalType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//JournalType/journalID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//JournalType/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Journal;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//JournalType/transaction"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//GeneralLedgerEntriesType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//GeneralLedgerEntriesType/numberOfEntries"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//GeneralLedgerEntriesType/totalDebit"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//GeneralLedgerEntriesType/totalCredit"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//GeneralLedgerEntriesType/journal"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceNo;XSDElementDeclaration=114/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//InvoiceNoType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//InvoiceStatusType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//InvoiceStatusType/N"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//InvoiceStatusType/S"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//InvoiceStatusType/A"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//InvoiceStatusType/R"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="_201.ecore#//InvoiceStatusType/F"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceBilling;XSDElementDeclaration=123/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//SourceBillingType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceBilling;XSDElementDeclaration=123/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//SourceBillingType/P"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceBilling;XSDElementDeclaration=123/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//SourceBillingType/I"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceBilling;XSDElementDeclaration=123/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//SourceBillingType/M"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//DocumentStatusType2">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//DocumentStatusType2/invoiceStatus"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//DocumentStatusType2/invoiceStatusDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//DocumentStatusType2/reason"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//DocumentStatusType2/sourceID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//DocumentStatusType2/sourceBilling"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax172Car;XSDSimpleTypeDefinition=25"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax172Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax40Car;XSDSimpleTypeDefinition=19"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax40Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Period;XSDElementDeclaration=120/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//PeriodType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//InvoiceTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//InvoiceTypeType/FT"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//InvoiceTypeType/FS"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//InvoiceTypeType/FR"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//InvoiceTypeType/ND"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="_201.ecore#//InvoiceTypeType/NC"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=5"
+        outputs="_201.ecore#//InvoiceTypeType/VD"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=6"
+        outputs="_201.ecore#//InvoiceTypeType/TV"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=7"
+        outputs="_201.ecore#//InvoiceTypeType/TD"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=8"
+        outputs="_201.ecore#//InvoiceTypeType/AA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=9"
+        outputs="_201.ecore#//InvoiceTypeType/DA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=10"
+        outputs="_201.ecore#//InvoiceTypeType/RP"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=11"
+        outputs="_201.ecore#//InvoiceTypeType/RE"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=12"
+        outputs="_201.ecore#//InvoiceTypeType/CS"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=13"
+        outputs="_201.ecore#//InvoiceTypeType/LD"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116/XSDSimpleTypeDefinition/XSDEnumerationFacet=14"
+        outputs="_201.ecore#//InvoiceTypeType/RA"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//EACCode;XSDElementDeclaration=111/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//EACCodeType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8"
+      outputs="_201.ecore#//ShippingPointStructure">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//ShippingPointStructure/deliveryID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//ShippingPointStructure/deliveryDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//ShippingPointStructure/group"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//ShippingPointStructure/warehouseID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//ShippingPointStructure/locationID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShippingPointStructure;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//ShippingPointStructure/address"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OrderReferences;XSDComplexTypeDefinition=4"
+      outputs="_201.ecore#//OrderReferences">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OrderReferences;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//OrderReferences/originatingON"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OrderReferences;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//OrderReferences/orderDate"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//References;XSDComplexTypeDefinition=6"
+      outputs="_201.ecore#//References">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//References;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//References/reference"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//References;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//References/reason"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Tax;XSDComplexTypeDefinition=10"
+      outputs="_201.ecore#//Tax">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Tax;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//Tax/taxType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Tax;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//Tax/taxCountryRegion"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Tax;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//Tax/taxCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Tax;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=3/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//Tax/taxPercentage"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Tax;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=3/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//Tax/taxAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTPortugueseTaxExemption;XSDSimpleTypeDefinition=12"
+      outputs="_201.ecore#//SAFPTPortugueseTaxExemption"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//LineType1">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType1/lineNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType1/orderReferences"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//LineType1/productCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//LineType1/productDescription"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//LineType1/quantity"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//LineType1/unitOfMeasure"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//LineType1/unitPrice"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//LineType1/taxPointDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//LineType1/references"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//LineType1/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType1/debitAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType1/creditAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//LineType1/tax"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_201.ecore#//LineType1/taxExemptionReason"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13"
+        outputs="_201.ecore#//LineType1/settlementAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CurrencyCode;XSDElementDeclaration=109/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//CurrencyCodeType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Currency;XSDComplexTypeDefinition=2"
+      outputs="_201.ecore#//Currency">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Currency;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//Currency/currencyCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Currency;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//Currency/currencyAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Currency;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//Currency/exchangeRate"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Settlement;XSDComplexTypeDefinition=7"
+      outputs="_201.ecore#//Settlement">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Settlement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//Settlement/settlementDiscount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Settlement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//Settlement/settlementAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Settlement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//Settlement/settlementDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Settlement;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//Settlement/paymentTerms"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//PaymentMechanismType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//PaymentMechanismType/CC"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//PaymentMechanismType/CD"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//PaymentMechanismType/CH"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//PaymentMechanismType/CS"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="_201.ecore#//PaymentMechanismType/LC"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=5"
+        outputs="_201.ecore#//PaymentMechanismType/MB"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=6"
+        outputs="_201.ecore#//PaymentMechanismType/NU"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=7"
+        outputs="_201.ecore#//PaymentMechanismType/PR"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=8"
+        outputs="_201.ecore#//PaymentMechanismType/TB"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119/XSDSimpleTypeDefinition/XSDEnumerationFacet=9"
+        outputs="_201.ecore#//PaymentMechanismType/TR"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Payment;XSDComplexTypeDefinition=5"
+      outputs="_201.ecore#//Payment">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Payment;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//Payment/paymentMechanism"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Payment;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//Payment/paymentAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Payment;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//Payment/paymentDate"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//DocumentTotalsType2">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//DocumentTotalsType2/taxPayable"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//DocumentTotalsType2/netTotal"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//DocumentTotalsType2/grossTotal"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//DocumentTotalsType2/currency"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//DocumentTotalsType2/settlement"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//DocumentTotalsType2/payment"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTaxType;XSDElementDeclaration=129/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//WithholdingTaxTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTaxType;XSDElementDeclaration=129/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//WithholdingTaxTypeType/IRS"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTaxType;XSDElementDeclaration=129/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//WithholdingTaxTypeType/IRC"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTaxType;XSDElementDeclaration=129/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//WithholdingTaxTypeType/IS"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTax;XSDComplexTypeDefinition=11"
+      outputs="_201.ecore#//WithholdingTax">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTax;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//WithholdingTax/withholdingTaxType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTax;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//WithholdingTax/withholdingTaxDescription"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTax;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//WithholdingTax/withholdingTaxAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//InvoiceType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//InvoiceType/invoiceNo"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//InvoiceType/documentStatus"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//InvoiceType/hash"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//InvoiceType/hashControl"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//InvoiceType/period"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//InvoiceType/invoiceDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//InvoiceType/invoiceType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//InvoiceType/selfBillingIndicator"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//InvoiceType/sourceID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//InvoiceType/eACCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//InvoiceType/systemEntryDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//InvoiceType/transactionID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_201.ecore#//InvoiceType/customerID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13"
+        outputs="_201.ecore#//InvoiceType/shipTo"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=14"
+        outputs="_201.ecore#//InvoiceType/shipFrom"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=15"
+        outputs="_201.ecore#//InvoiceType/movementEndTime"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=16"
+        outputs="_201.ecore#//InvoiceType/movementStartTime"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17"
+        outputs="_201.ecore#//InvoiceType/line"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18"
+        outputs="_201.ecore#//InvoiceType/documentTotals"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/Invoice;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19"
+        outputs="_201.ecore#//InvoiceType/withholdingTax"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//SalesInvoicesType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//SalesInvoicesType/numberOfEntries"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//SalesInvoicesType/totalDebit"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//SalesInvoicesType/totalCredit"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/SalesInvoices;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//SalesInvoicesType/invoice"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DocumentNumber;XSDElementDeclaration=110/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//DocumentNumberType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatus;XSDElementDeclaration=117/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//MovementStatusType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatus;XSDElementDeclaration=117/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//MovementStatusType/N"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatus;XSDElementDeclaration=117/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//MovementStatusType/T"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatus;XSDElementDeclaration=117/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//MovementStatusType/A"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatus;XSDElementDeclaration=117/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//MovementStatusType/R"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//DocumentStatusType1">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//DocumentStatusType1/movementStatus"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//DocumentStatusType1/movementStatusDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//DocumentStatusType1/reason"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//DocumentStatusType1/sourceID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//DocumentStatusType1/sourceBilling"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//MovementTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//MovementTypeType/GR"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//MovementTypeType/GT"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//MovementTypeType/GA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118/XSDSimpleTypeDefinition/XSDEnumerationFacet=3"
+        outputs="_201.ecore#//MovementTypeType/GC"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118/XSDSimpleTypeDefinition/XSDEnumerationFacet=4"
+        outputs="_201.ecore#//MovementTypeType/GD"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFTPTMovementTaxType;XSDSimpleTypeDefinition=11"
+      outputs="_201.ecore#//SAFTPTMovementTaxType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFTPTMovementTaxType;XSDSimpleTypeDefinition=11/XSDEnumerationFacet"
+        outputs="_201.ecore#//SAFTPTMovementTaxType/IVA"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFTPTMovementTaxType;XSDSimpleTypeDefinition=11/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//SAFTPTMovementTaxType/NS"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFTPTMovementTaxCode;XSDSimpleTypeDefinition=10"
+      outputs="_201.ecore#//SAFTPTMovementTaxCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementTax;XSDComplexTypeDefinition=3"
+      outputs="_201.ecore#//MovementTax">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementTax;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//MovementTax/taxType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementTax;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//MovementTax/taxCountryRegion"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementTax;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//MovementTax/taxCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementTax;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//MovementTax/taxPercentage"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//LineType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType/lineNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType/orderReferences"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//LineType/productCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//LineType/productDescription"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//LineType/quantity"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//LineType/unitOfMeasure"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//LineType/unitPrice"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//LineType/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType/debitAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType/creditAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//LineType/tax"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//LineType/taxExemptionReason"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//LineType/settlementAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//DocumentTotalsType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//DocumentTotalsType/taxPayable"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//DocumentTotalsType/netTotal"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//DocumentTotalsType/grossTotal"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//DocumentTotalsType/currency"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//StockMovementType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//StockMovementType/documentNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//StockMovementType/documentStatus"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//StockMovementType/hash"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//StockMovementType/hashControl"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//StockMovementType/period"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//StockMovementType/movementDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//StockMovementType/movementType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//StockMovementType/systemEntryDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//StockMovementType/transactionID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//StockMovementType/customerID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//StockMovementType/supplierID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//StockMovementType/sourceID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//StockMovementType/eACCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_201.ecore#//StockMovementType/movementComments"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=13"
+        outputs="_201.ecore#//StockMovementType/shipTo"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=14"
+        outputs="_201.ecore#//StockMovementType/shipFrom"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=15"
+        outputs="_201.ecore#//StockMovementType/movementEndTime"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=16"
+        outputs="_201.ecore#//StockMovementType/movementStartTime"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=17"
+        outputs="_201.ecore#//StockMovementType/aTDocCodeID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=18"
+        outputs="_201.ecore#//StockMovementType/line"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/StockMovement;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=19"
+        outputs="_201.ecore#//StockMovementType/documentTotals"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//MovementOfGoodsType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//MovementOfGoodsType/numberOfMovementLines"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//MovementOfGoodsType/totalQuantityIssued"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/MovementOfGoods;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//MovementOfGoodsType/stockMovement"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkStatus;XSDElementDeclaration=130/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//WorkStatusType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkStatus;XSDElementDeclaration=130/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//WorkStatusType/N"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkStatus;XSDElementDeclaration=130/XSDSimpleTypeDefinition/XSDEnumerationFacet=1"
+        outputs="_201.ecore#//WorkStatusType/A"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkStatus;XSDElementDeclaration=130/XSDSimpleTypeDefinition/XSDEnumerationFacet=2"
+        outputs="_201.ecore#//WorkStatusType/F"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//DocumentStatusType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//DocumentStatusType/workStatus"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//DocumentStatusType/workStatusDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//DocumentStatusType/reason"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/DocumentStatus;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//DocumentStatusType/sourceID"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkType;XSDElementDeclaration=131/XSDSimpleTypeDefinition"
+      outputs="_201.ecore#//WorkTypeType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkType;XSDElementDeclaration=131/XSDSimpleTypeDefinition/XSDEnumerationFacet"
+        outputs="_201.ecore#//WorkTypeType/DC"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//LineType2">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType2/lineNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType2/orderReferences"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//LineType2/productCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//LineType2/productDescription"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//LineType2/quantity"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//LineType2/unitOfMeasure"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//LineType2/unitPrice"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//LineType2/taxPointDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//LineType2/description"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//LineType2/debitAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//LineType2/creditAmount"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//LineType2/tax"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//LineType2/taxExemptionReason"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11/Line;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_201.ecore#//LineType2/settlementAmount"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//DocumentTotalsType1">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//DocumentTotalsType1/taxPayable"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//DocumentTotalsType1/netTotal"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//DocumentTotalsType1/grossTotal"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12/DocumentTotals;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//DocumentTotalsType1/currency"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//WorkDocumentType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//WorkDocumentType/documentNumber"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//WorkDocumentType/documentStatus"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//WorkDocumentType/hash"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//WorkDocumentType/hashControl"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="_201.ecore#//WorkDocumentType/period"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="_201.ecore#//WorkDocumentType/workDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="_201.ecore#//WorkDocumentType/workType"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=7"
+        outputs="_201.ecore#//WorkDocumentType/sourceID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=8"
+        outputs="_201.ecore#//WorkDocumentType/eACCode"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=9"
+        outputs="_201.ecore#//WorkDocumentType/systemEntryDate"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="_201.ecore#//WorkDocumentType/customerID"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=11"
+        outputs="_201.ecore#//WorkDocumentType/line"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3/WorkDocument;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=12"
+        outputs="_201.ecore#//WorkDocumentType/documentTotals"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//WorkingDocumentsType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//WorkingDocumentsType/numberOfEntries"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//WorkingDocumentsType/totalDebit"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//WorkingDocumentsType/totalCredit"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/WorkingDocuments;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//WorkingDocumentsType/workDocument"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//SourceDocumentsType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//SourceDocumentsType/salesInvoices"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//SourceDocumentsType/movementOfGoods"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//SourceDocumentsType/workingDocuments"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="_201.ecore#//AuditFileType">
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="_201.ecore#//AuditFileType/header"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="_201.ecore#//AuditFileType/masterFiles"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="_201.ecore#//AuditFileType/generalLedgerEntries"/>
+    <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="_201.ecore#//AuditFileType/sourceDocuments"/>
+  </nested>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFile;XSDElementDeclaration"
+      outputs="_201.ecore#//DocumentRoot/auditFile"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//AuditFileVersion;XSDElementDeclaration=106"
+      outputs="_201.ecore#//DocumentRoot/auditFileVersion"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//BillingAddress;XSDElementDeclaration=14"
+      outputs="_201.ecore#//DocumentRoot/billingAddress"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//BuildingNumber;XSDElementDeclaration=15"
+      outputs="_201.ecore#//DocumentRoot/buildingNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//BusinessName;XSDElementDeclaration=16"
+      outputs="_201.ecore#//DocumentRoot/businessName"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//City;XSDElementDeclaration=17"
+      outputs="_201.ecore#//DocumentRoot/city"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ClosingCreditBalance;XSDElementDeclaration=18"
+      outputs="_201.ecore#//DocumentRoot/closingCreditBalance"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ClosingDebitBalance;XSDElementDeclaration=19"
+      outputs="_201.ecore#//DocumentRoot/closingDebitBalance"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CompanyAddress;XSDElementDeclaration=20"
+      outputs="_201.ecore#//DocumentRoot/companyAddress"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CompanyID;XSDElementDeclaration=107"
+      outputs="_201.ecore#//DocumentRoot/companyID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CompanyName;XSDElementDeclaration=21"
+      outputs="_201.ecore#//DocumentRoot/companyName"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Contact;XSDElementDeclaration=22"
+      outputs="_201.ecore#//DocumentRoot/contact"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Country;XSDElementDeclaration=108"
+      outputs="_201.ecore#//DocumentRoot/country"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CreditAmount;XSDElementDeclaration=23"
+      outputs="_201.ecore#//DocumentRoot/creditAmount"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CurrencyAmount;XSDElementDeclaration=24"
+      outputs="_201.ecore#//DocumentRoot/currencyAmount"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CurrencyCode;XSDElementDeclaration=109"
+      outputs="_201.ecore#//DocumentRoot/currencyCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Customer;XSDElementDeclaration=3"
+      outputs="_201.ecore#//DocumentRoot/customer"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CustomerID;XSDElementDeclaration=25"
+      outputs="_201.ecore#//DocumentRoot/customerID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//CustomerTaxID;XSDElementDeclaration=26"
+      outputs="_201.ecore#//DocumentRoot/customerTaxID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DateCreated;XSDElementDeclaration=27"
+      outputs="_201.ecore#//DocumentRoot/dateCreated"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DebitAmount;XSDElementDeclaration=28"
+      outputs="_201.ecore#//DocumentRoot/debitAmount"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DeliveryDate;XSDElementDeclaration=29"
+      outputs="_201.ecore#//DocumentRoot/deliveryDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DeliveryID;XSDElementDeclaration=30"
+      outputs="_201.ecore#//DocumentRoot/deliveryID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Description;XSDElementDeclaration=31"
+      outputs="_201.ecore#//DocumentRoot/description"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DocArchivalNumber;XSDElementDeclaration=32"
+      outputs="_201.ecore#//DocumentRoot/docArchivalNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//DocumentNumber;XSDElementDeclaration=110"
+      outputs="_201.ecore#//DocumentRoot/documentNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//EACCode;XSDElementDeclaration=111"
+      outputs="_201.ecore#//DocumentRoot/eACCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Email;XSDElementDeclaration=33"
+      outputs="_201.ecore#//DocumentRoot/email"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//EndDate;XSDElementDeclaration=34"
+      outputs="_201.ecore#//DocumentRoot/endDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ExchangeRate;XSDElementDeclaration=35"
+      outputs="_201.ecore#//DocumentRoot/exchangeRate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Fax;XSDElementDeclaration=36"
+      outputs="_201.ecore#//DocumentRoot/fax"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//FiscalYear;XSDElementDeclaration=112"
+      outputs="_201.ecore#//DocumentRoot/fiscalYear"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedger;XSDElementDeclaration=2"
+      outputs="_201.ecore#//DocumentRoot/generalLedger"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GeneralLedgerEntries;XSDElementDeclaration=8"
+      outputs="_201.ecore#//DocumentRoot/generalLedgerEntries"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GLPostingDate;XSDElementDeclaration=37"
+      outputs="_201.ecore#//DocumentRoot/gLPostingDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GrossTotal;XSDElementDeclaration=38"
+      outputs="_201.ecore#//DocumentRoot/grossTotal"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//GroupingCategory;XSDElementDeclaration=113"
+      outputs="_201.ecore#//DocumentRoot/groupingCategory"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Hash;XSDElementDeclaration=39"
+      outputs="_201.ecore#//DocumentRoot/hash"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//HashControl;XSDElementDeclaration=40"
+      outputs="_201.ecore#//DocumentRoot/hashControl"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Header;XSDElementDeclaration=1"
+      outputs="_201.ecore#//DocumentRoot/header"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//HeaderComment;XSDElementDeclaration=41"
+      outputs="_201.ecore#//DocumentRoot/headerComment"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceDate;XSDElementDeclaration=42"
+      outputs="_201.ecore#//DocumentRoot/invoiceDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceNo;XSDElementDeclaration=114"
+      outputs="_201.ecore#//DocumentRoot/invoiceNo"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatus;XSDElementDeclaration=115"
+      outputs="_201.ecore#//DocumentRoot/invoiceStatus"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceStatusDate;XSDElementDeclaration=43"
+      outputs="_201.ecore#//DocumentRoot/invoiceStatusDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//InvoiceType;XSDElementDeclaration=116"
+      outputs="_201.ecore#//DocumentRoot/invoiceType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//JournalID;XSDElementDeclaration=44"
+      outputs="_201.ecore#//DocumentRoot/journalID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//LineNumber;XSDElementDeclaration=45"
+      outputs="_201.ecore#//DocumentRoot/lineNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//LocationID;XSDElementDeclaration=46"
+      outputs="_201.ecore#//DocumentRoot/locationID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementComments;XSDElementDeclaration=47"
+      outputs="_201.ecore#//DocumentRoot/movementComments"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementDate;XSDElementDeclaration=48"
+      outputs="_201.ecore#//DocumentRoot/movementDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementEndTime;XSDElementDeclaration=49"
+      outputs="_201.ecore#//DocumentRoot/movementEndTime"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStartTime;XSDElementDeclaration=50"
+      outputs="_201.ecore#//DocumentRoot/movementStartTime"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatus;XSDElementDeclaration=117"
+      outputs="_201.ecore#//DocumentRoot/movementStatus"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementStatusDate;XSDElementDeclaration=51"
+      outputs="_201.ecore#//DocumentRoot/movementStatusDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//MovementType;XSDElementDeclaration=118"
+      outputs="_201.ecore#//DocumentRoot/movementType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//NetTotal;XSDElementDeclaration=52"
+      outputs="_201.ecore#//DocumentRoot/netTotal"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//NumberOfEntries;XSDElementDeclaration=53"
+      outputs="_201.ecore#//DocumentRoot/numberOfEntries"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//NumberOfMovementLines;XSDElementDeclaration=54"
+      outputs="_201.ecore#//DocumentRoot/numberOfMovementLines"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OpeningCreditBalance;XSDElementDeclaration=55"
+      outputs="_201.ecore#//DocumentRoot/openingCreditBalance"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OpeningDebitBalance;XSDElementDeclaration=56"
+      outputs="_201.ecore#//DocumentRoot/openingDebitBalance"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OrderDate;XSDElementDeclaration=57"
+      outputs="_201.ecore#//DocumentRoot/orderDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//OriginatingON;XSDElementDeclaration=58"
+      outputs="_201.ecore#//DocumentRoot/originatingON"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PaymentMechanism;XSDElementDeclaration=119"
+      outputs="_201.ecore#//DocumentRoot/paymentMechanism"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Period;XSDElementDeclaration=120"
+      outputs="_201.ecore#//DocumentRoot/period"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//PostalCode;XSDElementDeclaration=59"
+      outputs="_201.ecore#//DocumentRoot/postalCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Product;XSDElementDeclaration=5"
+      outputs="_201.ecore#//DocumentRoot/product"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductCode;XSDElementDeclaration=60"
+      outputs="_201.ecore#//DocumentRoot/productCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductCompanyTaxID;XSDElementDeclaration=61"
+      outputs="_201.ecore#//DocumentRoot/productCompanyTaxID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductDescription;XSDElementDeclaration=62"
+      outputs="_201.ecore#//DocumentRoot/productDescription"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductGroup;XSDElementDeclaration=63"
+      outputs="_201.ecore#//DocumentRoot/productGroup"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductID;XSDElementDeclaration=64"
+      outputs="_201.ecore#//DocumentRoot/productID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductNumberCode;XSDElementDeclaration=65"
+      outputs="_201.ecore#//DocumentRoot/productNumberCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductType;XSDElementDeclaration=121"
+      outputs="_201.ecore#//DocumentRoot/productType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ProductVersion;XSDElementDeclaration=66"
+      outputs="_201.ecore#//DocumentRoot/productVersion"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Quantity;XSDElementDeclaration=67"
+      outputs="_201.ecore#//DocumentRoot/quantity"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Reason;XSDElementDeclaration=68"
+      outputs="_201.ecore#//DocumentRoot/reason"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//RecordID;XSDElementDeclaration=69"
+      outputs="_201.ecore#//DocumentRoot/recordID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Reference;XSDElementDeclaration=70"
+      outputs="_201.ecore#//DocumentRoot/reference"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Region;XSDElementDeclaration=71"
+      outputs="_201.ecore#//DocumentRoot/region"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SelfBillingIndicator;XSDElementDeclaration=122"
+      outputs="_201.ecore#//DocumentRoot/selfBillingIndicator"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SettlementAmount;XSDElementDeclaration=72"
+      outputs="_201.ecore#//DocumentRoot/settlementAmount"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShipFrom;XSDElementDeclaration=73"
+      outputs="_201.ecore#//DocumentRoot/shipFrom"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShipFromAddress;XSDElementDeclaration=74"
+      outputs="_201.ecore#//DocumentRoot/shipFromAddress"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShipTo;XSDElementDeclaration=75"
+      outputs="_201.ecore#//DocumentRoot/shipTo"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//ShipToAddress;XSDElementDeclaration=76"
+      outputs="_201.ecore#//DocumentRoot/shipToAddress"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SoftwareCertificateNumber;XSDElementDeclaration=77"
+      outputs="_201.ecore#//DocumentRoot/softwareCertificateNumber"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceBilling;XSDElementDeclaration=123"
+      outputs="_201.ecore#//DocumentRoot/sourceBilling"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocumentID;XSDElementDeclaration=78"
+      outputs="_201.ecore#//DocumentRoot/sourceDocumentID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceDocuments;XSDElementDeclaration=9"
+      outputs="_201.ecore#//DocumentRoot/sourceDocuments"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SourceID;XSDElementDeclaration=79"
+      outputs="_201.ecore#//DocumentRoot/sourceID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//StartDate;XSDElementDeclaration=80"
+      outputs="_201.ecore#//DocumentRoot/startDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//StreetName;XSDElementDeclaration=81"
+      outputs="_201.ecore#//DocumentRoot/streetName"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Supplier;XSDElementDeclaration=4"
+      outputs="_201.ecore#//DocumentRoot/supplier"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierID;XSDElementDeclaration=82"
+      outputs="_201.ecore#//DocumentRoot/supplierID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SupplierTaxID;XSDElementDeclaration=83"
+      outputs="_201.ecore#//DocumentRoot/supplierTaxID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SystemEntryDate;XSDElementDeclaration=84"
+      outputs="_201.ecore#//DocumentRoot/systemEntryDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAccountingBasis;XSDElementDeclaration=124"
+      outputs="_201.ecore#//DocumentRoot/taxAccountingBasis"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxAmount;XSDElementDeclaration=85"
+      outputs="_201.ecore#//DocumentRoot/taxAmount"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxCode;XSDElementDeclaration=125"
+      outputs="_201.ecore#//DocumentRoot/taxCode"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxCountryRegion;XSDElementDeclaration=126"
+      outputs="_201.ecore#//DocumentRoot/taxCountryRegion"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxEntity;XSDElementDeclaration=86"
+      outputs="_201.ecore#//DocumentRoot/taxEntity"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxExemptionReason;XSDElementDeclaration=87"
+      outputs="_201.ecore#//DocumentRoot/taxExemptionReason"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxExpirationDate;XSDElementDeclaration=88"
+      outputs="_201.ecore#//DocumentRoot/taxExpirationDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxPayable;XSDElementDeclaration=89"
+      outputs="_201.ecore#//DocumentRoot/taxPayable"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxPercentage;XSDElementDeclaration=90"
+      outputs="_201.ecore#//DocumentRoot/taxPercentage"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxPointDate;XSDElementDeclaration=91"
+      outputs="_201.ecore#//DocumentRoot/taxPointDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTable;XSDElementDeclaration=6"
+      outputs="_201.ecore#//DocumentRoot/taxTable"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxTableEntry;XSDElementDeclaration=7"
+      outputs="_201.ecore#//DocumentRoot/taxTableEntry"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxType;XSDElementDeclaration=127"
+      outputs="_201.ecore#//DocumentRoot/taxType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TaxVerificationDate;XSDElementDeclaration=92"
+      outputs="_201.ecore#//DocumentRoot/taxVerificationDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Telephone;XSDElementDeclaration=93"
+      outputs="_201.ecore#//DocumentRoot/telephone"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TotalCredit;XSDElementDeclaration=94"
+      outputs="_201.ecore#//DocumentRoot/totalCredit"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TotalDebit;XSDElementDeclaration=95"
+      outputs="_201.ecore#//DocumentRoot/totalDebit"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TotalQuantityIssued;XSDElementDeclaration=96"
+      outputs="_201.ecore#//DocumentRoot/totalQuantityIssued"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionDate;XSDElementDeclaration=97"
+      outputs="_201.ecore#//DocumentRoot/transactionDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionID;XSDElementDeclaration=98"
+      outputs="_201.ecore#//DocumentRoot/transactionID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//TransactionType;XSDElementDeclaration=128"
+      outputs="_201.ecore#//DocumentRoot/transactionType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//UnitOfMeasure;XSDElementDeclaration=99"
+      outputs="_201.ecore#//DocumentRoot/unitOfMeasure"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//UnitPrice;XSDElementDeclaration=100"
+      outputs="_201.ecore#//DocumentRoot/unitPrice"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WarehouseID;XSDElementDeclaration=101"
+      outputs="_201.ecore#//DocumentRoot/warehouseID"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//Website;XSDElementDeclaration=102"
+      outputs="_201.ecore#//DocumentRoot/website"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WithholdingTaxType;XSDElementDeclaration=129"
+      outputs="_201.ecore#//DocumentRoot/withholdingTaxType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkDate;XSDElementDeclaration=103"
+      outputs="_201.ecore#//DocumentRoot/workDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkStatus;XSDElementDeclaration=130"
+      outputs="_201.ecore#//DocumentRoot/workStatus"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkStatusDate;XSDElementDeclaration=104"
+      outputs="_201.ecore#//DocumentRoot/workStatusDate"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//WorkType;XSDElementDeclaration=131"
+      outputs="_201.ecore#//DocumentRoot/workType"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax3Car;XSDSimpleTypeDefinition=15"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax3Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMandatoryMax70Car;XSDSimpleTypeDefinition=22"
+      outputs="_201.ecore#//SAFPTtextTypeMandatoryMax70Car"/>
+  <nested inputs="../../openk_pos_v1_2_discount/models/SAFTPT_1_02_01.xsd#//SAFPTtextTypeMax40Car;XSDSimpleTypeDefinition=28"
+      outputs="_201.ecore#//SAFPTtextTypeMax40Car"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

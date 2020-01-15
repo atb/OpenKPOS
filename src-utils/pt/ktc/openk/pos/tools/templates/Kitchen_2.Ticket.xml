@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Openbravo POS is a point of sales application designed for touch screens.
+    Copyright (C) 2007-2009 Openbravo, S.L.
+    http://sourceforge.net/projects/openbravopos
+
+    This file is part of Openbravo POS.
+
+    Openbravo POS is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Openbravo POS is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Openbravo POS.  If not, see <http://www.gnu.org/licenses/>.
+    
+    USADO PARA IMPRESSAO DO ORIGINAL (QUANDO A CHECK BOX DA IMPRESSORA ESTA SELECCIONADA)
+    
+    A tag <ticket> pode ter um atributo que identifica a impressora a usar. Exemplo:
+    <ticket printer="1">
+    
+    ORDEM GRILL
+ -->
+<output>
+
+        #set( $inicio = 0)
+
+         #foreach ($ticketline in $ticket.getLines())
+          #if (($ticketline.getLineStatus()!='=') && ($ticketline.getProductCategoryID()=='7'))
+
+       #if ($inicio == 0)
+    <ticket printer="3">
+       <line></line>
+        <line></line>
+        <line>
+            <text align="left" length="15">Ordem Grill</text>
+        </line>
+        <line>
+            <text align="left" length="15">Data:</text>
+            <text>${ticket.printDate()}</text>
+        </line>  
+        #if ($place != "")
+        <line>
+            <text align="left" length="15">Mesa:</text>
+            <text>${place}</text>
+        </line>  
+        #end
+        <line></line>    
+        <line>
+            <text align ="left" length="2">E </text>
+            <text align ="left" length="20">Descrição</text>
+            <text align ="right" length="5">Qt</text>
+        </line>      
+        <line>
+             <text>------------------------------------------</text>
+        </line>
+        #set( $inicio = 1)
+        #end
+
+          <line>
+              <text align ="left" length="2">${ticketline.getLineStatus()}</text>
+              #if ($ticketline.isProductCom()) 
+                  <text align ="left" length="20">*${ticketline.printName()}</text>
+              #else
+                  <text align ="left" length="20">${ticketline.printName()}</text>
+              #end
+              <text align ="right" length="5">${ticketline.printMultiplyAbs()}</text>
+          </line> 
+         #end
+        #end
+        
+         #foreach ($ticketline in $ticket.getRemovedLines())
+          #if (($ticketline.getLineStatus()!='=') && ($ticketline.getProductCategoryID()=='6'))
+
+       #if ($inicio == 0)
+    <ticket printer="3">
+       <line></line>
+        <line></line>
+        <line>
+            <text align="left" length="15">Ordem Grill</text>
+        </line>
+        <line>
+            <text align="left" length="15">Data:</text>
+            <text>${ticket.printDate()}</text>
+        </line>  
+        #if ($place != "")
+        <line>
+            <text align="left" length="15">Mesa:</text>
+            <text>${place}</text>
+        </line>  
+        #end
+        <line></line>    
+        <line>
+            <text align ="left" length="2">E </text>
+            <text align ="left" length="20">Descrição</text>
+            <text align ="right" length="5">Qt</text>
+        </line>      
+        <line>
+             <text>------------------------------------------</text>
+        </line>
+        #set( $inicio = 1)
+        #end
+
+          <line>
+              <text align ="left" length="2">${ticketline.getLineStatus()}</text>
+              #if ($ticketline.isProductCom()) 
+                  <text align ="left" length="20">*${ticketline.printName()}</text>
+              #else
+                  <text align ="left" length="20">${ticketline.printName()}</text>
+              #end
+              <text align ="right" length="5">${ticketline.printMultiplyAbs()}</text>
+          </line> 
+         #end
+        #end
+      
+
+       #if ($inicio == 1)       
+        <line>
+             <text>------------------------------------------</text>
+        </line>   
+        <line>
+            <text align="left" length="15">Operador:</text>
+            <text>${ticket.printUser()}</text>
+        </line>
+        <line></line> 
+
+     </ticket>
+     #end
+
+</output>
+
+

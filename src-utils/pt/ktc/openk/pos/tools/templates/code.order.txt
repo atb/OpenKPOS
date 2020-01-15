@@ -1,0 +1,24 @@
+//
+// script para imprimir as ordens de cozinha
+//
+
+// deve chamar os templates de impressao das diversas classes de produtos
+// Cozinha
+sales.printTicket("Kitchen.Ticket");
+
+// Grill
+sales.printTicket("Kitchen_2.Ticket");
+
+// deve fazer o reset do estado da linhas uma vez que as ordens ja foram dadas
+ticket.resetStatus();
+
+// esvaziar a lista de linhas removidas
+ticket.emptyRemovedLines();
+
+// devolver o resultado na forma de uma string
+// Indica que se deve sair para o mapa de mesas se estamos em modo restaurante
+"sair"
+
+
+
+

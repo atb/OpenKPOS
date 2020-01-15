@@ -1,0 +1,421 @@
+\chapter{Administração}
+\label{ch:administracao}
+
+\section{Utilizadores}
+O OpenK POS vêm configurado com 3 tipos de utilizadores: o
+Administrador (reservado à assistência por parte da KTC); o Gerente (o
+utilizador com mais permissões) e o empregado (um utilizador com menos
+permissões, basicamente só podendo efectuar operações relacionadas com
+vendas).\newline
+\indent A Figura ~\ref{fig:opcoes_gerente} e a Figura
+~\ref{fig:opcoes_empregado} ilustram, respectivamente, as opções disponíveis para o utilizador Gerente e para o utilizador Empregado.\newline
+
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\linewidth}
+	  \centering
+	      \includegraphics[width=0.4\textwidth]{./imgs_org/opcoes_gerente.png}
+	  \caption{Opções do gerente}
+	  \label{fig:opcoes_gerente}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+	  \centering
+	      \includegraphics[width=0.4\textwidth]{./imgs_org/opcoes_empregado.png}
+	  \caption{Opções do empregado}
+	  \label{fig:opcoes_empregado}
+\end{minipage}
+\end{figure}
+
+\begin{bclogo}[couleur=blue!30, arrondi=0.1, logo=\bclampe, ombre=true]{É
+possível criar novos utilizadores e/ou alterar os existentes} Como esta funcionalidade tem implicações ao nível da
+segurança da aplicação deve ser efetuada por técnicos da KTC a pedido do
+cliente.
+\end{bclogo}\newline
+
+\noindent As configurações possíveis sobre os utilizadores incluem as suas
+permissões, a associação de um cartão de utilizador ou a associação de uma fotografia. Se o
+utilizador tiver um cartão associado é possível efetuar o login por leitura do
+código de barras do cartão do utilizador.
+
+\section{Armazéns}
+Apesar de ser possível definir vários armazéns e um produto existir em vários
+armazéns cada POS apenas trabalha com stock de um único armazém. Essa definição
+é efetuada aquando da instalação do OpenK POS.\newline
+
+\begin{bclogo}[couleur=blue!30, arrondi=0.1, logo=\bclampe, ombre=true]{É
+possível definir mais do que um armazém} Como esta funcionalidade tem
+implicações ao nível da segurança da aplicação deve ser efetuada por técnicos da KTC a pedido do
+cliente.
+\end{bclogo}
+
+\section{Impostos}
+O OpenK POS suporta um elevado nível de flexibilidade no que se refere a
+impostos. É possível definir impostos não só por produto mas também por cliente.
+Para além disso é ainda possível definir mais do que uma taxa de imposto para o
+mesmo produto.\newline
+\indent As situações descritas anteriormente, embora possíveis, são pouco
+comuns, pelo que o OpenK vem configurado com as 3 taxas de IVA normais para
+Portugal continental: Taxa Normal, Taxa Intermédia e Taxa Reduzida.\newline
+\indent As operações relativas à definição de impostos estão acessíveis através
+da opção de administração \emph{Stocks}.\newline
+\indent De seguida descrevem-se os passos gerais que constituem a definição de
+impostos.
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/main_stocks.png}
+  \caption{Opções de administração relacionadas com stocks e produtos}
+\end{figure}
+
+\subsection{Categorias de impostos por cliente}
+Este passo é opcional. Permite definir categorias de impostos que podem ser
+associadas a clientes. Desta forma será possível ter impostos (taxas) diferentes
+por tipo de cliente. Permite, por exemplo, aplicar taxas diferentes para
+clientes das regiões autónomas ou dos países membros da União Europeia. Como se
+pode observar pela Figura ~\ref{fig:cat_imp_cli} a sua definição consiste
+apenas na atribuição de uma designação para uma categoria.\newline
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/cat_imp_cli.png}
+  \caption{Janela de definição de categorias de imposto por cliente}
+  \label{fig:cat_imp_cli}
+\end{figure}
+
+\subsection{Categorias de impostos}
+Este passo é obrigatório. É necessário definir categorias de impostos uma vez
+que cada produto deve pertencer a uma categoria de imposto. Podemos, por
+exemplo, ter um produto na categoria de ``Iva Taxa Normal''.\newline
+\indent O OpenK POS vem configurado com 3 categorias de imposto, relativas às 3
+taxas de IVA portuguesas: Taxa Reduzida, Taxa Intermédia e Taxa Normal.
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/cat_imp.png}
+  \caption{Janela de definição de categorias de impostos}
+  \label{fig:cat_imp}
+\end{figure}
+
+\subsection{Impostos}
+Este passo é obrigatório. É a este nível que se definem as taxas a aplicar. A
+Figura ~\ref{fig:impostos} ilustra a definição de impostos.\newline
+\indent A aplicação permite que um imposto seja desdobrado em várias taxas. Esta
+situação é usada em casos em que seja necessário cobrar mais do que um imposto
+num produto que se vende. É apenas neste caso que se usam os campos ``Imposto
+Pai'' e ``Ordem''. Não é uma situação corrente em Portugal.\newline
+\indent Cada imposto tem de estar associado a uma categoria de imposto. Isto
+porque, como veremos mais à frente, cada produto está associado também a uma
+categoria de imposto. É desta forma que o programa determina qual a taxa
+(imposto) a aplicar a um produto.\newline
+\indent É possível ainda definir para cada imposto a ``categoria de imposto de
+cliente''. Esta definição é opcional, tal como já foi referido anteriormente. Se
+for definido este campo então a aplicação vai aplicar esta taxa quando um
+produto da mesma categoria de imposto for vendido a um cliente dessa categoria
+de imposto de cliente. Tal como foi referido anteriormente permite ter produtos
+com taxas diferentes quando vendidos a clientes diferentes. A aplicação de
+inicio não está configurada para trabalhar dessa forma (embora seja
+possível).\newline
+\indent Por exemplo, podemos ter a categoria de imposto ``IVA Taxa Normal''.
+Nesta categoria podemos definir mais do que um ``Imposto''. Por exemplo, o
+imposto ``IVA Taxa Normal Continente (23\%)'', ``IVA Taxa Normal Madeira
+(15\%)'' e ``IVA Membro UE (0\%)''. A cada imposto podemos associar uma
+Categoria de imposto de cliente. Isto permite que a Taxa actual de IVA a aplicar
+na venda de um produto possa depender do cliente. Convém ter sempre um imposto
+\emph{default} para o qual não existe categoria de imposto de cliente para ser
+usado por omissão nas situações mais comuns (isto é, para os clientes para os
+quais não especificamos qual era a categoria de imposto de cliente).\newline
+
+\begin{bclogo}[couleur=blue!30, arrondi=0.1, logo=\bclampe, ombre=true]{Nota
+importante sobre o nome do imposto} Ao definirmos os impostos o campo ``nome''
+deve conter a designação da taxa (por exemplo ``IVA Normal'') ou, nos casos de isenção, a justificação da isenção (por exemplo, ``Isenção art9,
+n10''). Essa informação vai aparecer nos documentos de venda.
+\end{bclogo}
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/impostos.png}
+  \caption{Janela de definição de impostos}
+  \label{fig:impostos}
+\end{figure}
+
+\section{Produtos}
+
+\subsection{Categorias}
+É possível dividir os produtos pode categorias ou classes, tal como se pode
+observar na Figura ~\ref{fig:categorias}. As categorias podem ser subdivididas
+em mais categorias até ao limite desejado.\newline
+\indent Para especificarmos uma categoria devemos indicar o seu nome e, caso
+pretendamos que seja uma subcategoria de outra já existente, selecionar o nome
+da categoria pai no campo ``Categoria''. Pode-se ainda selecionar uma imagem
+para a categoria. Esta imagem será apresentada depois na janela de vendas para
+mais facilmente se identificar a categoria. Os botões adicionar e remover do
+catálogo permitem especificar se a categoria vai aparecer na janela de vendas ou
+não e, por conseguinte, os produtos que pertenceram a essa categoria.\newline
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/categorias.png}
+  \caption{Janela de definição de Categorias de Produtos}
+  \label{fig:categorias}
+\end{figure}
+
+\subsection{Atributos de Produtos}
+Consiste na configuração de atributos de produtos, como por exemplo a cor e o
+tamanho. Estes dados podem depois ser usados na gestão de stocks.\newline
+
+\begin{itemize}
+  \item (Atributos de produtos) Definir o nome dos atributos de produtos
+  \item (Valores de atributos) Definir os valores possíveis para atributos de
+  produtos (se não se definir nenhum valor a aplicação pede ao utilizador para
+  introduzir um valor quando se usam os atributos)
+  \item (Conjunto de atributos de produto) Definir o nome dos conjuntos de
+  atributos de produtos
+  \item (Uso de atributos de produto) Definir quais os atributos de produtos que
+  faem parte dos conjuntos de atributos de produtos
+\end{itemize}
+
+\subsection{Produtos}
+A definição de produtos é efetuada na janela ilustrada na Figura
+~\ref{fig:produtos}.\newline
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/produtos.png}
+  \caption{Janela de definição de Produtos}
+  \label{fig:produtos}
+\end{figure}
+
+\begin{itemize}
+	\item Referência = Campo usado em pesquisas
+	\item Nome = Nome do Produto
+	\item Geral:
+	\begin{itemize}
+	  \item Código de barras = o código de barras do produto
+	  \item Preço de compra = o preço de compra do produto
+	  \item Preço de venda = o preço de venda do produto (sem impostos)
+	  \item Margem = a margem em percentagem
+	  \item Preço de venda + imposto = preço de venda ao público (preço de venda +
+	  imposto)
+	  \item Categoria de imposto = a categoria de imposto a aplicar a este produto
+	  \item Categoria = a categoria do produto
+	  \item Atributos = o conjunto de atributos de produto a usar no produto.
+	  Opcional.
+	\end{itemize}
+	\item Stock (ver Figura ~\ref{fig:produto_stock}):
+	\begin{itemize}
+	  \item Custo de stock por ano = É possível definir um custo de stock por
+	  unidade de produto. Serve apenas para efeito de relatórios, para se ter uma
+	  ideia do custo de armazenamento de um produto.
+	  \item Volume de stock = espaço ocupado
+	  \item No catálogo = se pertence ao catálogo ou não
+	  \item Ordem = permite indicar a ordem do produto no catálogo
+	  \item Auxiliar = se é um produto auxiliar e pode entrar na composição de
+	  outro produto
+	  \item Balança = se necessita de balança para calcular a sua quantidade
+	\end{itemize}
+	\item Propriedades: permite anotar a ficha do produto com informação adicional
+\end{itemize}
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.4\textwidth]{./imgs_org/produto_stock.png}
+  \caption{Separador de definição de informação de stock de Produtos}
+  \label{fig:produto_stock}
+\end{figure}
+
+\subsection{Produtos compostos}
+É possível definir composições de produtos. Produtos normais podem ser compostos
+de proutos que se definem como auxiliares. Nesse caso, quando se vende o produto
+composto aparece a opção para acrescentar os seus produtos componentes (não é
+obrigatório). Se acrescentarmos os componentes estes aparecem indentados por
+baixo do principal.\newline
+\indent Também se podem vender os produtos auxiliares diretamente.\newline
+
+\subsection{Relatórios sobre produtos}
+
+\subsubsection{Produtos}
+Lista, por categorias, os produtos com os respetivos preços de compra (custo),
+venda e venda com imposto.
+
+\subsubsection{Etiquetas de produtos}
+Lista as fichas dos produtos em formato adequado para afixação.
+
+\subsubsection{Catálogo}
+Apresenta o catálogo de todos os produtos agrupados por famíliaas/categorias.
+
+\section{Gestão de Stocks}
+Compra de produtos e movimentações de stocks.
+
+\subsection{Manutenção de Stock}
+Imprime um recibo relativamente à manutenção de stock. Permite fazer a
+movimentação de stock entre armazéns. Em caso de movimento imprime um recibo de
+saída e um recibo de entrada. O valor do produto impresso é o valor de compra
+(custo). Não permite alterar o valor do produto.\newline
+
+\subsection{Diário de Stock}
+Não imprime recibo. Não permite a movimentação entre armazéms. Serve para
+registar as entradas de produtos em armazéns da empresa (vindos de
+fornecedores). Permite alterar o valor do produto. É útil para, por exemplo,
+carregar inicialmente o stock que a empresa tem de todos os produtos.\newline
+
+\subsection{Relatórios sobre stock}
+A aplicação disponibiliza um conjunto de relatório relativos às movimentações de
+stock.\newline
+
+\subsubsection{Armazéns}
+Este relatório permite obter o estado do stock actual por armazéns e vários
+filtros relativos a produtos. Apresenta também os valores monetários relativos
+aos movimentos de stock.\newline
+
+\subsubsection{Inventário corrente}
+Relatório semelhante ao anterior mas apenas apresenta as unidades dos produtos
+em stock.\newline
+
+\subsubsection{Inventário corrente ``broken''}
+Este relatório apresenta os produtos que estejam abaixo do nível mínimo de stock
+que foi definido na especificação do produto. Note-se que apenas são
+considerados produtos para os quais tenham sido definidos os limites de
+segurança de stock.\newline
+
+\subsubsection{Detalhes do inventário corrente}
+Este relatório apresenta as movimentações de stock detalhadas por
+armazém.\newline
+
+\subsubsection{Inventário diário}
+Permite obter os movimentos de stock entre datas, por armazém e razão do
+movimento.\newline
+
+\subsubsection{Detalhes do inventário diário}
+Relatório semelhante ao anterior mas com detalhe relativo aos atributos
+de produto (caso existam).\newline
+
+\section{Clientes}
+A janela de administração de clientes permite fazer a gestão dos dados
+associados aos clientes assim como executar relatórios relativos a clientes. A
+Figura ~\ref{fig:clientes} apresenta a janela de administração de
+clientes.\newline
+
+\begin{figure}[h!]
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/clientes.png}
+  \caption{Janela de Administração de Clientes}
+  \label{fig:clientes}
+\end{figure}
+
+\begin{itemize}
+	\item NIF = Número de identificação Fiscal. Obrigatório
+	\item Chave pesquisa = Chave única usada para pesquisa do cliente. Obrigatório.
+	\item Nome = Nome do cliente. Obrigatório.
+	\item Cartão = Código de barras que pode ser usado num cartão de cliente para
+	identificar o cliente.
+	\item Cat de imposto Cliente = Opcional. Permite especificar uma categoria de
+	imposto associada ao cliente. Se um cliente tiver uma categoria de imposto
+	associado então só podem ser aplicados a este cliente impostos com a mesma
+	categoria de imposto de cliente. Por exemplo, se o cliente é de uma região
+	autónoma cobra-se o IVA da região ou se é um sujeito passivo de uma estado
+	membro da UE não se cobra IVA.
+	\item Dívida máxima = Permite definir o valor máximo da dívida do cliente.
+	\item Dívida do cliente = Apresenta o valor actual da dívida do cliente.
+	\item Data da dívida = A data do último valor que ficou em dívida pelo cliente.
+	\item Endereço
+	\begin{itemize}
+	  \item Linha de endereço 1 = Rua do cliente. Obrigatório.
+	  \item Linha de endereço 2 = Localidade ou freguesia.
+	  \item Código postal = Código postal. Obrigatório.
+	  \item Cidade = Obrigatório.
+	  \item Região = Distrito. Opcional.
+	  \item País = Opcional.
+	\end{itemize}
+	\item Contacto
+	\begin{itemize}
+	  \item Dados de contacto do cliente. Opcional.
+	\end{itemize}
+	\item Notas
+	\begin{itemize}
+	  \item Informação pertinente relativa ao cliente. Esta informação pode ser
+	  consultada no acto de pagamento de uma venda.
+	\end{itemize}
+\end{itemize}
+
+\begin{figure}[h!] 
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/editar_cliente.png}
+  \caption{Janela de Edição de Clientes}
+  \label{fig:editar_cliente}
+\end{figure}
+
+\subsection{Relatórios sobre clientes}
+
+\subsubsection{Clientes}
+Gera um relatório com as fichas dos clientes (ver Figura
+~\ref{fig:rel_clientes}).
+Se o cliente tiver um cartão atribuído então a ficha do cliente inclui o código de barras
+relativo ao cartão do cliente. Para cada cliente aparecem, do lado
+esquerdo, a identificação do cliente e do lado direito o saldo do
+cliente.\newline
+
+\begin{figure}[h!] 
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/rel_clientes.png}
+  \caption{Relatório de Clientes}
+  \label{fig:rel_clientes}
+\end{figure}
+
+\subsubsection{Clientes com dívidas}
+Gera um relatório com as fichas dos clientes com dívidas.\newline
+
+\subsubsection{Diário de cliente}
+Gera um relatório com os registos de movimentos de clientes relativos a dividas
+e seus pagamentos (ver Figura ~\ref{fig:diario_clientes}).\newline
+
+\begin{figure}[h!] 
+  \centering
+      \includegraphics[width=0.8\textwidth]{./imgs_org/diario_clientes.png}
+  \caption{Diário de movimentos de dívidas de Clientes}
+  \label{fig:diario_clientes}
+\end{figure}
+
+\section{Vendas}
+Nesta opção é possível consultar e imprimir dados sobre as
+vendas.\newline
+Note-se que apenas são considerados os dados de caixas fechados.
+
+\subsection{Relatório de Caixa por Utilizador}
+Imprime os movimentos de caixa por utilizador entre duas datas.\newline
+
+\subsection{Relatório de Vendas de Produtos}
+Imprime as vendas por produto entre duas datas.\newline
+
+\subsection{Relatório de Impostos}
+Imprime os impostos das vendas entre duas datas.\newline
+
+\subsection{Relatório de Vendas e Impostos}
+Imprime os impostos das vendas entre duas datas. Este relatório é
+adequado para suportar a declaração periódica de IVA.\newline
+
+\subsection{Gráfico de Vendas}
+Apresenta um gráfico de vendas por utilizador e por datas.
+
+\subsection{Gráfico de Vendas de Produtos}
+Apresenta um gráfico de vendas por produto e por datas.
+
+\section{Emissão do Ficheiro SAF-T PT}
+Esta opção permite gerar o ficheiro SAF-T de acordo com a regulamentação da
+Autoridade Tributária Portuguesa (Finanças). Para emitir o ficheiro é necessário
+especificar um intervalo de datas relativo ao período para o qual desejamos os
+dados do SAF-T.
+
+\section{Cópias de Segurança}
+Esta opção permite gerar cópias de segurança dos dados da aplicação. Deve ser
+executada com regularidade (uma sugestão é efectua-la com a periodicidade do
+fecho de caixa).\newline
+
+\begin{bclogo}[couleur=blue!30, arrondi=0.1, logo=\bclampe, ombre=true]{É
+possível automatizar a geração de cópias de segurança} Para tal deve solicitar
+o serviço aos técnicos da KTC. Após a falha do sistema a reposição de cópias de
+segurança deve ser solicitada aos técnicos da KTC.
+\end{bclogo}
+
+
+
+

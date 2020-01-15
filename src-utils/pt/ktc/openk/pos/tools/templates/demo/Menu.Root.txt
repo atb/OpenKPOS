@@ -1,0 +1,99 @@
+//    Openbravo POS is a point of sales application designed for touch screens.
+//    Copyright (C) 2007-2009 Openbravo, S.L.
+//    http://sourceforge.net/projects/openbravopos
+//
+//    This file is part of Openbravo POS.
+//
+//    Openbravo POS is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    Openbravo POS is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with Openbravo POS.  If not, see <http://www.gnu.org/licenses/>.
+
+    group = menu.addGroup("Menu.Main");
+    group.addPanel("/pt/ktc/openk/pos/images/mycomputer.png", "Menu.Ticket", "com.openbravo.pos.sales.JPanelTicketSales");
+    group.addPanel("/pt/ktc/openk/pos/images/mycomputer.png", "Menu.TicketRefund", "pt.ktc.openk.pos.sales.JPanelTicketEdits");
+    group.addPanel("/pt/ktc/openk/pos/images/mycomputer.png", "Menu.TicketDuplicate", "pt.ktc.openk.pos.sales.JPanelTicketEdits");
+	// Nova opcao para substituir recibo
+    group.addPanel("/pt/ktc/openk/pos/images/mycomputer.png", "Menu.TicketReplace", "pt.ktc.openk.pos.sales.JPanelTicketReplaceSale");
+    group.addPanel("/pt/ktc/openk/pos/images/kdmconfig.png", "Menu.CustomersPayment", "com.openbravo.pos.customers.CustomersPayment");
+    group.addPanel("/pt/ktc/openk/pos/images/mycomputer.png", "Menu.Payments", "com.openbravo.pos.panels.JPanelPayments");
+    group.addPanel("/pt/ktc/openk/pos/images/mycomputer.png", "Menu.CloseTPV", "com.openbravo.pos.panels.JPanelCloseMoney");
+    group.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.Closing", "/pt/ktc/openk/pos/reports/closedpos.bs");
+
+    group = menu.addGroup("Menu.Backoffice");
+    submenu = group.addSubmenu("/pt/ktc/openk/pos/images/contents.png", "Menu.Customers", "com.openbravo.pos.forms.MenuCustomers");
+        submenu.addTitle("Menu.Customers");
+//        submenu.addPanel("/pt/ktc/openk/pos/images/kdmconfig.png", "Menu.CustomersManagement", "com.openbravo.pos.customers.CustomersPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/kdmconfig.png", "Menu.CustomersManagement", "pt.ktc.openk.pos.customers.CustomersPanel");
+        submenu.addTitle("Menu.Customers.Reports");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.CustomersReport", "/pt/ktc/openk/pos/reports/customers.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.CustomersBReport", "/pt/ktc/openk/pos/reports/customersb.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.CustomersDiary", "/pt/ktc/openk/pos/reports/customersdiary.bs");
+    submenu = group.addSubmenu("/pt/ktc/openk/pos/images/contents.png", "Menu.StockManagement", "com.openbravo.pos.forms.MenuStockManagement");
+        submenu.addTitle("Menu.StockManagement.Edit");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Products", "pt.ktc.openk.pos.inventory.ProductsPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.ProductsWarehouse", "com.openbravo.pos.inventory.ProductsWarehousePanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Auxiliar", "com.openbravo.pos.inventory.AuxiliarPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Categories", "com.openbravo.pos.inventory.CategoriesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Attributes", "com.openbravo.pos.inventory.AttributesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.AttributeValues", "com.openbravo.pos.inventory.AttributeValuesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.AttributeSets", "com.openbravo.pos.inventory.AttributeSetsPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.AttributeUse", "com.openbravo.pos.inventory.AttributeUsePanel");
+
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Taxes", "com.openbravo.pos.inventory.TaxPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.TaxCategories", "com.openbravo.pos.inventory.TaxCategoriesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.TaxCustCategories", "com.openbravo.pos.inventory.TaxCustCategoriesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.StockDiary", "com.openbravo.pos.inventory.StockDiaryPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.StockMovement", "com.openbravo.pos.inventory.StockManagement");      
+        submenu.addTitle("Menu.StockManagement.Reports");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.Products", "/pt/ktc/openk/pos/reports/products.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.ProductLabels", "/pt/ktc/openk/pos/reports/productlabels.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.Catalog", "/pt/ktc/openk/pos/reports/productscatalog.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.Inventory", "/pt/ktc/openk/pos/reports/inventory.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.Inventory2", "/pt/ktc/openk/pos/reports/inventoryb.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.InventoryBroken", "/pt/ktc/openk/pos/reports/inventorybroken.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.InventoryListDetail", "/pt/ktc/openk/pos/reports/inventorylistdetail.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.InventoryDiff", "/pt/ktc/openk/pos/reports/inventorydiff.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.InventoryDiffDetail", "/pt/ktc/openk/pos/reports/inventorydiffdetail.bs");
+    submenu = group.addSubmenu("/pt/ktc/openk/pos/images/contents.png", "Menu.SalesManagement", "com.openbravo.pos.forms.MenuSalesManagement");
+        submenu.addTitle("Menu.SalesManagement.Reports");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.UserSells", "/pt/ktc/openk/pos/reports/usersales.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.ClosedProducts", "/pt/ktc/openk/pos/reports/closedproducts.bs");
+//        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.ReportTaxes", "/pt/ktc/openk/pos/reports/taxes.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.ReportSalesAndTaxes", "/pt/ktc/openk/pos/reports/sales_and_taxes.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/fileprint.png", "Menu.ProductSales", "pt.ktc.openk.pos.panels.JPanelProductSalesRPrinter");        
+        submenu.addPanel("/pt/ktc/openk/pos/images/cakes3d.png", "Menu.SalesChart", "/pt/ktc/openk/pos/reports/chartsales.bs");
+        submenu.addPanel("/pt/ktc/openk/pos/images/cakes3d.png", "Menu.ProductSales", "/pt/ktc/openk/pos/reports/productsales.bs");
+    submenu = group.addSubmenu("/pt/ktc/openk/pos/images/contents.png", "Menu.Maintenance", "com.openbravo.pos.forms.MenuMaintenance");
+        submenu.addTitle("Menu.Maintenance.POS");        
+        submenu.addPanel("/pt/ktc/openk/pos/images/kdmconfig.png", "Menu.Users", "com.openbravo.pos.admin.PeoplePanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/yast_group_add.png", "Menu.Roles", "com.openbravo.pos.admin.RolesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/clipart.png", "Menu.Resources", "com.openbravo.pos.admin.ResourcesPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/gohome.png", "Menu.Locations", "com.openbravo.pos.inventory.LocationsPanel");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Floors", "com.openbravo.pos.mant.JPanelFloors");
+        submenu.addPanel("/pt/ktc/openk/pos/images/bookmark.png", "Menu.Tables", "com.openbravo.pos.mant.JPanelPlaces");
+        submenu.addTitle("Menu.Maintenance.Reports");
+        submenu.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.UsersReport", "/pt/ktc/openk/pos/reports/people.bs");
+   group.addPanel("/pt/ktc/openk/pos/images/appointment.png", "Menu.SAFT-PT", "pt.ktc.openk.pos.saft.JPanelSaft");
+   group.addPanel("/pt/ktc/openk/pos/images/company.png", "Menu.Company", "pt.ktc.openk.pos.company.CompanyPanel");
+   group.addPanel("/pt/ktc/openk/pos/images/filesave.png", "Menu.Backup", "pt.ktc.openk.pos.backup.JPanelBackup");
+   group.addPanel("/pt/ktc/openk/pos/images/filesave.png", "Menu.Restore", "pt.ktc.openk.pos.backup.JPanelRestore");
+   
+// Deprecated options.
+//        submenu.addTitle("Menu.Maintenance.ERP");
+//        submenu.addExecution("/pt/ktc/openk/pos/images/openbravo.png", "Menu.ERPProducts", "com.openbravo.possync.ProductsSyncCreate");
+//        submenu.addExecution("/pt/ktc/openk/pos/images/openbravo.png", "Menu.ERPOrders", "com.openbravo.possync.OrdersSyncCreate");
+    group = menu.addGroup("Menu.System");
+    group.addChangePasswordAction();
+// (ATB) A configuracao agora e harcoded!
+//    group.addPanel("/pt/ktc/openk/pos/images/package_settings.png", "Menu.Configuration", "com.openbravo.pos.config.JPanelConfiguration");
+    group.addPanel("/pt/ktc/openk/pos/images/fileprint.png", "Menu.Printer", "com.openbravo.pos.panels.JPanelPrinter");
+    group.addExitAction();

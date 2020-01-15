@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Openbravo POS is a point of sales application designed for touch screens.
+    Copyright (C) 2008-2009 Openbravo, S.L.
+    http://sourceforge.net/projects/openbravopos
+
+    This file is part of Openbravo POS.
+
+    Openbravo POS is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Openbravo POS is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Openbravo POS.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<permissions>
+    <class name="sales.EditLines"/>
+    <class name="sales.RefundTicket"/>
+    <class name="sales.PrintTicket"/>
+    <class name="sales.Total"/>
+    <class name="payment.cash"/>
+    <class name="payment.cheque"/>
+    <class name="payment.paper"/>
+    <class name="payment.magcard"/>
+    <class name="payment.free"/>
+    <class name="payment.debt"/>    
+    <class name="refund.cash"/>
+    <class name="refund.cheque"/>
+    <class name="refund.paper"/>
+    <class name="refund.magcard"/>
+   <class name="button.print"/>
+   <class name="button.order"/>
+    <class name="button.preview"/>    
+   <class name="button.opendrawer"/>
+    <!-- Principal -->
+    <class name="com.openbravo.pos.sales.JPanelTicketSales"/>
+    <class name="com.openbravo.pos.sales.JPanelTicketEdits"/>
+    <class name="com.openbravo.pos.customers.CustomersPayment"/>  
+    <class name="pt.ktc.openk.pos.sales.JPanelTicketEdits"/>    
+    <class name="com.openbravo.pos.panels.JPanelPayments"/>
+    <class name="com.openbravo.pos.panels.JPanelCloseMoney"/>
+    <class name="/pt/ktc/openk/pos/reports/closedpos.bs"/>
+    <!--  Opcoes acrescentadas -->
+    <!-- Adminstracao / Clientes -->
+    <class name="com.openbravo.pos.forms.MenuCustomers"/>
+    <class name="com.openbravo.pos.customers.CustomersPanel"/>
+    <class name="pt.ktc.openk.pos.customers.CustomersPanel"/>
+    <class name="/pt/ktc/openk/pos/reports/customers.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/customersb.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/customersdiary.bs"/>
+    <!-- Administracao / Stocks -->
+    <class name="com.openbravo.pos.forms.MenuStockManagement"/>
+    <class name="pt.ktc.openk.pos.inventory.ProductsPanel"/>
+    <class name="com.openbravo.pos.inventory.ProductsWarehousePanel"/>
+    <class name="com.openbravo.pos.inventory.CategoriesPanel"/>
+    <class name="com.openbravo.pos.inventory.AttributesPanel"/>
+    <class name="com.openbravo.pos.inventory.AttributeValuesPanel"/>
+    <class name="com.openbravo.pos.inventory.AttributeSetsPanel"/>
+    <class name="com.openbravo.pos.inventory.AttributeUsePanel"/>
+    <class name="com.openbravo.pos.inventory.TaxPanel"/>
+    <class name="com.openbravo.pos.inventory.TaxCategoriesPanel"/>
+    <class name="com.openbravo.pos.inventory.TaxCustCategoriesPanel"/>
+    <class name="com.openbravo.pos.inventory.StockDiaryPanel"/>
+    <class name="com.openbravo.pos.inventory.StockManagement"/>
+    <class name="com.openbravo.pos.inventory.AuxiliarPanel"/>
+    <class name="/pt/ktc/openk/pos/reports/products.bs"/>     
+    <class name="/pt/ktc/openk/pos/reports/productlabels.bs"/>     
+    <class name="/pt/ktc/openk/pos/reports/productscatalog.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/inventory.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/inventoryb.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/inventorybroken.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/inventorylistdetail.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/inventorydiff.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/inventorydiffdetail.bs"/>
+    <!-- Administracao / Vendas -->
+    <class name="com.openbravo.pos.forms.MenuSalesManagement"/>
+    <class name="/pt/ktc/openk/pos/reports/usersales.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/closedproducts.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/taxes.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/sales_and_taxes.bs"/>
+    <class name="/pt/ktc/openk/pos/reports/chartsales.bs"/>  
+    <class name="/pt/ktc/openk/pos/reports/productsales.bs"/> 
+    <!-- Administracao / Manutencao : Nao tem acesso a nenhuma opcao ! -->
+    <!-- Administracao / SAF-T (PT) -->
+    <class name="pt.ktc.openk.pos.backup.JPanelBackup"/>    
+    <class name="pt.ktc.openk.pos.saft.JPanelSaft"/>
+    <!-- Administracao / Sistema -->
+    <class name="com.openbravo.pos.panels.JPanelPrinter"/>
+    <class name="Menu.ChangePassword"/>
+ </permissions>
